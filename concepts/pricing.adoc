@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: concepts/pricing.html 
+keywords: pricing, billing introduction, Keystone billing 
+summary: Keystone bietet ein Pay-as-you-grow-Modell für Ihren flexiblen und skalierbaren Verbrauchsbedarf. 
+---
+= Keystone -Preise
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der nutzungsbasierte Abonnementdienst NetApp Keystone STaaS bietet flexiblen und skalierbaren Verbrauch mit vorhersehbaren und im Voraus festgelegten Preisen für Ihren Speicherbedarf.
+
+Keystone bietet Ihnen die folgenden Abrechnungsmöglichkeiten:
+
+* Sie können auf der Grundlage von IOPS und zugesagter Latenzkapazität bezahlen, um verschiedene Workload-Anforderungen zu erfüllen.  Die verschiedenen Leistungsservicestufen – Extreme, Premium, Performance, Standard, Value und Object – ermöglichen Ihnen die Verwaltung Ihres Speichers basierend auf dem von Ihnen erworbenen Servicelevel.
+* Es bietet eine vorhersehbare Abrechnung für die zugesagte Kapazität und eine nutzungsabhängige Bezahlung für die variable (Burst-)Kapazitätsnutzung.
+* Sie können einen Paketpreis für Hardware, Kernbetriebssystem und Support zu einem Preis von einem $/TiB auswählen.  Sie erhalten für jeden Speichertyp, jede Datei, jeden Block, jedes Objekt oder jeden Cloud-Speicherdienst eine einzige Rechnung.
+* Sie können die Laufzeit der Dienste und die Zahlungsoptionen flexibel auswählen, beispielsweise monatlich, vierteljährlich oder jährlich.
+
+
+Die Keystone -Abrechnung basiert auf der zugesagten Kapazität und dem variablen Burst-Verbrauch.
+
+Informationen zu den verschiedenen in Keystone unterstützten Kapazitäten finden Sie unterlink:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten in Keystone"] .
+
+*Verwandte Informationen*
+
+* link:../concepts/committed-capacity-billing.html["Abrechnung basierend auf zugesagter Kapazität"]
+* link:../concepts/consumed-capacity-billing.html["Messung basierend auf verbrauchter Kapazität"]
+* link:../concepts/burst-consumption-billing.html["Abrechnung basierend auf Burst-Verbrauch"]
+* link:../concepts/misc-volume-billing.html["Abrechnung nach verschiedenen Volumenarten"]
+* link:../concepts/billing-schedules.html["Abrechnungspläne"]
+

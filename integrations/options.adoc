@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: integrations/options.html 
+keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor 
+summary: Als NetApp Keystone STaaS-Abonnent können Sie Ihre Daten suchen und filtern, Berichte zu Abonnements und Nutzung erstellen, Zeitstempel prüfen und Warnmeldungen anzeigen. 
+---
+= Durchsuchen Sie Keystone -Daten, erstellen Sie Berichte und zeigen Sie Warnungen an
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Ihre Daten suchen und filtern, Berichte zu Abonnements und Nutzung erstellen und Warnmeldungen anzeigen, um über Ihre Speicherumgebung auf dem Laufenden zu bleiben.
+
+
+
+== Suchen und filtern Sie Daten von BlueXP
+
+In BlueXP können Sie Keystone -Daten basierend auf den in der Tabelle innerhalb einer Registerkarte verfügbaren Spaltenparametern suchen und filtern.  Beispielsweise können Sie im Unterregister *Abonnements* unter dem Register *Abonnements* Daten filtern, indem Sie die Keystone -Version in das Suchfeld eingeben.  Ebenso können Sie auf der Registerkarte *Volumes in Clustern* unter der Registerkarte *Assets* Volumes filtern, indem Sie den Volumenamen in das Suchfeld eingeben.
+
+Sie können Ihre Suche verfeinern, indem Sie die erweiterte Filteroption verwenden, sofern verfügbar.  Beispielsweise können Sie im Unterregister *Abonnements* Daten nach Keystone Version, Abrechnungszeitraum, höchster Kapazität und Tagen bis zum Ablauf des Abonnements filtern und im Register *Volumes in Clustern* können Sie nach Volume-Name, Cluster-Name, QoS-Konformität, Volume-Typ und mehr filtern.  Um Ihre Ergebnisse präzise einzugrenzen, können mehrere Filter gleichzeitig angewendet werden.image:bxp-filter-search.png["erweiterte Filteroption"]
+
+
+
+== Generieren Sie Berichte aus BlueXP oder Digital Advisor
+
+Über den Download-Button können Sie Berichte zu Ihren Keystone -Daten erstellen und einsehenimage:bluexp-download-report-2.png["Bericht-Download-Symbol 2 in BlueXP"] verfügbar in Registerkarten in BlueXP oder Digital Advisor.  Über diese Registerkarten können Sie Berichte zu Ihren Abonnements, zur historischen Nutzung, zur Burst-Nutzung, zur Leistung, zu Assets, Volumes und Objekten erstellen.
+
+Die Details werden im CSV-Format generiert, das Sie zur späteren Verwendung und zum Vergleich speichern können.
+
+
+
+== Konsolidierten Bericht aus Digital Advisor generieren
+
+In Digital Advisor können Sie einen konsolidierten Bericht für Ihre Abonnements, die historische Nutzung, die Burst-Nutzung, die Leistung, die Assets sowie die Volumes und Objekte erstellen und anzeigen.  Wählen Sie hierzu in der Berichtsfunktion in Digital Advisor als Berichtstyp * Keystone -Abonnements* aus.  Sie können diese Berichte auf Kunden-, Cluster-, Beobachtungslisten- oder Abonnementebene erstellen.
+
+image:report-generation.png["Bericht erstellen"]
+
+Der Bericht wird im Excel-Format erstellt, wobei alle Informationsarten, wie z. B. Abonnementdetails oder Nutzungsverlauf, auf separaten Blättern angezeigt werden.  Zur einfacheren Anzeige sind diese Blätter entsprechend den Registerkarten auf der Seite * Keystone -Abonnements* benannt.  Sie können den Bericht zur späteren Verwendung speichern.
+
+Weitere Informationen zum Erstellen von Berichten finden Sie unterlink:https://docs.netapp.com/us-en/active-iq/task_generate_reports.html["Erstellen Sie benutzerdefinierte Berichte"^] .
+
+
+
+== Benachrichtigungen von Digital Advisor anzeigen
+
+In Digital Advisor bietet das Keystone -Dashboard Warnmeldungen, die Ihnen helfen, die in Ihrer Speicherumgebung auftretenden Probleme zu verstehen.  Diese Benachrichtigungen können als Informationsmeldungen oder Warnungen erscheinen.  Wenn es beispielsweise Volumes in Ihren verwalteten Clustern gibt, denen keine adaptiven QoS-Richtlinien (AQoS) zugeordnet sind, wird möglicherweise eine Warnmeldung angezeigt.  Wählen Sie die Warnmeldung aus, um die Liste der nicht konformen Volumes auf der Registerkarte *Volumes & Objekte* anzuzeigen.
+
+
+NOTE: Wenn Sie ein einzelnes Leistungsservicelevel oder einen Tarifplan abonniert haben, können Sie die Warnung für nicht konforme Volumina nicht sehen.
+
+image:alert-aiq-3.png["Alarm"]
+
+Informationen zu AQoS-Richtlinien finden Sie unterlink:../concepts/qos.html["Adaptive QoS"] .
+
+Wenden Sie sich an den NetApp Keystone Support, um weitere Informationen zu diesen Nachrichten zu erhalten.  Informationen zum Einreichen von Serviceanfragen finden Sie unterlink:../concepts/gssc.html#generating-service-requests["Generieren von Serviceanfragen"] .

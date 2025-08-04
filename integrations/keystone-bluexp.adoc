@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-bluexp.html 
+keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor 
+summary: Als NetApp Keystone STaaS-Abonnent können Sie sich einen Überblick über Ihre Abonnements von NetApp BlueXP verschaffen. 
+---
+= Keystone Dashboard in BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe der Registerkarte *Übersicht* können Sie schnell die gefährdeten Workloads ermitteln, die Kapazität und den Ablaufstatus von Abonnements anzeigen, die nicht aufgelösten Warnungen identifizieren und die Abonnements mit der höchsten Kapazitätsauslastung anzeigen.  Sie können auch den Status Ihrer Abonnements für verschiedene Versionen von Keystone anzeigen und alle Probleme hervorheben, die Ihre Aufmerksamkeit erfordern.
+
+Um die Registerkarte *Übersicht* anzuzeigen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone > Übersicht*.
+
+image:bxp-dashboard-overview-1.png["ein Screenshot der Registerkarte „Übersicht“"]
+
+Die Registerkarte *Übersicht* bietet folgende Einblicke:
+
+* *Zusammenfassung*: Zeigt die Gesamtzahl der Abonnements, ONTAP Cluster, StorageGRID Knoten und ONTAP Knoten an.  Jede Kategorie verfügt über eine Schaltfläche *Anzeigen*, um einfach zu detaillierten Abschnitten auf der Registerkarte *Abonnements* oder *Assets* zu navigieren.
+* *Läuft bald ab*: Die Anzahl der Abonnements, die innerhalb von 6 Monaten ablaufen.  Klicken Sie auf *Anzeigen*, um diese Abonnements auf der Registerkarte *Abonnements* anzuzeigen.
+* *Offene Anfragen*: Die Gesamtzahl der offenen Serviceanfragen.
+* *Kapazitätsnutzung*: Der Kapazitätsverbrauchsstatus für Abonnements, die über dem Burst liegen, Burst verwenden und nicht ausgelastet sind.  Jede Kategorie enthält eine Schaltfläche *Anzeigen*, um zur Registerkarte *Abonnements* mit den entsprechenden angewendeten Filtern zu navigieren.
+* *Top 5-Abonnements mit der höchsten Kapazitätsauslastung*: Zeigt eine Tabelle der fünf Keystone Abonnements mit dem höchsten Prozentsatz an Kapazitätsauslastung an.  Sie können in der Spalte *Abonnement* auf die Abonnementnummer klicken, um detaillierte Informationen zu erhalten.
+
+
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-overview.html["Erfahren Sie mehr über das Keystone -Dashboard"]
+* link:../integrations/dashboard-access.html["Erste Schritte mit dem Keystone -Dashboard"]
+* link:..//integrations/keystone-aiq.html["Keystone -Dashboard in Digital Advisor"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+

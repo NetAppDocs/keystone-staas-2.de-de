@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: integrations/volumes-objects-tab.html 
+keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
+summary: Zeigen Sie Kapazitätsdetails auf Volume- oder Objektspeicherebene an. 
+---
+= Details zu ONTAP -Volumes und Objektspeicher anzeigen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie Kapazitätsdetails auf Volume- oder Objektspeicherebene anzeigen möchten, können Sie in Digital Advisor zur Registerkarte *Volumes & Objekte* navigieren.  Für StorageGRID können Sie auf dieser Registerkarte die Nutzung durch die einzelnen Knoten in Ihrer Objektspeicherumgebung ablesen.
+
+Sie können diese Details auf der Registerkarte *Assets* in BlueXP anzeigen.  Um die Details für ein bestimmtes Keystone STaaS-Abonnement anzuzeigen, lesen Sielink:../integrations/assets-tab.html["Anzeigen von Assets, die mit einem Keystone -Abonnement verknüpft sind"] .  Wenn Sie Details zu mehreren Keystone Abonnements anzeigen möchten, lesen Sielink:../integrations/assets.html["Anzeigen von Assets in allen Ihren Keystone -Abonnements"] .
+
+
+NOTE: Der Titel dieser Registerkarte variiert je nach Art der Bereitstellung an Ihrem Standort.  Wenn Sie sowohl ONTAP als auch Objektspeicher haben, wird der Titel der Registerkarte als *Volumes & Objekte* angezeigt.  Nur bei ONTAP wird der Name *Volumes* angezeigt.  Für den StorageGRID Objektspeicher wird die Registerkarte *Objekte* angezeigt.
+
+
+
+== Details zu ONTAP -Volumes und Objektspeicher anzeigen
+
+Die Registerkarte *Volumes & Objects* bietet Einblicke in ONTAP -Systemvolumes und Objektspeicher auf verschiedenen Detailebenen.  Für ONTAP -Volumes gibt es zwei Unterregisterkarten: *Volume-Zusammenfassung*, die eine Gesamtanzahl der den abonnierten Leistungsservice-Levels zugeordneten Volumes bereitstellt, und *Volume-Details*, die diese Volumes noch einmal mit ihren spezifischen Einzelheiten auflistet.  Die Unterregisterkarte *Objekte* enthält Details zum Objektspeicher für Abonnements, die Leistungsservicelevel sowohl für Datei- als auch für Objektspeicher umfassen.
+
+[role="tabbed-block"]
+====
+.Bandzusammenfassung
+--
+. Gehen Sie im linken Navigationsbereich von Digital Advisor zu *Allgemein > Keystone -Abonnements > Volumes und Objekte > Volume-Zusammenfassung*.
+. Wählen Sie die Abonnementnummer aus.
++
+Für das ausgewählte Keystone STaaS-Abonnement können Sie die Gesamtzahl der Volumes, ihren QoS-Konformitätsstatus, die Anzahl der geschützten Volumes und die insgesamt zugesagte, verbrauchte und verfügbare Kapazität in all diesen Volumes sehen.  Wenn Sie auf die Anzahl der nicht konformen oder geschützten Volumes klicken, gelangen Sie zur Registerkarte „Volumedetails“, auf der Sie eine gefilterte Liste anzeigen können, die je nach Ihrer Auswahl entweder die nicht konformen Volumes oder die geschützten Volumes anzeigt.
+
++
+image:volume-summary-2.png["Registerkarte „Volumenübersicht“"]
+
+
+
+--
+.Volumendetails
+--
+. Gehen Sie im linken Navigationsbereich von Digital Advisor zu *Allgemein > Keystone -Abonnements > Volumes > Volumedetails*.
+. Wählen Sie die Abonnementnummer aus.
++
+Sie können die tabellarische Auflistung der Volumes sehen, z. B. Kapazitätsnutzung, Volume-Typ, Cluster, Aggregat und die zugewiesenen Keystone Leistungsservice-Levels.  Sie können durch die Spalten scrollen und mehr darüber erfahren, indem Sie mit der Maus über die Informationssymbole neben den Spaltenüberschriften fahren.  Sie können nach Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.
+
++
+
+NOTE: QoS-Richtlinien sind in Keystone Version 3 nicht anwendbar.
+
++
+Mit *Spalten ausblenden/einblenden* können Sie in der Tabelle angezeigte Spalten hinzufügen oder entfernen.  Standardmäßig sind alle Spalten außer der Spalte *Abteilung* ausgewählt.  Sie können beliebige Spalten auswählen oder die Auswahl aufheben, einschließlich der Spalte *Abteilung*. Ihre Einstellungen werden zur späteren Verwendung gespeichert.  Beim Herunterladen des CSV-Berichts werden die Spaltendetails *Abteilung* einbezogen, sofern sie ausgewählt sind, während andere Spalten unabhängig von ihrem Auswahlstatus in der Tabelle angezeigt werden.
+
++
+
+NOTE: Für den erweiterten Zusatzdienst zum Datenschutz wird eine zusätzliche Spalte angezeigt, die angibt, ob es sich bei dem Volume um ein primäres oder ein gespiegeltes Volume in der MetroCluster -Konfiguration handelt.  Sie können einzelne Knotenseriennummern kopieren, indem Sie auf die Schaltfläche *Knotenseriennummern kopieren* klicken.
+
++
+image:volume-details-3.png["Registerkarte „Volumesdetails“"]
+
+
+
+--
+.Objekte
+--
+. Gehen Sie im linken Navigationsbereich von Digital Advisor zu *Allgemein > Keystone -Abonnements > Objekte*.
+. Wählen Sie die Abonnementnummer aus.  Standardmäßig wird die erste verfügbare Abonnementnummer ausgewählt, wenn das zuvor ausgewählte Abonnement keine Leistungsservicelevel für Datei- und Objektspeicher enthält.
++
+
+NOTE: Für StorageGRID zeigt diese Registerkarte die physische Nutzung der Knoten für die Objektspeicherung an.
+
++
+image:objects-details.png["Registerkarte „Objekte“"]
+
+
+
+--
+====
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-overview.html["Das Keystone -Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone Abonnementressourcen an"]
+* link:../integrations/assets.html["Anzeigen von Assets in allen Ihren Keystone -Abonnements"]
+* link:../integrations/performance-tab.html["Anzeigen von Leistungsmetriken"]
+

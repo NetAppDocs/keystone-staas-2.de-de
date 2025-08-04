@@ -1,0 +1,154 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-availability.html 
+keywords: availability, sla, service level agreement, slo, service level objectives 
+summary: 'Das Verfügbarkeits-SLO zielt auf eine Betriebszeit von 99,999 % während eines Abrechnungszeitraums für alle NetApp ONTAP Flash-Speicher-Arrays ab, die zur Lieferung der Keystone Bestellung eingesetzt werden.' 
+---
+= Verfügbarkeits-SLO
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Verfügbarkeits-SLO zielt auf eine Betriebszeit von 99,999 % während eines Abrechnungszeitraums für alle NetApp ONTAP Flash-Speicher-Arrays ab, die zur Lieferung der Keystone Bestellung eingesetzt werden.
+
+
+
+== Metriken
+
+* *Monatliche Betriebszeit in Prozent* = [(Anzahl der zulässigen Sekunden in einem Monat – Durchschnitt der Anzahl der Sekunden Ausfallzeit für alle AFF -Speicher-Arrays, die zur Lieferung der Keystone Bestellung in diesem Monat eingesetzt wurden) / Anzahl der zulässigen Sekunden in einem Monat] x 100 %
+* *Ausfallzeit*: Der von NetApp festgelegte Zeitraum, in dem beide Controller eines Paars innerhalb eines Speicherarrays nicht verfügbar sind.
+* *Zulässige Anzahl von Sekunden*: Dies sind Sekunden in einem Monat, die für die Berechnung der Betriebszeit berücksichtigt werden.  Nicht eingeschlossen ist der Zeitraum, in dem die STaaS-Dienste aufgrund geplanter Wartungsarbeiten, Upgrades, mit NetApp vereinbarter Supportaktivitäten oder aufgrund von Umständen, die außerhalb der Kontrolle oder Verantwortung von NetApp oder Keystone Services liegen, nicht verfügbar sind.
+
+
+
+
+== Leistungsservice-Levels
+
+Alle Leistungsservicelevel, die von ONTAP Flash-Speicher-Arrays unterstützt werden, sind für das Verfügbarkeits-SLO berechtigt.  Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Leistungsservicelevel in Keystone"] .
+
+
+
+== Serviceguthaben
+
+
+NOTE: SLAs und Garantien sind auf Nominierungsbasis erhältlich.
+
+Wenn die Verfügbarkeit von ONTAP Flash-Speicher-Arrays für berechtigte Abonnements innerhalb eines Abrechnungszeitraums unter das monatliche Betriebszeitziel von 99,999 % fällt, vergibt NetApp Servicegutschriften wie folgt:
+
+|===
+| *Monatliche Betriebszeit (weniger als)* | *Dienstgutschrift* 
+
+
+ a| 
+99,999 %
+ a| 
+5 %
+
+
+
+ a| 
+99,99 %
+ a| 
+10 %
+
+
+
+ a| 
+99,9 %
+ a| 
+25 %
+
+
+
+ a| 
+99,0 %
+ a| 
+50 %
+
+|===
+
+
+=== Berechnung des Serviceguthabens
+
+Servicegutschriften werden nach folgender Formel ermittelt:
+
+Servicegutschriften = (beeinträchtigte Kapazität / gesamte zugesagte Kapazität) X Kapazitätsgebühren X Gutschriftprozentsatz
+
+Wo:
+
+* *beeinträchtigte Kapazität*: Die Menge der betroffenen gespeicherten Kapazität.
+* *Gesamtkapazität*: Die Kapazität, die für das Leistungsservicelevel der Keystone Bestellung zugesagt wurde.
+* *Kapazitätsgebühren*: Die Gebühren für das betroffene Leistungsservicelevel für den Monat.
+* *Guthabenprozentsatz*: Der vorgegebene Prozentsatz für das Dienstguthaben.
+
+
+*Beispiel*
+
+Das folgende Beispiel zeigt die Berechnungsmethode für Servicegutschriften:
+
+. Berechnen Sie die monatliche Betriebszeit, um den Prozentsatz der Servicegutschrift zu bestimmen:
++
+** Zulässige Sekunden in einem 30-Tage-Monat: 30 (Tage) X 24 (Stunden/Tag) X 60 (Minuten/Stunde) X 60 (Sekunden/Minute) = 2.592.000 Sekunden
+** Ausfallzeit in Sekunden: 95 Sekunden
++
+Mit der Formel: Monatlicher Betriebszeitprozentsatz = [(2.592.000 - 95)/(2.592.000)] X 100
+
++
+Basierend auf der Berechnung beträgt die monatliche Betriebszeit 99,996 % und der Servicegutschriftprozentsatz 5 %.
+
+
+
+. Serviceguthaben berechnen:
++
+|===
+
+
+| *Service-Level* | *Beeinträchtigte Kapazität* | *Gesamtkapazität* | *Kapazitätsgebühren* | *Kreditprozentsatz* 
+
+
+ a| 
+Extrem
+| 10 Tib für 95 Sekunden | 100 Tib | 1000 US-Dollar | 5 % 
+|===
++
+Mit der Formel: Servicegutschriften = ( 10 / 100 ) X 1000 x 0,05
+
++
+Basierend auf der Berechnung beträgt das Serviceguthaben 5 $.
+
+
+
+
+
+=== Serviceguthabenanfrage
+
+Wenn ein Verstoß gegen das SLA festgestellt wird, öffnen Sie ein Support-Ticket der Priorität 3 (P3) beim NetApp Keystone Support.
+
+* Folgende Angaben sind erforderlich:
++
+.. Keystone -Abonnementnummer
+.. Details zu Volumes und Speichercontrollern
+.. Ort, Uhrzeit, Datum und Beschreibung des Problems
+.. Berechnete Zeitdauer der Latenzerkennung
+.. Messinstrumente und -methoden
+.. Alle anderen anwendbaren Dokumente
+
+
+* Geben Sie die Details in der Excel-Tabelle wie unten gezeigt für ein P3-Ticket ein, das beim NetApp Keystone Support eröffnet wurde.
++
+image:sla-breach.png["Excel-Tabellenvorlage"]
+
+
+
+[NOTE]
+====
+* Eine Servicegutschriftanfrage sollte innerhalb von sechs Wochen eingeleitet werden, nachdem der NetApp Keystone Support einen Verstoß bestätigt hat.  Alle Servicegutschriften müssen von NetApp bestätigt und genehmigt werden.
+* Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden.  Servicegutschriften gelten nicht für abgelaufene Keystone Abonnements.  Weitere Informationen finden Sie unterlink:../concepts/gssc.html["NetApp Keystone Unterstützung"] .
+
+
+====

@@ -1,0 +1,199 @@
+---
+sidebar: sidebar 
+permalink: integrations/consumption-tab.html 
+keywords: keystone-aiq, digital advisor keystone, consumption trends, subscriptions, historical data, bluexp 
+summary: Um die Nutzung Ihres Abonnements zu verstehen, können Sie die zugesagte Kapazität, die verbrauchte Kapazität, die verfügbare Kapazität und mehr anzeigen. 
+---
+= Verbrauchstrends Ihrer Keystone -Abonnements anzeigen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Ihre Abonnementnutzung überwachen, indem Sie historische Daten Ihrer Keystone Abonnements für einen bestimmten Zeitraum anzeigen.  Dadurch erhalten Sie wertvolle Einblicke in Ihr Nutzungsverhalten.
+
+Sie können historische Daten Ihrer Keystone -Abonnements über BlueXP oder Digital Advisor anzeigen:
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Abonnements*.
+. Wählen Sie die Abonnementnummer in der Spalte *Abonnementnummer* aus.
++
+Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
+
+. Wählen Sie die Registerkarte *Verbrauchstrend*.
+. Wählen Sie „Historischer Verbrauch“ aus der Dropdown-Liste „Ansicht“ und wählen Sie mithilfe des Kalendersymbols im Feld „Zeitraum“ den Zeitraum aus, um die Trends der Kapazitätsnutzung zu analysieren.
++
+Die historischen Verbrauchsdaten für jedes Leistungsservicelevel werden basierend auf dem ausgewählten Zeitbereich in einem Liniendiagramm angezeigt.
+
++
+
+NOTE: Sie können *Aufgelaufener Burst* aus der Dropdown-Liste *Anzeigen* auswählen, wenn Sie die historischen Burst-Nutzungsdaten anzeigen möchten, für die Rechnungen erstellt wurden.  Mithilfe dieser Daten können Sie die in Ihrer Rechnung ausgewiesene Nutzung analysieren.  Weitere Informationen finden Sie unterlink:../integrations/consumption-tab.html#view-accrued-burst["Aufgelaufenen Burst anzeigen"] .
+
++
+image:bxp-consumption-trend.png["Screenshot mit historischem Verbrauch"]
+
++
+Das Liniendiagramm zeigt historische Verbrauchsdaten an und ermöglicht Benutzern die Analyse von Trends über einen ausgewählten Datumsbereich.  Das Diagramm zeigt Kennzahlen wie Daten (von Benutzerdaten genutzte Speicherkapazität), Snapshot (von Snapshot-Daten genutzte Speicherkapazität) und genutzte Kapazität (Gesamtspeicherkapazität, einschließlich Daten und Snapshot-Daten) sowie die zugesagte und Burst-Kapazität.  Datum und Uhrzeit jedes Datenpunkts werden unten im Diagramm angezeigt.  Basierend auf dem Datumsbereich Ihrer Abfrage zeigen die Nutzungsdiagramme bis zu 30 Datenerfassungspunkte.  Sie können den Mauszeiger über das Diagramm bewegen, um die Nutzungsaufschlüsselung an jedem Datenerfassungspunkt anzuzeigen.
+
++
+Sie können sich neben dem historischen Verbrauch auch eine Zusammenfassung des aktuellen Verbrauchs anzeigen lassen, um einen klaren Überblick über Ihren Verbrauch zu erhalten.
+
+
+
+--
+.Digital Advisor
+--
+.Schritte
+. Klicken Sie auf *Allgemein > Keystone -Abonnements > Verbrauchstrend*.
+. Wählen Sie das gewünschte Abonnement aus, für das Sie die Details anzeigen möchten.  Standardmäßig ist das erste Abonnement in Ihrem Kontonamen ausgewählt.
+. Wählen Sie *Verbrauchstrend*, wenn Sie die historischen Daten anzeigen und den Trend der Kapazitätsnutzung analysieren möchten.
++
+
+NOTE: Sie können *Invoiced Accrued Burst* auswählen, wenn Sie die historischen Burst-Nutzungsdaten anzeigen möchten, für die Rechnungen erstellt wurden.  Mithilfe dieser Daten können Sie die in Ihrer Rechnung ausgewiesene Nutzung analysieren.  Weitere Informationen finden Sie unterlink:../integrations/consumption-tab.html#view-accrued-burst["Aufgelaufenen Burst anzeigen"] .
+
+. Wählen Sie den Zeitraum aus den Kalendersymbolen in den Feldern *Von Datum* und *Bis Datum* aus.  Wählen Sie den Datumsbereich für die Abfrage aus.  Der Datumsbereich kann vom Monatsanfang oder dem Abonnementstartdatum bis zum aktuellen Datum oder dem Abonnementenddatum reichen.  Sie können kein zukünftiges Datum auswählen.
++
+
+TIP: Beschränken Sie den Datumsbereich Ihrer Abfrage auf drei Monate, um eine optimale Leistung und Benutzererfahrung zu erzielen.
+
+. Klicken Sie auf *Details anzeigen*.  Die historischen Verbrauchsdaten des Abonnements für jedes Leistungsservicelevel werden basierend auf dem ausgewählten Zeitraum angezeigt.
++
+Die Balkendiagramme zeigen den Namen des Leistungsservicelevels und die für diesen Leistungsservicelevel verbrauchte Kapazität für den Datumsbereich an.  Datum und Uhrzeit der Abholung werden unten im Diagramm angezeigt.  Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenerfassungspunkten angezeigt.  Sie können den Mauszeiger über die Diagramme bewegen, um die Aufschlüsselung der Nutzung hinsichtlich zugesagter, verbrauchter, Burst- und über dem Burst-Limit liegender Daten an diesem Datenerfassungspunkt anzuzeigen.
+
++
+Die Balkendiagramme zeigen kurzfristige Ausbrüche und Sie können diese Ausbrüche mithilfe der Zoomfunktion anzeigen.  Wenn ein kurzfristiger Burst vorliegt, wird dies durch einen blauen Punkt auf dem entsprechenden Balken oder direkt auf der X-Achse angezeigt, wenn keine Daten verbraucht werden.  Um die Details anzuzeigen, klicken und halten Sie auf den Balken oder die X-Achse, wo der blaue Punkt angezeigt wird. Ziehen Sie dann den Cursor über das Diagramm, um das gewünschte Zeitintervall auszuwählen, und lassen Sie ihn los, um Ihre Auswahl zu bestätigen.  Diese Aktion vergrößert die Daten und bietet eine detailliertere Ansicht der Kapazität, die auf dieser Leistungsdienstebene für das ausgewählte Intervall verwendet wird.  Sie können auf die Schaltfläche *Zoom zurücksetzen* klicken, um zur ursprünglichen Diagrammansicht zurückzukehren.
+
++
+image:aiq-ks-subtime-7.png["Registerkarte „Verbrauchstrend“ mit Details"]
+
++
+Monatliche Daten sind in den Diagrammen durch eine vertikale Linie getrennt.
+
++
+
+NOTE: Ein leeres Diagramm zeigt an, dass an diesem Datenerfassungspunkt in Ihrer Umgebung keine Daten verfügbar waren.
+
++
+Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den Verbrauch, die Burst-Nutzung und die aufgelaufenen Burst-Daten für den aktuellen Abrechnungszeitraum anzuzeigen.  Diese Angaben basieren nicht auf dem Datumsbereich der Abfrage.
+
++
+** *Aktuell verbraucht*: Indikator für die verbrauchte Kapazität (in TiB), die für das Leistungsservicelevel definiert ist.  Dieses Feld verwendet bestimmte Farben:
++
+*** Keine Farbe: Burst- oder Burst-Nutzung.
+*** Grau: Keine Verwendung.
+*** Grün: Innerhalb von 80 % der zugesagten Kapazität.
+*** Gelb: 80 % der für den Burst vorgesehenen Kapazität.
+
+
+** *Aktueller Burst*: Anzeige für die verbrauchte Kapazität innerhalb oder über dem definierten Burst-Limit.  Jede Nutzung innerhalb des Burst-Limits für Ihr Abonnement, beispielsweise 20 % über der zugesagten Kapazität, liegt innerhalb des Burst-Limits.  Eine darüber hinausgehende Nutzung gilt als Nutzung über der Burst-Grenze.  Dieses Feld zeigt bestimmte Farben an:
++
+*** Keine Farbe: Keine Burst-Nutzung.
+*** Rot: Burst-Nutzung.
+*** Lila: Über der Burst-Grenze.
+
+
+** *Aufgelaufener Burst*: Indikator der gesamten Burst-Kapazität (in TiB), die während jedes 2-Minuten-Intervalls innerhalb eines Monats für den aktuellen Abrechnungszeitraum angesammelt wurde.
+
+
+
+
+--
+====
+
+
+== Berechnung des aufgelaufenen Bursts
+
+Die aufgelaufene Burst-Nutzung für einen ganzen Monat wird wie folgt berechnet:
+
+[Summe der Bursts im Monat / ((Tage im Monat) x 24 x 60)] x Intervalldauer
+
+Sie können den aufgelaufenen Burst für kurze Zeiträume, beispielsweise alle zwei Minuten, folgendermaßen berechnen:
+
+[Burst / ((Tage im Monat) x 24 x 60)] x Intervalldauer
+
+Der Burst ist die Differenz zwischen der verbrauchten Kapazität und der zugesagten Kapazität.  Wenn beispielsweise bei einem 30-tägigen Monat die verbrauchte Kapazität 120 TiB erreicht und die zugesagte Kapazität für ein 2-Minuten-Intervall 100 TiB beträgt, ergibt sich eine Burst-Kapazität von 20 TiB, was einer aufgelaufenen Burst-Nutzung von 0,000925926 TiB für dieses Intervall entspricht.
+
+
+
+== Aufgelaufenen Burst anzeigen
+
+Sie können die aufgelaufene Burst-Datennutzung über BlueXP oder Digital Advisor anzeigen.  Wenn Sie in BlueXP im Dropdown-Menü *Anzeigen* auf der Registerkarte *Verbrauchstrend* die Option *Aufgelaufener Burst* oder in Digital Advisor auf der Registerkarte *Verbrauchstrend* die Option *Abgerechneter aufgelaufener Burst* ausgewählt haben, können Sie die aufgelaufene Burst-Datennutzung je nach ausgewähltem Abrechnungszeitraum auf monatlicher oder vierteljährlicher Basis anzeigen.  Diese Daten sind für die letzten 12 abgerechneten Monate verfügbar und Sie können nach Datumsbereich für bis zu 30 Monate abfragen.  Balkendiagramme zeigen die in Rechnung gestellten Daten an. Wenn die Nutzung noch nicht in Rechnung gestellt wurde, wird sie für diesen Zeitraum als _Ausstehend_ markiert.
+
+
+TIP: Die in Rechnung gestellte aufgelaufene Burst-Nutzung wird pro Abrechnungszeitraum basierend auf der zugesagten und verbrauchten Kapazität für ein Leistungsservicelevel berechnet.
+
+Wenn das Abonnement bei einem vierteljährlichen Abrechnungszeitraum an einem anderen Datum als dem 1. des Monats beginnt, deckt die vierteljährliche Rechnung den darauffolgenden 90-Tage-Zeitraum ab.  Wenn Ihr Abonnement beispielsweise am 15. August beginnt, wird die Rechnung für den Zeitraum vom 15. August bis 14. Oktober erstellt.
+
+Wenn Sie von der vierteljährlichen zur monatlichen Abrechnung wechseln, deckt die vierteljährliche Rechnung weiterhin den 90-Tage-Zeitraum ab, wobei im letzten Monat des Quartals zwei Rechnungen erstellt werden: eine für den vierteljährlichen Abrechnungszeitraum und eine weitere für die verbleibenden Tage dieses Monats.  Durch diese Umstellung kann der monatliche Abrechnungszeitraum jeweils am 1. des Folgemonats beginnen.  Wenn Ihr Abonnement beispielsweise am 15. Oktober beginnt, erhalten Sie im Januar zwei Rechnungen – eine für den Zeitraum vom 15. Oktober bis 14. Januar und eine weitere für den Zeitraum vom 15. bis 31. Januar – bevor der monatliche Abrechnungszeitraum am 1. Februar beginnt.
+
+image:accr-burst-2.png["aufgelaufene Burst-Nutzung vierteljährlich"]
+
+Diese Funktion ist nur im Vorschaumodus verfügbar.  Wenden Sie sich an Ihren KSM, um mehr über diese Funktion zu erfahren.
+
+
+
+== Täglich aufgelaufene Burst-Datennutzung anzeigen
+
+Sie können die täglich aufgelaufene Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum über BlueXP oder Digital Advisor anzeigen.  In BlueXP bietet die Tabelle *Aufgelaufener Burst nach Tagen* detaillierte Daten, einschließlich Zeitstempel, zugesagter, verbrauchter und aufgelaufener Burst-Kapazität, wenn Sie *Aufgelaufener Burst* aus der Dropdown-Liste *Anzeigen* auf der Registerkarte *Verbrauchstrend* auswählen.
+
+image:bxp-accrued-burst-days.png["Screenshot, der die Tabelle mit den aufgelaufenen Bursts nach Tagen zeigt"]
+
+Wenn Sie in Digital Advisor auf die Leiste klicken, die die Rechnungsdaten aus der Option *Invoiced Accrued Burst* anzeigt, wird unter dem Balkendiagramm der Abschnitt „Berechnbare bereitgestellte Kapazität“ angezeigt, der sowohl die Anzeige von Diagrammen als auch von Tabellen bietet.  Die standardmäßige Diagrammansicht zeigt die täglich anfallende Burst-Datennutzung in einem Liniendiagrammformat an und zeigt Änderungen der Nutzung im Zeitverlauf.
+
+image:invoiced-daily-accr-burst-1.png["Screenshot des Balkendiagramms"]
+
+Ein Beispielbild, das die täglich anfallende Burst-Datennutzung in einem Liniendiagramm zeigt:
+
+image:invoiced-daily-accr-burst-date.png["Screenshot, der Burst-Nutzungsdaten in einem Liniendiagrammformat zeigt"]
+
+Sie können zu einer Tabellenansicht wechseln, indem Sie oben rechts im Diagramm auf die Option *Tabelle* klicken.  Die Tabellenansicht bietet detaillierte tägliche Nutzungsmetriken, einschließlich Leistungsservicelevel, Zeitstempel, zugesagte Kapazität, verbrauchte Kapazität und abrechenbare bereitgestellte Kapazität.  Sie können auch einen Bericht dieser Details im CSV-Format zur späteren Verwendung und zum Vergleich erstellen.
+
+
+
+== Referenzdiagramme für erweiterten Datenschutz für MetroCluster
+
+Wenn Sie den Zusatzdienst für erweiterten Datenschutz abonniert haben, können Sie die Aufschlüsselung der Verbrauchsdaten für die MetroCluster Partner-Sites auf der Registerkarte *Verbrauchstrend* in Digital Advisor anzeigen.
+
+Informationen zum erweiterten Datenschutz-Add-On-Service finden Sie unterlink:../concepts/adp.html["Erweiterter Datenschutz"] .
+
+Wenn die Cluster in Ihrer ONTAP Speicherumgebung in einem MetroCluster -Setup konfiguriert sind, werden die Verbrauchsdaten Ihres Keystone Abonnements im selben historischen Datendiagramm aufgeteilt, um den Verbrauch an den primären und gespiegelten Standorten für die Basisleistungs-Servicelevel anzuzeigen.
+
+
+NOTE: Die Verbrauchsbalkendiagramme sind nur für die Basisleistungs-Servicelevel aufgeteilt.  Beim Zusatzdienst „Erweiterter Datenschutz“, also dem Leistungsservice-Level „Advanced Data-Protect“, ist diese Abgrenzung nicht vorhanden.
+
+.Erweitertes Service-Level für Datenschutzleistung
+Für die Leistungsdienstebene „Advanced Data-Protect“ wird der Gesamtverbrauch zwischen den Partnerstandorten aufgeteilt und die Nutzung an jedem Partnerstandort wird in einem separaten Abonnement erfasst und abgerechnet: ein Abonnement für den primären Standort und ein weiteres für den Spiegelstandort.  Aus diesem Grund werden in den Verbrauchsdiagrammen für den Zusatzdienst „Erweiterter Datenschutz“ nur die diskreten Verbrauchsdetails des primären Standorts angezeigt, wenn Sie auf der Registerkarte „Verbrauchstrend“ die Abonnementnummer für den primären Standort auswählen.  Da jeder Partnerstandort in einer MetroCluster -Konfiguration sowohl als Quelle als auch als Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quelle und die an diesem Standort erstellten Spiegelvolumes.
+
+
+TIP: Der Tooltip neben der Tracking-ID Ihres Abonnements im Reiter *Aktueller Verbrauch* hilft Ihnen, das Partnerabonnement im MetroCluster Setup zu identifizieren.
+
+.Grundlegende Leistungsservice-Level
+Für die Basisleistungs-Servicelevel wird jedes Volume wie am primären und am Spiegelstandort bereitgestellt berechnet. Daher wird dasselbe Balkendiagramm entsprechend dem Verbrauch am primären und am Spiegelstandort aufgeteilt.
+
+.Was Sie für das primäre Abonnement sehen können
+Das folgende Bild zeigt die Diagramme für das Leistungsservicelevel _Performance_ (Basisleistungsservicelevel) und eine primäre Abonnementnummer.  Dasselbe Diagramm mit den historischen Daten zeigt auch den Verbrauch der Spiegelsite in einem helleren Farbton desselben Farbcodes an, der für die primäre Site verwendet wird.  Der Tooltip beim Darüberfahren mit der Maus zeigt die Aufschlüsselung des Verbrauchs (in TiB) für die primären und gespiegelten Sites an, nämlich 95,04 TiB bzw. 93,38 TiB.
+
+image:mcc-chart-2.png["mcc primär"]
+
+Für das Leistungsservicelevel „Advanced Data-Protect“ sieht das Diagramm folgendermaßen aus:
+
+image:adp-src-2.png["mcc Primärbasis"]
+
+.Was Sie für das sekundäre Abonnement (Spiegelsite) sehen können
+Wenn Sie das sekundäre Abonnement überprüfen, können Sie sehen, dass das Balkendiagramm für das Leistungsservicelevel _Leistung_ (Basisleistungsservicelevel) am selben Datenerfassungspunkt wie die Partnersite umgekehrt ist und die Verbrauchsaufteilung an den primären und Spiegelsites 93,38 TiB bzw. 95,04 TiB beträgt.
+
+image:mcc-chart-mirror-2.png["mcc-Spiegel"]
+
+Für das Performance-Service-Level _Advanced Data-Protect_ sieht das Diagramm für denselben Sammelpunkt wie beim Partnerstandort wie folgt aus:
+
+image:adp-mir-2.png["mcc Spiegelfuß"]
+
+Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["MetroCluster Datenschutz und Notfallwiederherstellung verstehen"^] .

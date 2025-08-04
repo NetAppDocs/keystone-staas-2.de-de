@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: concepts/usps.html 
+keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
+summary: United States Protected Support ist ein Zusatzdienst, der die Bereitstellung und Unterstützung laufender Keystone -Dienste durch US-Bürger auf US-amerikanischem Boden ermöglicht. 
+---
+= Erfahren Sie mehr über USPS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+United States Protected Support (USPS) ist ein Zusatzangebot für NetApp Keystone Abonnements.  Es berechtigt Sie zum Erhalt von Lieferungen und Support für laufende Keystone -Dienste durch US-Bürger auf US-amerikanischem Boden.
+
+Lesen Sie die folgenden Abschnitte, um zu verstehen, welche Elemente Ihrer Abonnements an diesen Zusatzdienst gebunden sind und unter den Bedingungen der NetApp Keystone -Vereinbarung bereitgestellt werden. Fußnote: Haftungsausschluss1 [Die hier beschriebenen Dienste und Angebote unterliegen einer vollständig ausgeführten Keystone -Vereinbarung, sind durch diese eingeschränkt und geregelt.]
+
+
+
+== NetApp USPS-Überwachung
+
+Das Supportteam von NetApp USPS Keystone überwacht den Zustand Ihrer Produkte und abonnierten Dienste, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen.  Alle Mitarbeiter, die die mit den entsprechenden Keystone Abonnementaufträgen verbundenen Produkte überwachen, sind US-Bürger und arbeiten auf US-amerikanischem Boden.
+
+
+
+== Keystone -Erfolgsmanager
+
+Der Keystone Success Manager (KSM) ist ein US-Bürger, der auf US-amerikanischem Boden tätig ist.  Ihre Verantwortlichkeiten sind in Ihrem NetApp Keystone Vertrag festgelegt.
+
+
+
+== Bereitstellungsaktivitäten
+
+Sofern verfügbar, werden Bereitstellungs- und Installationsaktivitäten vor Ort und per Fernzugriff von US-Bürgern auf US-amerikanischem Boden durchgeführt. Fußnote: Haftungsausschluss [Die Verfügbarkeit des entsprechenden Personals für Aktivitäten vor Ort hängt vom geografischen Standort ab, an dem die Keystone -Systeme bereitgestellt werden.]
+
+
+
+== Support
+
+Sofern verfügbar, werden die erforderlichen Fehlerbehebungs- und Supportaktivitäten vor Ort von US-Bürgern auf US-amerikanischem Boden durchgeführt. Fußnote: Haftungsausschluss[]

@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: concepts/burst-consumption-billing.html 
+keywords: burst consumption billing 
+summary: Die Abrechnung von Keystone STaaS basiert auf der Burst-Kapazität, d. h. der von Ihnen verbrauchten Kapazität zusätzlich zur zugesagten Kapazität Ihres Abonnements. 
+---
+= Abrechnung basierend auf Burst-Verbrauch
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Abrechnung von Keystone STaaS basiert auf der _Burst-Kapazität_, d. h. der von Ihnen verbrauchten Kapazität zusätzlich zur zugesagten Kapazität Ihres Abonnements.
+
+Ihr Burst-Limit wird in Ihrer Keystone -Vereinbarung festgelegt und angegeben.  Es liegt 20 % über der zugesagten Kapazität.
+
+Die zugesicherte Kapazität ist die Kapazität, die Ihnen beim Kauf des Abonnements zugesichert wurde.  Die zugesagte Kapazität und die Burst-Kapazität werden pro Leistungsservicelevel gemessen.  Die verbrauchte Kapazität ist die Kapazität, die Ihre Workloads tatsächlich nutzen.
+
+Wenn die verbrauchte Kapazität größer ist als die zugesagte Kapazität für ein Leistungsservicelevel, wird der Burst-Verbrauch erfasst und entsprechend berechnet.  Normalerweise liegt es 20 % über der zugesagten Kapazität.  Die Nutzung über der Burst-Kapazität wird als „Über dem Burst-Limit“ angezeigt.
+
+Dieser Vorgang wird für jeden erstellten Verbrauchsdatensatz durchgeführt.  Der Burst-Verbrauch spiegelt daher sowohl die Menge als auch die Dauer Ihrer übermäßig verbrauchten Kapazitäten zusätzlich zu Ihren zugesagten Kapazitäten wider.  Weitere Informationen finden Sie unterlink:../integrations/consumption-tab.html["Verbrauchstrends Ihrer Keystone -Abonnements anzeigen"] .
+
+Informationen zu den verschiedenen in Keystone unterstützten Kapazitäten finden Sie unterlink:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten in Keystone"] .

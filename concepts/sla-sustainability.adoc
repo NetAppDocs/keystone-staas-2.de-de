@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-sustainability.html 
+keywords: sustainability, sla, service level agreement, slo, service level objectives 
+summary: 'Keystone liefert eine garantierte Messung der maximalen Anzahl tatsächlicher Watt pro Tebibyte (W/TiB) für Speicherdienste basierend auf ONTAP Flash-Speicher-Arrays mit Sustainability SLO.' 
+---
+= Nachhaltigkeits-SLO
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone bietet eine garantierte Messung der maximalen Anzahl tatsächlicher Watt pro Tebibyte (W/TiB) für Speicherdienste basierend auf ONTAP Flash-Speicher-Arrays mit Sustainability SLO.  Das Nachhaltigkeits-SLO definiert den maximalen Verbrauch von W/TiB für jedes berechtigte Leistungsservicelevel und hilft Unternehmen, ihre Nachhaltigkeitsziele zu erreichen.
+
+
+
+== Metriken
+
+* *Watt*: Der vom täglichen AutoSupport gemeldete Stromverbrauch, einschließlich der Nutzung durch den Controller und angeschlossene Festplattenregale.
+* *Tebibyte*: Das Maximum von:
++
+** die zugesagte Kapazität + zugewiesene Burst-Kapazität für das Performance-Service-Level oder
+** die effektiv eingesetzte Kapazität unter der Annahme eines Speichereffizienzfaktors von `2:1` .
+
+
++
+Weitere Informationen zum Speichereffizienzverhältnis finden Sie unter https://docs.netapp.com/us-en/active-iq/task_analyze_storage_efficiency.html["Analysieren Sie Einsparungen bei Kapazität und Speichereffizienz"^] .
+
+
+
+
+
+== Leistungsservice-Levels
+
+Nachhaltigkeit SLO basiert auf den folgenden Konsumkriterien:
+
+|===
+
+
+| *Service-Level* | *SLO-Kriterien* | *Mindestkapazität* | *Plattform* 
+
+
+ a| 
+Extrem
+| <= 8 W/TiB | 200 TiB | AFF A800 und AFF A900 
+
+
+ a| 
+Prämie
+| <= 4 W/TiB | 300 TiB | AFF A800 und AFF A900 
+
+
+ a| 
+Performance
+| <= 4 W/TiB | 300 TiB | AFF A800 und AFF A900 
+|===
+Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Leistungsservicelevel in Keystone"] .
+
+
+
+== Serviceguthaben
+
+
+NOTE: SLAs und Garantien sind auf Nominierungsbasis erhältlich.
+
+Wenn der W/TiB-Verbrauch während eines Abrechnungszeitraums die SLA-Kriterien nicht erfüllt, vergibt NetApp Servicegutschriften wie folgt:
+
+|===
+| Tage, an denen das SLA im Abrechnungszeitraum versäumt wurde | Dienstguthaben 
+
+
+ a| 
+1 bis 2
+ a| 
+3 %
+
+
+
+ a| 
+3 bis 7
+ a| 
+15 %
+
+
+
+ a| 
+14
+ a| 
+50 %
+
+|===
+
+
+=== Serviceguthabenanfrage
+
+Wenn ein Verstoß gegen das SLA festgestellt wird, öffnen Sie ein Support-Ticket der Priorität 3 (P3) beim NetApp Keystone Support und geben Sie die Details wie in der unten gezeigten Excel-Tabelle gefordert an:
+
+image:sla-breach.png["Excel-Tabellenvorlage"]
+
+[NOTE]
+====
+* Eine Servicegutschriftanfrage sollte innerhalb von sechs Wochen eingeleitet werden, nachdem der NetApp Keystone Support einen Verstoß bestätigt hat.  Alle Servicegutschriften müssen von NetApp bestätigt und genehmigt werden.
+* Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden.  Servicegutschriften gelten nicht für abgelaufene Keystone Abonnements.  Weitere Informationen finden Sie unterlink:../concepts/gssc.html["NetApp Keystone Unterstützung"] .
+
+
+====

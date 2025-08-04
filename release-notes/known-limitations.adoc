@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-limitations.html 
+keywords: limitations, known limitations in Keystone STaaS 
+summary: Bekannte Einschränkungen kennzeichnen Plattformen, Geräte oder Funktionen, die von dieser Produktversion nicht unterstützt werden oder nicht ordnungsgemäß mit ihr zusammenarbeiten.  Lesen Sie diese Einschränkungen sorgfältig durch. 
+---
+= Bekannte Einschränkungen in Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bekannte Einschränkungen kennzeichnen Plattformen, Geräte oder Funktionen, die von Keystone STaaS-Diensten oder -Komponenten nicht unterstützt werden oder nicht ordnungsgemäß zusammenarbeiten.  Lesen Sie diese Einschränkungen sorgfältig durch.
+
+
+
+== Einschränkungen von Keystone Collector
+
+
+
+=== Authentifizierungsfehler beim Keystone Collector mit aktiviertem StorageGRID SSO
+
+Keystone Collector unterstützt keine Messung, wenn für das StorageGRID -System Single Sign-On (SSO) aktiviert ist.  In den Protokollen wird die folgende Fehlermeldung angezeigt:
+
+`panic: json: cannot unmarshal object into Go struct field AuthResponse.data of type string`
+
+Siehe Knowledge Base-Artikellink:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_authenticate_with_StorageGRID_in_SSO_Mode["Keystone Collector kann im SSO-Modus nicht mit StorageGRID authentifizieren"^] für Informationen und Lösungen.
+
+
+
+=== Keystone Collector kann unter vSphere 8.0 Update 1 nicht gestartet werden
+
+Eine Keystone Collector-VM mit VMware vSphere Version 8.0 Update 1 lässt sich nicht einschalten und es wird folgende Fehlermeldung angezeigt:
+
+`Property 'Gateway' must be configured for the VM to power on.`
+
+Siehe Knowledge Base-Artikellink:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_start_on_vSphere_8.0_U1["Keystone Collector kann unter vSphere 8.0 U1 nicht gestartet werden"^] für Informationen und Lösungen.
+
+
+
+=== Support-Bundle kann nicht über Kerberos generiert werden
+
+Wenn das Stammverzeichnis von Keystone Collector über NFSv4 mit Kerberos gemountet wird, wird das Support-Paket nicht generiert und die folgende Fehlermeldung wird angezeigt:
+
+`subprocess.CalledProcessError: Command '['sosreport', '--batch', '-q', '--tmp-dir', '/home/<user>']' returned non-zero exit status 1.`
+
+Siehe Knowledge Base-Artikel https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_generate_support_bundle_on_Kerberized_home_directory["Keystone Collector kann kein Support-Paket im Kerberized-Home-Verzeichnis generieren"^] für Informationen und Lösungen.
+
+
+
+=== Keystone Collector kann nicht mit Hosts innerhalb eines bestimmten Netzwerkbereichs kommunizieren
+
+Keystone Collector kann nicht mit Geräten innerhalb des Netzwerkbereichs 10.88.0.0/16 kommunizieren, wenn die `ks-collector` Dienst läuft.  Siehe Knowledge Base-Artikellink:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_container_conflict_with_customer_network["Konflikt zwischen Keystone Collector-Container und Kundennetzwerk"^] für Informationen und Lösungen.
+
+
+
+=== Keystone Collector kann das SSL-CA-Stammzertifikat des Kunden nicht überprüfen
+
+Wenn die SSL/TLS-Prüfung an der Grenzfirewall in einer Umgebung zur Prüfung des SSL/TLS-Verkehrs aktiviert ist, kann Keystone Collector keine HTTPS-Verbindung herstellen, da das Stamm-CA-Zertifikat des Kunden nicht vertrauenswürdig ist.
+
+Weitere Informationen und Lösungen finden Sie unterlink:..//installation/configuration.html#trust-a-custom-root-ca["Einer benutzerdefinierten Stammzertifizierungsstelle vertrauen"^] oder Knowledge Base-Artikellink:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_cannot_verify_Customer_Root_SSL_CA_certificate["Keystone Collector kann das SSL-CA-Zertifikat des Kundenstamms nicht überprüfen"^] .

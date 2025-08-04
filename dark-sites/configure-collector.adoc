@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/configure-collector.html 
+keywords: configure, keystone, collector, private mode, darksite mode, tui utility 
+summary: Führen Sie einige Konfigurationsaufgaben durch, damit Keystone Collector Nutzungsdaten in einer Umgebung ohne Internetzugang erfassen kann, die auch als „Dark Site“ oder „Privater Modus“ bezeichnet wird. 
+---
+= Konfigurieren Sie Keystone Collector im privaten Modus
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Führen Sie einige Konfigurationsaufgaben durch, damit Keystone Collector Nutzungsdaten in einer Umgebung ohne Internetzugang erfassen kann, die auch als „Dark Site“ oder „Privater Modus“ bezeichnet wird.  Dies ist eine einmalige Aktivität zum Aktivieren und Zuordnen der erforderlichen Komponenten zu Ihrer Speicherumgebung.  Nach der Konfiguration überwacht Keystone Collector alle von Active IQ Unified Manager verwalteten ONTAP Cluster.
+
+
+NOTE: Keystone Collector stellt Ihnen das Dienstprogramm „Keystone Collector Management Terminal User Interface“ (TUI) zur Verfügung, mit dem Sie Konfigurations- und Überwachungsaktivitäten durchführen können.  Sie können verschiedene Tastatursteuerelemente wie die Eingabetaste und die Pfeiltasten verwenden, um die Optionen auszuwählen und durch diese TUI zu navigieren.
+
+.Schritte
+. Starten Sie das TUI-Verwaltungsprogramm für Keystone Collector:
++
+`keystone-collector-tui`
+
+. Gehen Sie zu *Konfigurieren > Erweitert*.
+. Schalten Sie die Option *Darksite-Modus* um.
++
+image:dark-site-mode-1.png["Darksite-Modus"]
+
+. Wählen Sie *Speichern*.
+. Gehen Sie zu *Konfigurieren > KS-Collector*, um Keystone Collector zu konfigurieren.
+. Schalten Sie das Feld *KS Collector mit System starten* um.
+. Schalten Sie das Feld * ONTAP -Nutzung erfassen* um.  Fügen Sie die Details des Active IQ Unified Manager (Unified Manager)-Servers und des Benutzerkontos hinzu.
+. *Optional*: Aktivieren Sie das Feld *Verwendung von Tarifplänen mit gestaffelten Tarifen*, wenn für das Abonnement eine Datenstaffelung erforderlich ist.
+. Aktualisieren Sie den *Nutzungstyp* basierend auf dem erworbenen Abonnementtyp.
++
+
+NOTE: Bestätigen Sie vor der Konfiguration den mit dem Abonnement von NetApp verknüpften Nutzungstyp.
+
++
+image:dark-site-usage-type-1.png["Verwendungstypoption"]
+
+. Wählen Sie *Speichern*.
+. Gehen Sie zu *Konfigurieren > KS-Collector*, um das Keystone Collector-Schlüsselpaar zu generieren.
+. Gehen Sie zu *Encryption Key Manager* und drücken Sie die Eingabetaste.
++
+image:dark-site-encryption-key-manager-1.png["Option „Encryption Key Manager“"]
+
+. Wählen Sie *Collector-Schlüsselpaar generieren* und drücken Sie die Eingabetaste.
++
+image:dark-site-generate-collector-keypair-1.png["Option „Collector-Schlüsselpaar generieren“"]
+
+. Stellen Sie sicher, dass sich der Keystone Collector in einem fehlerfreien Zustand befindet, indem Sie zum Hauptbildschirm der TUI zurückkehren und die Informationen zum *Servicestatus* überprüfen.  Das System sollte anzeigen, dass sich die Dienste im Status *Insgesamt: Gesund* befinden.  Warten Sie bis zu 10 Minuten. Wenn der Gesamtstatus nach diesem Zeitraum immer noch fehlerhaft ist, überprüfen Sie die vorherigen Konfigurationsschritte und wenden Sie sich an das NetApp Supportteam.
++
+image:dark-site-overall-healthy-2.png["Dienststatus"]
+
+. Beenden Sie die TUI zur Keystone Collector-Verwaltung, indem Sie auf dem Startbildschirm die Option *Zur Shell beenden* auswählen.
+. Rufen Sie den generierten öffentlichen Schlüssel ab:
++
+`~/collector-public.pem`
+
+. Senden Sie eine E-Mail mit dieser Datei an ng-keystone-secure-site-upload@netapp.com für sichere Nicht-USPS-Sites oder an ng-keystone-secure-site-usps-upload@netapp.com für sichere USPS-Sites.
+
+
+
+
+== Nutzungsbericht exportieren
+
+Sie sollten den monatlichen Nutzungszusammenfassungsbericht am Ende jedes Monats an NetApp senden.  Sie können diesen Bericht manuell erstellen.
+
+Führen Sie die folgenden Schritte aus, um den Nutzungsbericht zu erstellen:
+
+. Gehen Sie auf dem Keystone Collector TUI-Startbildschirm zu *Nutzung exportieren*.
+. Sammeln Sie die Dateien und senden Sie sie für sichere Nicht-USPS-Sites an ng-keystone-secure-site-upload@netapp.com oder für sichere USPS-Sites an ng-keystone-secure-site-usps-upload@netapp.com.
++
+Keystone Collector generiert sowohl eine klare als auch eine verschlüsselte Datei, die manuell an NetApp gesendet werden sollte.  Der übersichtliche Dateibericht enthält die folgenden Details, die vom Kunden validiert werden können.
+
++
+image:dark-site-clear-file-report-1.png["Dateibericht löschen"]
+
+
+
+
+
+== ONTAP -Upgrade
+
+Keystone Collector unterstützt ONTAP -Upgrades über TUI.
+
+Führen Sie die folgenden Schritte aus, um ONTAP zu aktualisieren:
+
+. Gehen Sie zu *Wartung > ONTAP -Upgrade-Webserver*.
+. Kopieren Sie die ONTAP -Upgrade-Imagedatei nach */opt/netapp/ontap-upgrade/* und wählen Sie dann *Webserver starten*, um den Webserver zu starten.
++
+image:dark-site-start-webserver-1.png["Option „Webserver starten“"]
+
+. Gehe zu `http://<collector-ip>:8000` Verwenden Sie einen Webbrowser, um Unterstützung beim Upgrade zu erhalten.
+
+
+
+
+== Keystone Collector neu starten
+
+Sie können den Keystone Collector-Dienst über die TUI neu starten.  Gehen Sie in der TUI zu *Wartung > Collector-Dienste neu starten*.  Dadurch werden alle Collector-Dienste neu gestartet und ihr Status kann vom TUI-Startbildschirm aus überwacht werden.
+
+image:dark-site-restart-collector-services-1.png["Option „Collector-Dienste neu starten“"]

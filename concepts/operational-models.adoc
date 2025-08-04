@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: concepts/operational-models.html 
+keywords: Operational models, partner operations, customer operations, roles and responsibilities, r&r 
+summary: NetApp Keystone STaaS bietet zwei Betriebsmodelle für die Servicebereitstellung.  Sie sollten diese Optionen verstehen, bevor Sie mit Keystone beginnen. 
+---
+= Betriebsmodelle in Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone STaaS bietet zwei Betriebsmodelle für die Servicebereitstellung: ein partnerbetriebenes Modell und ein kundenbetriebenes Modell.  Sie sollten diese Optionen verstehen, bevor Sie mit Keystone beginnen.
+
+* *Partnerbetriebenes Modell*: Dieses Modell bietet zwei Optionen:
++
+** *Dienstanbieter*: Ein Dienstanbieter betreibt die Dienste für seine Endkunden.  Als Vertragspartner von NetApp verwaltet der Serviceprovider eine Multi-Tenant-Umgebung, in der jeder Mandant, der Kunde des Serviceproviders ist, über ein eigenes Abonnement verfügt, das vom Serviceprovider in Rechnung gestellt wird.  Der Service Provider-Administrator ist für die Durchführung aller Verwaltungsaufgaben für die Mandanten verantwortlich.
+** *Reseller*: Als Reseller fungiert ein Partner als Brücke zwischen NetApp und dem Kunden.  Der Partner verkauft Keystone -Dienste an den Endkunden und verwaltet die Rechnungsstellung.  Während sich der Partner um die Abrechnung kümmert, leistet NetApp direkten Support für den Kunden.  Der Keystone Support interagiert mit dem Kunden und übernimmt alle Verwaltungsaufgaben für die Mieter.
+
+
+* *Kundenbetriebenes Modell*: Als Kunde können Sie Keystone -Dienste entsprechend den von Ihnen ausgewählten Leistungsserviceleveln und Speicherkapazitäten abonnieren.  NetApp definiert die Architektur und Produkte und implementiert Keystone bei Ihnen vor Ort.  Sie müssen die Infrastruktur über Ihre Speicher- und IT-Ressourcen verwalten.  Basierend auf Ihrem Vertrag können Sie Serviceanfragen stellen, die von NetApp oder Ihrem Serviceprovider bearbeitet werden.  Ein Administrator Ihrer Organisation kann die Verwaltungsaufgaben an Ihrem Standort (in Ihrer Umgebung) durchführen.  Diese Aufgaben sind mit den Benutzern in Ihrer Umgebung verknüpft.
+
+
+
+
+== Rollen und Verantwortlichkeiten über den gesamten Service-Lebenszyklus
+
+* *Partnerbetriebenes Modell*: Die Aufteilung der Rollen und Verantwortlichkeiten hängt von der Vereinbarung zwischen Ihnen und dem Dienstanbieter oder Partner ab.  Weitere Informationen erhalten Sie von Ihrem Dienstanbieter.
+* *Kundenbetriebenes Modell*: Die folgende Tabelle fasst das gesamte Service-Lebenszyklusmodell und die damit verbundenen Rollen und Verantwortlichkeiten in einer kundenbetriebenen Umgebung zusammen.
+
+
+|===
+| Aufgabe | NetApp | Kunde 
+
+
+ a| 
+Installation und zugehörige Aufgaben
+
+* Installieren
+* Konfigurieren
+* Einsetzen
+* An Bord
+
+| image:check.png["Häkchen"] | Keine 
+
+
+ a| 
+Verwaltung und Überwachung
+
+* Monitor
+* Bericht
+* Ausführen administrativer Aufgaben
+* Alarm
+
+| Keine | image:check.png["Häkchen"] 
+
+
+ a| 
+Betrieb und Optimierung
+
+* Kapazität verwalten
+* Leistung verwalten
+* SLA verwalten
+
+| Keine | image:check.png["Häkchen"] 
+
+
+ a| 
+Support
+
+* Support-Kunden
+* Behebung von Hardware-Brüchen
+* Softwareunterstützung
+* Upgrades und Patches
+
+| image:check.png["Häkchen"] | Keine 
+|===
+Weitere Informationen zur Bereitstellung finden Sie unterlink:../concepts/infra.html["Keystone -Infrastruktur"] Undlink:..//concepts/components.html["Komponenten für die Bereitstellung"] .

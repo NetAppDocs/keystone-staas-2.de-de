@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: integrations/performance-tab.html 
+keywords: keystone-aiq, digital advisor keystone, performance tab 
+summary: Um die Leistung Ihrer Systeme zu überwachen, können Sie Leistungsmetriken der von Ihren Keystone Abonnements verwalteten ONTAP Volumes anzeigen. 
+---
+= Anzeigen von Leistungsmetriken
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um die Leistung Ihrer Systeme zu überwachen, können Sie Leistungsmetriken der von Ihren Keystone Abonnements verwalteten ONTAP Volumes anzeigen.
+
+
+TIP: Dieser Reiter steht Ihnen im Digital Advisor optional zur Verfügung.  Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen.  Es ist in BlueXP nicht verfügbar.
+
+Um diese Registerkarte in Digital Advisor anzuzeigen, führen Sie die folgenden Schritte aus:
+
+.Schritte
+. Klicken Sie auf *Allgemein > Keystone -Abonnements > Leistung*.
+. Wählen Sie die Abonnementnummer aus.  Standardmäßig ist die erste Abonnementnummer ausgewählt.
+. Wählen Sie den gewünschten Datenträgernamen aus der Liste aus.
++
+Alternativ können Sie auf dasimage:aiq-ks-time-icon.png["Diagrammsymbol"] Symbol neben einem ONTAP -Volume auf der Registerkarte *Volumes*, um zu dieser Registerkarte zu navigieren.
+
+. Wählen Sie den Datumsbereich für die Abfrage aus.  Der Datumsbereich kann vom Monatsanfang oder dem Abonnementstartdatum bis zum aktuellen Datum oder dem Abonnementenddatum reichen.  Sie können kein zukünftiges Datum auswählen.
+
+
+Die abgerufenen Details basieren auf dem Leistungsservicelevelziel für jedes Leistungsservicelevel.  Beispielsweise werden die Spitzen-IOPS, der maximale Durchsatz, die Ziellatenz und andere Metriken durch die individuellen Einstellungen für das Leistungsservicelevel bestimmt.  Weitere Informationen zu den Einstellungen finden Sie unterlink:../concepts/service-levels.html["Leistungsservicelevel in Keystone"] .
+
+
+NOTE: Wenn Sie das Kontrollkästchen *SLO-Referenzlinie* aktivieren, werden die IOPS-, Durchsatz- und Latenzdiagramme basierend auf dem Leistungs-Servicelevel-Ziel für das Leistungs-Servicelevel gerendert.  Andernfalls werden sie in tatsächlichen Zahlen angezeigt.
+
+Die im horizontalen Diagramm angezeigten Leistungsdaten stellen einen Durchschnitt in Fünf-Minuten-Intervallen dar und sind nach dem Datumsbereich der Abfrage angeordnet.  Sie können durch die Diagramme scrollen und mit der Maus über bestimmte Datenpunkte fahren, um tiefer in die erfassten Daten einzudringen.
+
+Sie können die Leistungsmetriken in den folgenden Abschnitten basierend auf der Kombination aus Abonnementnummer, Datenträgername und ausgewähltem Datumsbereich anzeigen und vergleichen.  Die Details werden gemäß dem dem Volume zugewiesenen Leistungsservicelevel angezeigt.  Sie können den Clusternamen und den Volumetyp sehen, d. h. die dem Volume zugewiesenen Lese- und Schreibberechtigungen.  Alle mit dem Volume verbundenen Warnmeldungen werden ebenfalls angezeigt.
+
+
+
+== IOPS
+
+In diesem Abschnitt werden die Eingabe-/Ausgabediagramme für die Arbeitslasten im Datenträger basierend auf dem Datumsbereich der Abfrage angezeigt.  Die Spitzen-IOPS für das Leistungsservicelevel und die aktuellen IOPS (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit den minimalen, maximalen und durchschnittlichen IOPS für den Zeitraum in IOPS/Tib angezeigt.
+
+image:perf-iops.png["IOPS-Abschnitt des Diagramms"]
+
+
+
+== Durchsatz
+
+In diesem Abschnitt werden die Durchsatzdiagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt.  Der maximale Durchsatz für das Leistungsservicelevel (SLO Max) und der aktuelle Durchsatz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit dem minimalen, maximalen und durchschnittlichen Durchsatz für den Zeitraum in MBps/TiB angezeigt.
+
+image:perf-thr.png["Durchsatzdiagramme"]
+
+
+
+== Latenz (ms)
+
+In diesem Abschnitt werden die Latenzdiagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt.  Die maximale Latenz für das Leistungsservicelevel (SLO-Ziel) und die aktuelle Latenz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit der minimalen, maximalen und durchschnittlichen Latenz für den Zeitraum in Millisekunden angezeigt.
+
+Dieses Diagramm hat die folgenden Farben:
+
+* Hellblau: _Latenz_.  Dies ist die tatsächliche Latenz, die alle anderen Latenzen als Ihren Keystone Dienst umfasst.  Dies kann zusätzliche Latenzzeiten beinhalten, beispielsweise die Latenz, die zwischen Ihrem Netzwerk und dem Client auftritt.
+* Dunkelblau: _Effektive Latenz_.  Die effektive Latenz ist die Latenz, die im Hinblick auf Ihr SLA nur für Ihren Keystone -Dienst gilt.
+
+
+image:perf-lat.png["Leistungsdiagramme"]
+
+
+
+== Logisch genutzt (TiB)
+
+In diesem Abschnitt werden die bereitgestellten und die logisch genutzten Kapazitäten des Volumes angezeigt.  Die aktuell logisch genutzte Kapazität (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) sowie die minimale, maximale und durchschnittliche Nutzung für den Zeitraum werden in TiB angezeigt.  In diesem Diagramm stellt der graue Bereich die zugesagte Kapazität dar und das gelbe Diagramm zeigt die logische Nutzung an.
+
+image:perf-log-usd.png["logisches Diagramm der genutzten Kapazität"]
+
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-overview.html["Das Keystone -Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone Abonnementressourcen an"]
+* link:../integrations/assets.html["Anzeigen von Assets in allen Ihren Keystone -Abonnements"]
+* link:../integrations/volumes-objects-tab.html["Details zu Datenträgern und Objekten anzeigen"]
+

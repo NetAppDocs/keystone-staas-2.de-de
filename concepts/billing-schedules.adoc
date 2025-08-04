@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concepts/billing-schedules.html 
+keywords: billing schedules, schedule for payment 
+summary: Keystone STaaS-Abonnements werden monatlich und jährlich abgerechnet. 
+---
+= Abrechnungspläne
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS-Abonnements werden monatlich oder jährlich abgerechnet.
+
+
+
+== Monatliche Abrechnung
+
+Rechnungen werden monatlich verschickt.  Für den Monat, in dem die Dienste in Anspruch genommen werden, wird im nächsten Monat eine Rechnung gesendet.  Beispielsweise wird Ihnen die Rechnung für die im Januar in Anspruch genommenen Leistungen Anfang Februar zugestellt.  Diese Rechnung enthält die Gebühren für die zugesagte Kapazität und gegebenenfalls für die Burst-Nutzung.
+
+
+
+== Jährliche Abrechnung
+
+Zu Beginn jedes Abonnementjahres wird eine Rechnung über die Mindestzahlung der zugesagten Kapazität erstellt.  Es wird am Startdatum des Abonnements generiert.  Am Ende eines Abonnementquartals wird eine weitere Rechnung gesendet, in der die anfallenden Gebühren für die in diesem Quartal angefallene Burst-Nutzung zusammengefasst sind.  Wird die zugesagte Kapazität während eines Abonnements geändert, wird am selben Tag eine Rechnung über die anteiligen Mindestzahlungen für das restliche Abonnementjahr versandt.  Die Abrechnung erfolgt ab dem Tag, an dem die Änderung der zugesagten Kapazität wirksam wird.

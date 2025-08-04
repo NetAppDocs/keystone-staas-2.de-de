@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-capacity.html 
+keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
+summary: Informieren Sie sich über die Speicherkapazitätstypen, die vom NetApp Keystone STaaS-Dienst für Version 2 unterstützt werden. 
+---
+= Unterstützte Speicherkapazitäten in Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der NetApp Keystone STaaS-Dienst unterstützt mehrere Arten von Speicherkapazitäten.  Das Verständnis dieser unterschiedlichen Kapazitätsbegriffe kann Ihnen bei der Verwendung von Keystone helfen.
+
+
+
+== Logische Kapazität
+
+Dies sind die Daten, die ein Kunde auf der Keystone -Infrastruktur platziert.  Alle Keystone -Kapazitäten beziehen sich auf eine logische Kapazität.  Wenn beispielsweise eine 1-TiB-Datei auf der Keystone Infrastruktur gespeichert wird, sollte mindestens 1 TiB Kapazität erworben werden.
+
+
+
+== Zugesicherte Kapazität
+
+Die monatlich während der Abonnementlaufzeit in Rechnung gestellte Mindestkapazität:
+
+* Jedem Servicelevel wird Kapazität zugewiesen.
+* Während der Laufzeit können feste Kapazitäten und zusätzliche Service-Levels hinzugefügt werden.
+
+
+
+
+=== Änderungen der zugesagten Kapazität
+
+Während der Laufzeit eines Abonnements können Sie die zugesagten Kapazitäten ändern.  Allerdings gibt es bestimmte Voraussetzungen:
+
+* Die zugesagte Kapazität kann unter bestimmten Bedingungen verringert werden.  Weitere Informationen finden Sie unterlink:../concepts/capacity-requirements.html["Kapazitätsreduzierung"] .
+* Die zugesagte Kapazität kann 90 Tage vor Ablauf Ihres Abonnements nicht erhöht werden, es sei denn, das Abonnement soll um weitere 12 Monate verlängert werden.
+* Sie können Änderungen an der zugesagten Kapazität über die BlueXP Schnittstelle oder von Ihrem Keystone Success Manager (KSM) anfordern.  Informationen zum Anfordern von Änderungen finden Sie unterlink:../concepts/gssc.html["NetApp Keystone Unterstützung"] .
+
+
+
+
+== Verbrauchte Kapazität
+
+Die verbrauchte Kapazität bezieht sich auf die Kapazität (in TiB Speicher), die derzeit für den Dienst verbraucht wird.  Es ist die Summe aus:
+
+* Die logische Kapazität, die zum Speichern aller Instanzen und Typen von Benutzerdaten (wie Kopien, gespiegelte Kopien und Versionen) verwendet wird.
+* Die logische Kapazität, die zum Speichern von Klon-Volumes verwendet wird, die mehr als 10 % der Größe des Original-Volumes haben.
+* Die physische Kapazität, die zum Speichern der Differenzdaten aus Snapshot-Kopien verwendet wird.
+* Die zugewiesene physische Kapazität.
+
+
+
+
+== Burst-Kapazität
+
+Mit dem NetApp Keystone Service können Sie zusätzlich zur zugesagten Kapazität für ein Servicelevel zusätzliche Kapazität nutzen.  Dies wird als Burst-Kapazitätsnutzung bezeichnet.
+
+Beachten Sie diese Punkte:
+
+* Die Burst-Kapazität wird im Keystone Abkommen vereinbart.  Sie liegt normalerweise bei bis zu 20 % über der zugesagten Kapazität und wird zum gleichen Satz wie die zugesagte Kapazität berechnet.
+* Die Burst-Kapazität kann elastisch verbraucht werden und wird täglich für den verbrauchten Durchschnitt berechnet.
+
+
+
+
+== Abgerechnete Kapazität
+
+Monatliche Rechnung = (zugesagte Kapazität [TiB] * zugesagte Rate [$/TiB]) + (täglich durchschnittlich bereitgestellte Burst-Kapazität [TiB] * Burst-Rate [$/TiB]).  Die monatliche Rechnung enthält eine Mindestgebühr basierend auf der zugesagten Kapazität.
+
+Die monatliche Rechnung variiert über die Mindestgebühr hinaus basierend auf dem täglichen durchschnittlichen Burst-Kapazitätsverbrauch.

@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/requirements.html 
+keywords: installation, private mode, requirement, vmware vsphere, linux, networking,disk, space 
+summary: Bevor Sie Keystone Collector in einer Umgebung ohne Internetzugang installieren, die auch als _Dark Site_ oder _Privatmodus_ bezeichnet wird, stellen Sie sicher, dass Ihre Systeme mit der erforderlichen Software ausgestattet sind und alle erforderlichen Voraussetzungen erfüllen. 
+---
+= Vorbereiten der Installation im privaten Modus
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bevor Sie Keystone Collector in einer Umgebung ohne Internetzugang installieren, die auch als _Dark Site_ oder _Privatmodus_ bezeichnet wird, stellen Sie sicher, dass Ihre Systeme mit der erforderlichen Software ausgestattet sind und alle erforderlichen Voraussetzungen erfüllen.
+
+
+
+== Anforderungen für VMware vSphere
+
+* Betriebssystem: VMware vCenter Server und ESXi 6.7 oder höher
+* Kern: 1 CPU
+* Arbeitsspeicher: 2 GB
+* Speicherplatz: 20 GB vDisk
+
+
+
+
+== Anforderungen für Linux
+
+* Betriebssystem: Debian 12 oder Red Hat Enterprise Linux (RHEL) 8.6 oder spätere Versionen der RHEL 8.x-Reihe
+* Kern: 2 CPU
+* Arbeitsspeicher: 4 GB
+* Speicherplatz: 50 GB vDisk
++
+** Mindestens 2 GB frei in `/var/lib/`
+** Mindestens 48 GB frei in `/opt/netapp`
+
+
+
+
+Auf demselben Server sollten auch die folgenden Pakete von Drittanbietern installiert sein.  Sofern über das Repository verfügbar, werden diese Pakete automatisch als Voraussetzungen installiert:
+
+* RHEL8
++
+** python3 >=v3.6.8, python3 \<=v3.9.13
+** Podman
+** SOS
+** yum-utils
+** python3-dnf-plugin-versionlock
+
+
+* Debian v12
++
+** python3 >= v3.9.0, python3 \<= v3.12.0
+** Podman
+** sosreport
+
+
+
+
+
+
+== Netzwerkanforderungen
+
+Die Netzwerkanforderungen für Keystone Collector umfassen Folgendes:
+
+* Active IQ Unified Manager (Unified Manager) 9.10 oder höher, konfiguriert auf einem Server mit aktivierter API-Gateway-Funktionalität.
+* Der Unified Manager-Server sollte für den Keystone Collector-Server über Port 443 (HTTPS) zugänglich sein.
+* Für den Keystone Collector sollte auf dem Unified Manager-Server ein Dienstkonto mit Anwendungsbenutzerberechtigungen eingerichtet werden.
+* Eine externe Internetverbindung ist nicht erforderlich.
+* Exportieren Sie jeden Monat eine Datei aus Keystone Collector und senden Sie sie per E-Mail an das NetApp Supportteam.  Weitere Informationen zur Kontaktaufnahme mit dem Support-Team finden Sie unterlink:../concepts/gssc.html["Holen Sie sich Hilfe zu Keystone"] .
+

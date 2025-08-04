@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: concepts/infra.html 
+keywords: keystone infrastructure, infra 
+summary: Die Keystone -Infrastruktur, das Design, die Technologieauswahl und die Komponentenprodukte liegen ausschließlich bei NetApp. 
+---
+= Keystone -Infrastruktur
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp ist allein verantwortlich für die Infrastruktur, das Design, die Technologieauswahl und die Komponenten von Keystone, was sowohl für NetApp als auch für vom Kunden betriebene Umgebungen gilt.
+
+NetApp behält sich das Recht vor, die folgenden Maßnahmen zu ergreifen:
+
+* Wählen Sie Produkte aus, ersetzen Sie sie oder verwenden Sie sie für einen anderen Zweck.
+* Aktualisieren Sie Produkte mit neuer Technologie, wenn dies als angemessen erachtet wird.
+* Erhöhen oder verringern Sie die Kapazität der Produkte, um die Serviceanforderungen zu erfüllen.
+* Ändern Sie Architektur, Technologie und/oder Produkte, um die Serviceanforderungen zu erfüllen.
+
+
+Die Keystone -Infrastruktur umfasst mehrere Komponenten, unter anderem die folgenden:
+
+* Die Keystone -Infrastruktur, einschließlich NetApp -Speichersysteme.
+* Tools zum Verwalten und Betreiben des Dienstes wie die ITOM-Überwachungslösung, BlueXP, Active IQ und Active IQ Unified Manager.
+
+
+
+
+== Speicherplattformen
+
+Unternehmensanwendungen benötigen Speicherplattformen, um schnelle Bereitstellungsworkflows zu unterstützen, kontinuierliche Verfügbarkeit aufrechtzuerhalten, hohe Arbeitslasten mit geringer Latenz zu bewältigen, eine höhere Leistung zu liefern und die Integration mit großen Cloud-Anbietern zu unterstützen.  NetApp verfügt über mehrere Produkte und Technologien zur Unterstützung dieser Anforderungen.  Für den Keystone -Dienst verwendet NetApp AFF, ASA und FAS sowie StorageGRID Systeme.
+
+
+
+== Überwachungstools
+
+Bei einem vom Kunden betriebenen Keystone -Dienst werden Speicherinfrastruktur und Überwachungstools an Ihrem Standort installiert.  Die Speicherinfrastruktur besteht aus der erforderlichen Speicherhardware, die zur Unterstützung Ihrer Erstbestellung erforderlich ist, mit der Möglichkeit, später mehr Speicher zu bestellen.
+
+Zusätzlich zu den Speichergeräten werden zwei Überwachungstools zur Speicher- und Verbrauchsüberwachung bereitgestellt.
+
+* Keystone IT Operations Management (ITOM)-Überwachungslösung: Eine Cloud-basierte SaaS-Anwendung zur Überwachung Ihrer Keystone Umgebung.  Es verfügt über integrierte Integrationen mit NetApp Speicherplattformen, um Umgebungsdaten zu sammeln und die Rechen-, Netzwerk- und Speicherkomponenten Ihrer Keystone -Infrastruktur zu überwachen.  Diese Überwachungsfunktion erstreckt sich auf lokale Setups, Rechenzentren, Cloud-Umgebungen oder eine beliebige Kombination davon.  Der Dienst wird mithilfe eines lokalen ITOM Collectors aktiviert, der an Ihrem Standort installiert ist und mit dem Cloud-Portal kommuniziert.
+* Keystone Data Collector: Keystone Data Collector sammelt Daten und stellt sie der Keystone Abrechnungsplattform zur weiteren Verarbeitung zur Verfügung.  Diese Anwendung ist mit Active IQ Unified Manager gebündelt.  Es sammelt im Abstand von fünf Minuten Daten von ONTAP und StorageGRID -Controllern.  Die Daten werden verarbeitet und Metadaten werden über den AutoSupport Mechanismus an den zentralen Active IQ -Datensee gesendet, der zur Generierung von Abrechnungsdaten verwendet wird.  Der Active IQ Data Lake verarbeitet die Abrechnungsdaten und sendet sie zur Abrechnung an Zuora.
+
+
+image:data-collector-flow.png["Collector-Datenfluss"]
+
+Sie können die Abonnement- und Verbrauchsdetails für Ihre Keystone Abonnements über BlueXP oder Digital Advisor anzeigen.  Weitere Informationen zur Keystone -Berichterstattung finden Sie unterlink:../integrations/dashboard-overview.html["Übersicht über das Keystone -Dashboard"] .

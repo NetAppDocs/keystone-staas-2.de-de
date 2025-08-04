@@ -1,0 +1,80 @@
+---
+sidebar: sidebar 
+permalink: concepts/metrics.html 
+keywords: metrics, GiB, IOPS, latency, durability, v2, version 2 
+summary: Der NetApp Keystone STaaS-Dienst verwendet mehrere Begriffe zum Messen von Metriken.  Möglicherweise möchten Sie mehr über diese Bedingungen erfahren, wenn Sie Keystone für Version 2 des Dienstes verwenden. 
+---
+= In Keystone verwendete Metriken und Definitionen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der NetApp Keystone STaaS-Dienst verwendet mehrere Begriffe zum Messen von Metriken.  Möglicherweise möchten Sie bei der Verwendung von Keystone mehr über diese Begriffe erfahren.
+
+Die folgenden Begriffe und Definitionen werden im Keystone STaaS-Dienst zum Messen von Metriken verwendet:
+
+* Kapazitätsmesseinheiten: GiB, TiB und PiB
+* E/A-Dichte: IOPS/TiB: Anzahl der pro Sekunde verarbeiteten Eingabe-/Ausgabevorgänge basierend auf dem gesamten Speicherplatz, der von der Arbeitslast verbraucht wird, in Tebibyte.
+* Serviceverfügbarkeit
+* Dauerhaftigkeit beim genauen Datenzugriff
+* Latenz und Geschwindigkeit
+
+
+
+
+== Metrikmessung
+
+* *Kapazitätsmessung in Gibibyte (GiB), Tebibyte (TiB) und Pebibyte (PiB)*: Messungen der Datenspeicherkapazität auf Basis von 1024 (1 GiB = 1024^3^ Bytes, 1 TiB = 1024^4^ Bytes und 1 PiB = 1024^5^ Bytes).
+* *Operationszählerdiagramm in IOPS/TiB*: Die von der Anwendung angeforderten Protokolloperationen pro Sekunde, geteilt durch die Größe des von den Workloads verwendeten Datenträgers.
+* *Verfügbarkeit*: Gemessen als Prozentsatz der Anzahl der vom Dienst erfolgreich beantworteten E/A-Anfragen, geteilt durch die Gesamtzahl der an den Dienst gestellten E/A-Anfragen.  Dies wird an der Servicegrenze eines Monats gemessen und beinhaltet nicht die geplante Serviceausfallzeit oder Nichtverfügbarkeit der Einrichtungen, des Netzwerks oder anderer vom Kunden bereitgestellter Dienste.
+* *Haltbarkeit*: Prozentsatz der Daten, auf die ohne Verlust der Genauigkeit zugegriffen wird, ausgenommen vom Kunden verursachte Löschungen oder Beschädigungen.
+* *Latenz*: Zeit zur Bearbeitung einer von einem Client empfangenen E/A-Anforderung, gemessen an der Dienstabgrenzung (E/A-Port des Speichercontrollers).
+
+
+
+
+=== Durchsatzleistungsmetriken
+
+Durchsatzleistungsmetriken gelten nur für Datei- und Blockdienste basierend auf:
+
+* 32 KB Blockgrößen
+* 70 % Lese-/30 % Schreib-E/A-Mix
+
+
+
+
+=== Variationen in der IO-Dichte
+
+Die in IOPS/TiB und/oder MBps/TiB berechnete IO-Dichte variiert je nach den folgenden Faktoren:
+
+* Workload-Eigenschaften
+* Latenz, ausgenommen Folgendes:
++
+** Anwendungslatenz
+** Host-Latenz
+** Latenz im Kundennetzwerk beim Übertragen von Daten zu und von den Controller-Ports
+** Overhead-Latenz im Zusammenhang mit der Datenübertragung zum Objektspeicher im Fall von FabricPool
+** Die Latenz, die automatisch durch die QoS angewendet wird, um die IO innerhalb der Service-Level-Maximen zu halten
+
+
+* Die Benutzer- und Snapshot-Kopiedaten, die als Teil der verwendeten Kapazität gezählt werden
+* Die zugewiesenen absoluten Mindest-IOPS auf jedem ONTAP Volume, unabhängig von der Datenmenge im Volume:
++
+** Extrem: 1.000 IOPS
+** Premium: 500 IOPS
+** Leistung, Standard und Wert: 75 IOPS
+
+
+* Bei Verwendung der Zusatzdienste „Advanced Data Protection“ gilt die Ziellatenz nur für die Bearbeitung von E/A-Anfragen aus dem lokalen Speicher.
+
+
+
+
+=== Volumen AQoS
+
+Auf jedes ONTAP Volume sollte die entsprechende adaptive Quality of Service (AQoS)-Richtlinie angewendet werden.  Andernfalls wird die Kapazität innerhalb jedes Volumes, auf das keine AQoS-Richtlinie angewendet wird, zum Tarif des höchsten Servicelevels abgerechnet.

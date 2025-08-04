@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: integrations/assets.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID 
+summary: Verwenden Sie die Registerkarte „Assets“, um Details zu ONTAP -Clustern und -Knoten sowie StorageGRID -Grids, -Sites und -Knoten anzuzeigen, die von Ihren Keystone -Abonnements verwaltet werden. 
+---
+= Anzeigen von Assets über mehrere Keystone -Abonnements hinweg
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Über das Keystone -Dashboard in BlueXP können Sie je nach Ihren Zugriffsberechtigungen detaillierte Informationen zu Knoten in Clustern, bereitgestellten Volumes und StorageGRID Knoten über mehrere Keystone Abonnements hinweg anzeigen.  Diese Ansicht ist in Digital Advisor nicht verfügbar.
+
+[role="tabbed-block"]
+====
+.Knoten in Clustern
+--
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Assets*.
++
+Auf der Registerkarte *Assets* wird die Unterregisterkarte *Knoten im Cluster* angezeigt.
+
++
+image:bxp-nodes-clusters-multiple-subscription.png["Ein Screenshot von Knoten in Clustern für mehrere Abonnements"]
+
++
+Sie können detaillierte Informationen zu allen Knoten in Clustern über Keystone -Abonnements hinweg anzeigen, einschließlich Knotenseriennummern, Status, Speichereffizienzeinstellungen, Plattformtyp und Kapazitätsdetails.  Außerdem erhalten Sie einen Überblick über:
+
++
+** Gesamtzahl der Abonnements und ONTAP -Knoten.
+** Knotenkapazitätsverbrauch mit einer anklickbaren Schaltfläche „Anzeigen“ zum Filtern der Tabelle und Anzeigen von Assets, die bestimmte Kriterien erfüllen (> 90 % verbraucht oder < 50 % verbraucht).
+** Knoten basierend auf ONTAP Versionen, mit der Schaltfläche *Anzeigen* zum Filtern nach Knoten innerhalb der letzten drei Versionen oder älter.
++
+
+TIP: Sie können die Tabelle mithilfe der Spaltenauswahl anpassenimage:column-selector.png["Spaltenauswahlsymbol"] Symbol und verwenden Sie die Suchleiste oben, um Keystone -Daten basierend auf den Spaltenparametern zu suchen und zu filtern.
+
+
+
+
+
+--
+.Volumes in Clustern
+--
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Assets*.
+. Wählen Sie die Registerkarte *Volumes in Clustern*.
++
+image:bxp-volumes-clusters-multiple-sub.png["Ein Screenshot von Volumes in Clustern für mehrere Abonnements"]
+
++
+Sie sehen detaillierte Informationen zu allen Volumes in Clustern über Keystone -Abonnements hinweg, einschließlich Volumename, Abonnementnummer, Knotenseriennummer, Einhaltung von QoS-Richtlinien, Clustername, Hostname und Leistungsservicelevel.  Sie können die bereitgestellte Kapazität, die logische und physische Auslastung sowie kalte Daten überwachen.  Außerdem erhalten Sie einen Überblick über:
+
++
+** Die Gesamtzahl der Abonnements, Cluster und Volumes.
+** Konformitäts- und Schutzstatus des Volumes mit einer Schaltfläche *Anzeigen* zum Filtern der Tabelle und Anzeigen von Assets basierend auf Kriterien wie „konform“, „nicht konform“ oder „nicht geschützt“.
++
+
+TIP: Sie können die Tabelle mithilfe der Spaltenauswahl anpassenimage:column-selector.png["Spaltenauswahlsymbol"] Symbol und verwenden Sie die Suchleiste oben, um Keystone -Daten basierend auf den Spaltenparametern zu suchen und zu filtern.
+
++
+Sie können in der Spalte *Abonnementnummer* auf eine Abonnementnummer klicken, um zur Registerkarte *Abonnements* zu gelangen, auf der Sie Details zum Abonnementverbrauch, Zeitpläne und zugehörige Asset-Informationen anzeigen können.  Weitere Informationen finden Sie unterlink:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"] .
+
+
+
+
+
+--
+.Knoten in Rastern
+--
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Assets*.
+. Wählen Sie die Registerkarte *Knoten in Rastern*.
++
+image:bxp-nodes-grids-multiple-sub.png["Ein Screenshot von Knoten in Rastern für mehrere Abonnements"]
+
++
+Sie können detaillierte Informationen zu allen Knoten in Rastern über Keystone -Abonnements hinweg anzeigen, einschließlich Knotenname, Knoten-ID, Abonnementnummer, Rastername, Knotentyp und Kunde.  Sie können die verbrauchte und verfügbare Datenkapazität, die CPU-Auslastung und die nutzbare Datenkapazität überwachen.
+
++
+
+TIP: Sie können die Tabelle mithilfe der Spaltenauswahl anpassenimage:column-selector.png["Spaltenauswahlsymbol"] Symbol und verwenden Sie die Suchleiste oben, um Keystone -Daten basierend auf den Spaltenparametern zu suchen und zu filtern.
+
++
+Sie können in der Spalte *Abonnementnummer* auf eine Abonnementnummer klicken, um zur Registerkarte *Abonnements* zu gelangen, auf der Sie Details zum Abonnementverbrauch, Zeitpläne und zugehörige Asset-Informationen anzeigen können.  Weitere Informationen finden Sie unterlink:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"] .
+
+
+
+--
+====
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-overview.html["Das Keystone -Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone Abonnementressourcen an"]
+* link:../integrations/volumes-objects-tab.html["Details zu Datenträgern und Objekten anzeigen"]
+

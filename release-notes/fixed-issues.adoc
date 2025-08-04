@@ -1,0 +1,292 @@
+---
+sidebar: sidebar 
+permalink: release-notes/fixed-issues.html 
+keywords: fixed issues 
+summary: Probleme, die in früheren Versionen der NetApp Keystone STaaS-Dienste festgestellt wurden, wurden in späteren Versionen behoben. 
+---
+= Behobene Probleme in Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Probleme, die in früheren Versionen der NetApp Keystone STaaS-Dienste festgestellt wurden, wurden in späteren Versionen behoben.
+
+[cols="3*"]
+|===
+| Problembeschreibung | Nach der Reparatur | In der Version behoben 
+
+
+ a| 
+Auf der Registerkarte *Assets* sind Assets für StorageGRID nicht sichtbar.
+ a| 
+Behoben
+ a| 
+19.06.2025
+
+
+
+ a| 
+Für das Servicelevel „Advance Data-Protect“ zeigt das Diagramm auf der Registerkarte „Verbrauchstrend“ eine Aufteilung für primäre und gespiegelte Sites.
+ a| 
+Das Diagramm zeigt keine Aufteilung mehr für primäre und gespiegelte Sites.
+ a| 
+19.06.2025
+
+
+
+ a| 
+Wenn der vorhandene Keystone Collector, der mit einem Debian-Paket installiert wurde, versucht, einen HTTP-Proxy zu konfigurieren oder Unified Manager über die TUI zur Verwaltung des Keystone Collectors zu aktivieren, reagiert die TUI nicht mehr.
+ a| 
+Behoben
+ a| 
+19.05.2025
+
+
+
+ a| 
+Keystone Collector für StorageGRID kann aufgrund fehlender gemeinsamer Einstellungen nicht richtig konfiguriert werden.
+ a| 
+Behoben
+ a| 
+12.05.2025
+
+
+
+ a| 
+Keystone Collector kann keine Nutzungsdaten für ONTAP Cluster erfassen, auf denen Versionen niedriger als 9.11 ausgeführt werden.
+ a| 
+Behoben
+ a| 
+30.04.2025
+
+
+
+ a| 
+Die Verbrauchswerte für verknüpfte Abonnements zeigen falsche negative Zahlen an, wodurch die gesamte vereinbarte Nutzung ungenau hoch angezeigt wird.
+ a| 
+Behoben
+ a| 
+14.04.2025
+
+
+
+ a| 
+Für einige Abonnements können auf der Registerkarte „Verbrauchstrend“ keine historischen Daten zu den Serviceleveln angezeigt werden.
+ a| 
+Behoben
+ a| 
+14.04.2025
+
+
+
+ a| 
+Fehlende Option * Keystone -Abonnements* aus *Beobachtungsliste* und Option *Abonnementnummer* aus *Berichten* im Digital Advisor Dashboard.
+ a| 
+Behoben
+ a| 
+19.03.2025
+
+
+
+ a| 
+Einige Keystone -Abonnements fehlen in der *Beobachtungsliste*, nachdem die Beobachtungsliste über das Digital Advisor Dashboard erstellt oder geändert wurde.
+ a| 
+Behoben
+ a| 
+19.03.2025
+
+
+
+ a| 
+Auf der Registerkarte *Verbrauchstrend* können keine historischen Daten für Servicelevel angezeigt werden, die mit einem abgelaufenen und mit derselben Tracking-ID, aber unterschiedlichen Serviceleveln erneuerten Abonnement verknüpft sind.
+ a| 
+Behoben
+ a| 
+19.03.2025
+
+
+
+ a| 
+Es können keine Berichte für Abonnements erstellt werden, wenn auf der Seite „Keystone Abonnements“ auf der Registerkarte „Abonnements“ mehr als 10–12 Abonnements ausgewählt werden.
+ a| 
+Behoben
+ a| 
+08.01.2025
+
+
+
+ a| 
+Die Unterregisterkarte *Volume-Zusammenfassung* auf der Registerkarte *Volumes & Objekte* kann für StorageGrid-Abonnements nicht geladen werden.
+ a| 
+Behoben
+ a| 
+21.11.2024
+
+
+
+ a| 
+Das Feld *Ab Datum* zur Auswahl des Datumsbereichs zeigt standardmäßig ein zukünftiges Datum an, wenn Sie zur Registerkarte *Verbrauchstrend* navigieren.
+ a| 
+Behoben
+ a| 
+04.09.2024
+
+
+
+ a| 
+Die TUI zur Keystone Collector-Verwaltung reagiert beim Einrichten von AQoS-Richtlinien nicht mehr.
+ a| 
+Behoben
+ a| 
+07.08.2024
+
+
+
+ a| 
+Nutzungsdiagramme zeigen Daten über den angegebenen Eintageszeitraum hinaus an, wenn das Datum, das dem aktuellen Tag entspricht, sowohl als Start- als auch als Enddatum für den vorherigen Monat aus der Option *Kapazitätstrend* auf der Registerkarte *Kapazitätstrends* ausgewählt wird.
+ a| 
+Nutzungsdiagramme zeigen jetzt Daten für den angegebenen Eintageszeitraum korrekt an.
+ a| 
+27.06.2024
+
+
+
+ a| 
+Historisch aufgelaufene Burst-Daten sind für die Service-Levels *CVO Primary* und *CVO Secondary* auf der Registerkarte *Kapazitätstrend* für Abonnements, die nicht mit einer MetroCluster Konfiguration konfiguriert sind, nicht verfügbar.
+ a| 
+Behoben
+ a| 
+21.06.2024
+
+
+
+ a| 
+Falsche Anzeige des auf der Registerkarte *Volumedetails* für AutoSupport Abonnements aufgeführten Werts des verbrauchten Objektspeichers.
+ a| 
+Der Verbrauchswert für den Objektspeicher wird jetzt korrekt angezeigt.
+ a| 
+21.06.2024
+
+
+
+ a| 
+Informationen auf Clusterebene können auf der Registerkarte *Assets* für AutoSupport Abonnements, die mit einer MetroCluster Konfiguration konfiguriert sind, nicht angezeigt werden.
+ a| 
+Behoben
+ a| 
+21. Juni 2024
+
+
+
+ a| 
+Falsche Platzierung von Keystone -Daten in CSV-Berichten, wenn die Spalte *Kontoname* in CSV-Berichten, die aus der Registerkarte *Kapazitätstrend* generiert wurden, einen Kontonamen mit einem Komma enthält `(,)` .
+ a| 
+Keystone -Daten werden in CSV-Berichten korrekt ausgerichtet.
+ a| 
+29.05.2024
+
+
+
+ a| 
+Zeigen Sie die aufgelaufene Burst-Nutzung auf der Registerkarte *Kapazitätstrend* an, auch wenn der Verbrauch unter der zugesagten Kapazität liegt.
+ a| 
+Behoben
+ a| 
+29.05.2024
+
+
+
+ a| 
+Falscher Tooltip-Text für das Indexsymbol *Current Burst* auf der Registerkarte *Capacity Trend*.
+ a| 
+Zeigt den richtigen Tooltip-Text an: „_Die Menge der aktuell verbrauchten Burst-Kapazität.“  Beachten Sie, dass dies für den aktuellen Abrechnungszeitraum gilt, nicht für den ausgewählten Datumsbereich._"
+ a| 
+28.03.2024
+
+
+
+ a| 
+Informationen zu nicht AQoS-konformen Volumes und MetroCluster Partnern sind für AutoSupport Abonnements nicht verfügbar, wenn 24 Stunden lang keine Keystone Daten vorhanden sind.
+ a| 
+Behoben
+ a| 
+28.03.2024
+
+
+
+ a| 
+Gelegentliche Nichtübereinstimmung bei der Anzahl der nicht AQoS-konformen Volumes, die auf den Registerkarten *Volume-Zusammenfassung* und *Volume-Details* aufgeführt sind, wenn einem Volume zwei Service-Level zugewiesen sind, das die AQoS-Konformität nur für ein Service-Level erfüllt.
+ a| 
+Behoben
+ a| 
+28.03.2024
+
+
+
+ a| 
+Auf der Registerkarte *Assets* sind keine Informationen zu AutoSupport -Abonnements verfügbar.
+ a| 
+Behoben
+ a| 
+14.03.2024
+
+
+
+ a| 
+Wenn sowohl MetroCluster als auch FabricPool in einer Umgebung aktiviert wurden, in der Tarifpläne sowohl für Tiering als auch für Objektspeicher anwendbar waren, konnten die Servicelevel für die Spiegelvolumes (sowohl Bestandteil- als auch FabricPool -Volumes) falsch abgeleitet werden.
+ a| 
+Auf Spiegelvolumes werden die richtigen Servicelevel angewendet.
+ a| 
+29.02.2024
+
+
+
+ a| 
+Bei einigen Abonnements mit einem einzigen Servicelevel oder Tarifplan fehlte die Spalte „AQoS-Konformität“ in der CSV-Ausgabe der Berichte auf der Registerkarte „Volumes“.
+ a| 
+Die Compliance-Spalte ist in den Berichten sichtbar.
+ a| 
+29.02.2024
+
+
+
+ a| 
+In einigen MetroCluster Umgebungen wurden gelegentlich Anomalien in den IOPS-Dichtediagrammen auf der Registerkarte *Leistung* festgestellt.  Dies geschah aufgrund einer ungenauen Zuordnung der Volumina zu den Serviceleveln.
+ a| 
+Die Diagramme werden korrekt angezeigt.
+ a| 
+29.02.2024
+
+
+
+ a| 
+Die Nutzungsanzeige für einen Burst-Verbrauchsdatensatz wurde in Bernstein angezeigt.
+ a| 
+Die Anzeige erscheint rot.
+ a| 
+13.12.2023
+
+
+
+ a| 
+Der Datumsbereich und die Daten in den Registerkarten „Kapazitätstrend“, „Aktuelle Nutzung“ und „Leistung“ wurden nicht in die UTC-Zeitzone konvertiert.
+ a| 
+Der Datumsbereich für Abfragen und Daten wird in allen Registerkarten in UTC-Zeit (Server-Zeitzone) angezeigt.  Die UTC-Zeitzone wird auch neben jedem Datumsfeld auf den Registerkarten angezeigt.
+ a| 
+13.12.2023
+
+
+
+ a| 
+Es gab eine Nichtübereinstimmung zwischen dem Start- und Enddatum zwischen den Registerkarten und den heruntergeladenen CSV-Berichten.
+ a| 
+Behoben.
+ a| 
+13.12.2023
+
+|===

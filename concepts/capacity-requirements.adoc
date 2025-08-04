@@ -1,0 +1,162 @@
+---
+sidebar: sidebar 
+permalink: concepts/capacity-requirements.html 
+keywords: storage capacity requirement for service levels, capacity definition per PSL, 
+summary: Die Kapazitätsanforderungen für Service-Level unterscheiden sich je nach Datei-, Block-, Objekt- oder Cloud-Speicher, der vom Keystone STaaS-Abonnement unterstützt wird. 
+---
+= Kapazitätsanforderungen für Performance-Service-Levels
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Kapazitätsanforderungen für die Leistungsservicelevel von Keystone STaaS unterscheiden sich je nach den vom Keystone STaaS-Abonnement unterstützten Datei-, Block-, Objekt- und Cloud-Speicherangeboten.
+
+
+
+== Mindestkapazitätsanforderungen für Datei- und Blockdienste
+
+Die pro Abonnement zulässige Mindestkapazität und inkrementelle Kapazität werden in der folgenden Tabelle beschrieben.  Die Mindestkapazität pro Leistungsservicelevel ist für alle Keystone -Verkaufsaktionen gleich definiert.  Die Kapazität über der Mindestkapazität, entweder zu Beginn des Abonnements, als Zusatzdienst zum Abonnement oder nach Neuzuweisung während des Abonnements, wird ebenfalls in der Tabelle strukturiert.
+
+|===
+
+
+| Kapazität | Extrem | Prämie | Performance | Standard | Wert 
+
+
+ a| 
+Mindestkapazität [in TiB]
+3+| 25 2+| 100 
+
+
+ a| 
+Zu Beginn des Abonnements zulässige inkrementelle Kapazität (und in Vielfachen) [in TiB]
+3+| 25 2+| 25 
+
+
+ a| 
+Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements zulässig [in TiB]
+3+| 25 2+| 25 
+|===
+
+
+== Mindestkapazitätsanforderungen für Objektspeicher
+
+Die Mindestkapazitätsanforderungen für Objektspeicher können Sie der folgenden Tabelle entnehmen:
+
+|===
+
+
+| Kapazität | Daten-Tiering | Objekt | Cloud Volumes ONTAP | Cloud-Backup-Dienst 
+
+
+ a| 
+Mindestkapazität [in TiB]
+ a| 
+Nicht zutreffend
+ a| 
+500
+ a| 
+4
+ a| 
+4
+
+
+
+ a| 
+Zu Beginn des Abonnements zulässige inkrementelle Kapazität (und in Vielfachen) [in TiB]
+ a| 
+Nicht zutreffend
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
+
+
+ a| 
+Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements zulässig [in TiB]
+ a| 
+Nicht zutreffend
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
+|===
+
+
+== Kapazitätsanpassungen
+
+Erfahren Sie mehr über Kapazitätsanpassungen:
+
+* Die Kapazität kann während der Laufzeit jederzeit, mit Ausnahme der letzten 90 Tage der Vertragslaufzeit, in den in den Tabellen im vorherigen Abschnitt beschriebenen Schritten pro Leistungsservicelevel hinzugefügt werden.  Das Hinzufügen von Kapazitäten oder Diensten ist innerhalb der letzten 90 Tage der Vertragslaufzeit zulässig, sofern eine Zustimmung zur Dienstverlängerung vorliegt.  Jede Kapazitätserweiterung und jeder neue Service vor Ort oder in der Cloud kann mit der bestehenden Laufzeit zusammenfallen.  Die Ihnen nach der Aktivierung der neuen Dienste zugesandte Rechnung spiegelt die geänderte Abrechnung wider.  Die zugesicherte Kapazität der Cloud-Dienste kann während der Abonnementlaufzeit zu keinem Zeitpunkt reduziert werden.  In der Zwischenzeit können die zugesagte Kapazität und die zugesagten Ausgaben für die Vor-Ort-Dienste während der Vertragslaufzeit auf Grundlage bestimmter Kriterien reduziert werden, die im folgenden Abschnitt „Kapazitätsreduzierung“ definiert sind.
+* Basierend auf der Keystone -Vereinbarung steht an jedem Standort eine Burst-Kapazität zur Verfügung.  Normalerweise liegt es 20 % über der zugesagten Kapazität für ein Leistungsservicelevel.  Jede Burst-Nutzung wird nur für diesen Abrechnungszeitraum in Rechnung gestellt.  Wenn Ihr zusätzlicher Burst-Bedarf größer ist als die vereinbarte Kapazität, wenden Sie sich an den Support.
+* Eine Änderung der zugesagten Kapazität während der Vertragslaufzeit ist nur unter bestimmten Voraussetzungen möglich, wie im folgenden Abschnitt _Kapazitätsreduzierung_ beschrieben.
+* Eine Kapazitätserhöhung oder ein Wechsel zu einem leistungsstärkeren Servicelevel während der Abonnementlaufzeit ist zulässig.  Ein Wechsel von einem Servicelevel mit höherer Leistung zu einem Servicelevel mit niedrigerer Leistung ist jedoch nicht zulässig.
+* Jede Änderungsanforderung in den letzten 90 Tagen der Servicelaufzeit erfordert eine Verlängerung des Dienstes um mindestens ein Jahr.
+
+
+
+
+=== Kapazitätsreduzierung
+
+Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell „Jährlich im Voraus“ und ausschließlich für lokale Bereitstellungen.  Es ist nicht für Cloud-Dienste oder Hybrid-Cloud-Dienste verfügbar.  Es bietet die Bereitstellung von Kapazitäten vor Ort, die pro Servicelevel und Abonnement um bis zu 25 % reduziert werden können.  Diese Kürzung ist einmal jährlich mit Wirkung zum Beginn der nächsten jährlichen Abrechnungsperiode zulässig.  Um die Kapazitätsreduzierung zu nutzen, sollten die jährlichen Zahlungen für On-Premise-Dienste während der Laufzeit jederzeit über 200.000 USD liegen.  Da dieses Abrechnungsmodell nur für lokale Bereitstellungen unterstützt wird, ist keine Umverteilung der Ausgaben von lokalen zu Cloud-Diensten möglich.  Ein Beispiel für eine jährliche Kapazitätsreduzierung ist in der folgenden Abbildung dargestellt.
+
+image:reallocation.png["Neuzuweisungslogik erklärt"]
+
+
+
+=== Vierteljährliche Neuzuweisung der Ausgaben
+
+Keystone STaaS bietet Ihnen die Möglichkeit, Ausgaben für lokale Dienste auf Ausgaben für Cloud Volumes ONTAP umzuverteilen.
+
+Voraussetzungen und Bedingungen auf Abonnementebene:
+
+* Gilt nur für das Modell mit monatlicher Abrechnung im Nachhinein.
+* Gilt nur für Abonnements mit einer Laufzeit von 1, 2 oder 3 Jahren.
+* Kapazität für Cloud Volumes ONTAP und Cloud Backup-Service sollte über Keystone erworben werden.
+* Bis zu 25 % der bestehenden, dienstbasierten Monatszahlungen vor Ort können für die Umverteilung auf Cloud-Dienste verwendet werden.
+* Umverteilungsanträge werden erst 90 Tage nach dem vorherigen Aktivierungsdatum der Umverteilung wirksam.
+* Eine Neuzuweisung von Cloud-Diensten zurück zu lokalen Diensten ist nicht möglich.
+* Ein Antrag auf Neuzuweisung muss vom Kunden oder Partner mindestens eine Woche vor dem nächsten Abrechnungszeitraum formell an Keystone Success Manager (KSM) übermittelt werden.
+* Neue Anfragen werden erst ab dem darauffolgenden Abrechnungszeitraum wirksam.
+
+
+Sie können einen Teil Ihrer Ausgaben für die Leistungsservice-Levels Ihrer abonnierten Datei-, Block- oder Objektspeicherung auf Hybrid-Cloud-Speicherdienste umlegen.  Bis zu 25 % des jährlichen Vertragswerts (ACV) können vierteljährlich auf Cloud Volumes ONTAP Primary- und Cloud Volumes ONTAP Secondary-Dienste umverteilt werden:
+
+image:reallocation.png["Neuzuweisungslogik erklärt"]
+
+Diese Tabelle enthält eine Reihe von Beispielwerten, um zu veranschaulichen, wie die Neuzuweisung von Ausgaben funktioniert.  In diesem Beispiel `$5000` von den monatlichen Ausgaben werden dem Hybrid-Cloud-Speicherdienst zugewiesen.
+
+|===
+
+
+| *Vor der Zuteilung* | *Kapazität (TiB)* | *Monatliche ausgewiesene Ausgaben* 
+
+
+| Extrem | 125 | 37.376 
+
+
+| *Nach der Neuzuweisung* | *Kapazität (TiB)* | *Monatliche ausgewiesene Ausgaben* 
+
+
+| Extrem | 108 | 37.376 
+
+
+| Cloud Volumes ONTAP | 47 | 5.000 
+
+
+|  |  | 37.376 
+|===
+Die Reduzierung beträgt (125-108) = 17 TiB der für das Servicelevel „Extreme Performance“ zugewiesenen Kapazität.  Bei der Neuzuweisung der Ausgaben beträgt der zugeteilte Hybrid-Cloud-Speicher nicht 17 TiB, sondern eine entsprechende Kapazität, die für 5.000 US-Dollar erworben werden kann.  In diesem Beispiel erhalten Sie für 5.000 US-Dollar 17 TiB lokale Speicherkapazität für das Servicelevel „Extreme Performance“ und 47 TiB Hybrid-Cloud-Kapazität des Servicelevels „Cloud Volumes ONTAP Performance“.  Daher erfolgt die Neuzuweisung im Hinblick auf die Ausgaben und nicht auf die Kapazität.
+
+Wenden Sie sich an Ihren Keystone Success Manager (KSM), wenn Sie Ausgaben von Ihren lokalen Diensten auf Cloud-Dienste umverteilen möchten.

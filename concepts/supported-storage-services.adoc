@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-services.html 
+keywords: storage, service, service definition, keystone STaaS services, 
+summary: Keystone STaaS-Dienste unterstützen ONTAP und StorageGRID. 
+---
+= Unterstützter Speicher in Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS-Dienste unterstützen Datei- und Blockspeicher mit ONTAP, Objektspeicher mit StorageGRID und Cloud Volumes ONTAP.
+
+Keystone STaaS bietet Standard- und optionale Dienste für Ihren Speicher.
+
+* Keystone STaaS-Standarddienste*: Standarddienste sind im Basisabonnement enthalten und werden nicht separat berechnet.
+
+* Keystone STaaS-Zusatzdienste*: Dies sind optionale, kostenpflichtige Dienste, die zusätzlich zu den Standard-Abonnementdiensten von Keystone STaaS zusätzliche Dienstprogramme und Vorteile bieten.
+
+Gleichzeitig können die Keystone STaaS-Dienste genutzt werden.  Beispielsweise kann ein Cloud-Speicherabonnement die gleiche Laufzeit haben wie Datei-, Block- und Objektspeicherabonnements.  Die Einbindung eines Cloud-Dienstes ist jederzeit während der Laufzeit eines bestehenden Speicherabonnements möglich.  Wenn Sie jedoch nicht vorhaben, ein bestehendes Datei-, Block- und Objektabonnement zu verlängern, kann während der letzten 90 Tage des Abonnements kein Cloud-Speicherabonnement hinzugefügt werden.
+
+
+
+== Dienste für Datei-, Block- und Objektspeicher
+
+Keystone STaaS-Dienste für ONTAP Datei- und Blockspeicher sowie StorageGRID Objektspeicher unterstützen mehrere Funktionen und Protokolle und werden in der folgenden Tabelle beschrieben:
+
+|===
+| Storage | Plattform | Protokolle | Unterstützte Funktionen 
+
+
+ a| 
+Dateispeicher
+ a| 
+ONTAP
+ a| 
+NFS und CIFS
+ a| 
+Unterstützte ONTAP -Funktionen:
+
+* FlexVol
+* FlexGroup
+* Snapshot-Kopien
+* SnapMirror (asynchron)
+* SnapVault
+* SnapLock Enterprise
+* FabricPool/Cloud-Tiering
+* SnapRestore
+* FlexClone
+* SnapCenter (Lizenz ist im Lieferumfang enthalten, aber nicht Teil der Keystone -Dienste, und die Verwaltung ist nicht garantiert)
+* Autonomer Ransomware-Schutz^1^
+
+
+
+
+ a| 
+Blockspeicher
+ a| 
+ONTAP
+ a| 
+FC und iSCSI
+ a| 
+Unterstützte ONTAP -Funktionen:
+
+* FlexVol
+* FlexGroup
+* Snapshot-Kopien
+* SnapMirror (asynchron)
+* SnapVault
+* SnapLock Enterprise
+* FabricPool/Cloud-Tiering
+* SnapRestore
+* FlexClone
+* SnapCenter (Lizenz ist im Lieferumfang enthalten, aber nicht Teil der Keystone -Dienste, und die Verwaltung ist nicht garantiert)
+
+
+
+
+ a| 
+Objektspeicher
+ a| 
+StorageGRID
+ a| 
+S3
+ a| 
+Unterstützt mehrere Richtlinien für das Information Lifecycle Management (ILM) an mehreren Standorten^2^
+
+|===
+
+NOTE: ^1^ Informationen zum Ransomware-Schutz in ONTAP finden Sie unter https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Autonomer Ransomware-Schutz"^] .  ^2^ Für jede Site ist ein separates Abonnement erforderlich.
+
+
+
+== Dienste für Cloud-Speicher
+
+Keystone STaaS bietet Cloud-Speicherdienste.  Keystone STaaS unterstützt die Datenverwaltungsfunktionen von Cloud Volumes ONTAP auf Amazon Web Services (AWS), Microsoft Azure und Google Cloud Platform.
+
+
+NOTE: Die von Cloud Volumes ONTAP benötigten hyperskalaren Rechen-, Speicher- und Netzwerkdienste werden von NetApp nicht als Teil der Keystone STaaS-Abonnements bereitgestellt. Diese Abonnements müssen direkt von den Anbietern hyperskalarer Cloud-Dienste bezogen werden.

@@ -1,0 +1,150 @@
+---
+sidebar: sidebar 
+permalink: concepts/service-levels.html 
+keywords: service levels, service level, rate plan or service level 
+summary: Keystone STaaS bietet Speicherkapazität auf vordefinierten Serviceleveln.  Jedes von Keystone verwaltete Volume ist einem Servicelevel zugeordnet. 
+---
+= Leistungsservicelevel in Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS bietet Datenspeicherkapazität auf vordefinierten Leistungsserviceleveln.  Jedes von Keystone -Diensten verwaltete Volume ist mit einem Leistungsservicelevel verknüpft.
+
+Ein Abonnement kann mehrere Tarifpläne haben und jeder Tarifplan entspricht einem Leistungsservicelevel.  Jeder Tarifplan verfügt über eine zugesagte Kapazität pro Leistungsservicelevel.
+
+Jedes Leistungsservicelevel wird durch seine E/A-Dichte definiert, d. h. IOPS/TiB/Volume.  Dies ist das Verhältnis von Leistung (Eingabe-/Ausgabevorgänge pro Sekunde [IOPS]) und verwendeter Speicherkapazität (TiB), also IOPS/TiB bei durchschnittlicher Latenz pro Volume.
+
+Sie wählen Leistungsservicelevel basierend auf Ihrer Speicherumgebung und Ihren Speicher- und Verbrauchsanforderungen aus.  Die Basis-Performance-Service-Levels stehen Ihnen standardmäßig zur Verfügung.  Wenn Sie sich für Zusatzdienste entschieden haben, stehen Ihnen zusätzlich bestimmte Leistungsservice-Level zur Verfügung.  Beispielsweise wird Ihrem Abonnement für den Zusatzdienst „Erweiterter Datenschutz“ das Leistungsservicelevel „Advanced Data-Protect“ zugewiesen.
+
+
+TIP: Eine detaillierte Servicebeschreibung für die NetApp Keystone STaaS Performance Service Levels ist verfügbar https://www.netapp.com/services/keystone/terms-and-conditions/["hier,"^] .
+
+Die grundlegenden Leistungsservicelevel für die unterstützten Speichertypen, Datei-, Block-, Objekt- und Cloud-Dienste werden in den folgenden Abschnitten beschrieben:
+
+
+
+== Leistungsservicelevel für Datei- und Blockspeicher
+
+*Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC
+
+|===
+
+
+| *Leistungs-Servicelevel* | *Extrem* | *Prämie* | *Leistung* | *Standard* | *Wert* 
+
+
+| *Beispiele für Workloadtypen* | Analysen, Datenbanken, unternehmenskritische Apps | VDI, VSI, Softwareentwicklung | OLTP, OLAP, Container, Softwareentwicklung | Dateifreigaben, Webserver | Sicherung 
+
+
+| *Maximale IOPS/logische TiBs pro Volume gespeichert* | 12.288 | 4.096 | 2.048 | 512 | 128 
+
+
+| *Maximale IOPS/logische TiBs, die pro Volume zugewiesen werden* | 6.144 | 2.048 | 1.024 | 256 | 64 
+
+
+| *Maximale Anzahl an MB/s/logischen TiBs, die pro Volume bei 32 KB/S gespeichert werden* | 384 | 128 | 64 | 16 | 4 
+
+
+| *Ziellatenz des 90. Perzentils* | <1 ms | <2 ms | <4 ms | <4 ms | <17 ms 
+
+
+| *Blockgröße* 5+| 32K 
+
+
+| *Zugesicherter und gemessener Kapazitätstyp* 5+| Logisch 
+|===
+
+
+=== Mehr zu Performance-Service-Levels für Datei- und Blockspeicher
+
+Die grundlegenden Service-Level-Metriken für die Leistung hängen von den folgenden Bedingungen ab:
+
+* Die Leistungsservicelevel für Datei- und Blockspeicher unterstützen ONTAP 9.7 und höher.
+* IOPS/TiB/Volume, MBps/TiB/Volume und Latenzwerte für Leistungsservicelevel basieren auf der im Volume gespeicherten Datenmenge, einer Blockgröße von 32 KB und einer zufälligen Kombination aus 70 % Lese- und 30 % Schreib-E/A-Vorgängen.
+* Die tatsächlichen IOPS/TiB/Volume und MBps/TiB/Volume können je nach tatsächlicher oder angenommener Blockgröße, gleichzeitiger Systemauslastung oder Eingabe-/Ausgabevorgängen variieren.
+* Folgendes ist in der Latenz nicht enthalten:
++
+** Anwendungs- oder Hostlatenz
+** Kundennetzwerklatenz zu oder von den Controller-Ports
+** Overheads im Zusammenhang mit der Datenübertragung zum Objektspeicher im Falle von FabricPool
+** Latenz wird automatisch durch QoS angewendet, um die IO innerhalb der Leistungs-Service-Level-Maximen zu halten
+
+
+* Latenzwerte gelten nicht für Schreibvorgänge in MetroCluster .  Diese Schreibvorgänge sind abhängig von der Entfernung der Remote-Systeme.
+* Wenn einem oder mehreren Volumes auf einem Speichersystem keine AQoS-Richtlinie zugewiesen ist, werden diese Volumes als nicht konforme Volumes betrachtet und es gelten keine Zielleistungs-Servicelevel für diese Systeme.
+* _Erwartete IOPS_ werden für FabricPool nur dann angestrebt, wenn die Tiering-Richtlinie auf „keine“ eingestellt ist und sich keine Blöcke in der Cloud befinden.  _Erwartete IOPS_ sind für Volumes vorgesehen, die sich nicht in einer synchronen SnapMirror -Beziehung befinden.
+* Die E/A-Operationen der Arbeitslast müssen über alle eingesetzten Controller hinweg ausgeglichen werden, wie durch die Keystone -Reihenfolge festgelegt.
+
+
+
+
+== Objektspeicher
+
+*Unterstütztes Protokoll*: S3
+
+|===
+
+
+| *Leistungs-Service-Level* | Objekt 
+
+
+| *Arbeitslasttyp* | Medienrepository, Archivierung 
+
+
+| *Maximale IOPS/logische TiB pro Volume gespeichert* | k. A. 
+
+
+| *Maximale MBps/logische TiB, die pro Volume gespeichert werden* | k. A. 
+
+
+| *Durchschnittliche Latenz* | k. A. 
+
+
+| *Zugesicherter und gemessener Kapazitätstyp* | Physikalisch 
+|===
+
+NOTE: Die Latenz umfasst nicht den Overhead, der im Falle eines FabricPool -Speichers mit der Datenübertragung zum Objektspeicher verbunden ist.
+
+
+
+== Cloud-Speicher
+
+*Unterstütztes Protokoll*: NFS, CIFS, iSCSI und S3 (nur AWS und Azure)
+
+|===
+
+
+| *Leistungs-Service-Level* | Cloud Volumes ONTAP 
+
+
+| *Arbeitslasttyp* | Notfallwiederherstellung, Softwareentwicklung/-tests, Geschäftsanwendungen 
+
+
+| *Maximale IOPS/logische TiB pro Volume gespeichert* | k. A. 
+
+
+| *Maximale MBps/logische TiB, die pro Volume gespeichert werden* | k. A. 
+
+
+| *Durchschnittliche Latenz* | k. A. 
+|===
+[NOTE]
+====
+* Cloud-native Dienste wie Computing, Speicher und Vernetzung werden von Cloud-Anbietern in Rechnung gestellt.
+* Diese Dienste sind von Cloud-Speicher- und Recheneigenschaften abhängig.
+
+
+====
+*Verwandte Informationen*
+
+* link:../concepts/supported-storage-capacity.html["Unterstützte Speicherkapazitäten"]
+* link:..//concepts/metrics.html["In Keystone -Diensten verwendete Metriken und Definitionen"]
+* link:../concepts/qos.html["Dienstqualität (QoS) in Keystone"]
+* link:../concepts/pricing.html["Keystone -Preise"]
+

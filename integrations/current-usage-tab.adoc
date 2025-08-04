@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: integrations/current-usage-tab.html 
+keywords: keystone-aiq, digital advisor keystone, current consumption tab, performance service levels, subscriptions 
+summary: Um die Nutzung Ihres Abonnements zu verstehen, können Sie die zugesagte Kapazität, die verbrauchte Kapazität, die verfügbare Kapazität und mehr anzeigen. 
+---
+= Sehen Sie sich den aktuellen Verbrauch Ihrer Keystone Abonnements an
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie erhalten Einblicke in die Nutzung Ihres Abonnements, indem Sie detaillierte Informationen wie zugesagte Kapazität, verbrauchte Kapazität und verfügbare Kapazität anzeigen. Dabei wird der aktuelle Verbrauchsstatus angezeigt und nach Leistungsserviceleveln getrennt.
+
+Um den aktuellen Verbrauchsstatus Ihrer Abonnements über BlueXP oder Digital Advisor anzuzeigen, gehen Sie folgendermaßen vor:
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.Schritte
+. Wählen Sie im linken Navigationsmenü von BlueXP *Speicher > Keystone > Abonnements*.
+. Wählen Sie in der Tabelle in der Spalte *Abonnementnummer* die Abonnementnummer aus, um den aktuellen Verbrauch anzuzeigen.
++
+Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
+
++
+image:bxp-current-consumption-graph.png["Details zum Stromverbrauch im grafischen Format"]
+
++
+Für das ausgewählte Abonnement können Sie Verbrauchsdetails entweder im Tabellen- oder Grafikformat anzeigen, indem Sie die Option *Tabelle* oder *Diagramm* aus der Dropdown-Liste *Anzeigen als* verwenden.  In der grafischen Ansicht können Sie den aktuellen Verbrauch pro Leistungsservicelevel sehen, einschließlich genutzter Kapazität, bereitgestellter Kapazität, zugesagtem Kapazitätslimit und Burst-Kapazitätslimit.
+
++
+In der Tabellenansicht können Sie Details wie die maximal verbrauchte Kapazität und die verbleibenden Tage bis zum Ablauf sehen.  Im Rahmen der Überwachung Ihrer Abonnementnutzung können Sie den Namen des Leistungsservicelevels, den Verbrauchsstatus, zugesagte und genutzte Kapazitäten, bereitgestellte und Burst-Kapazitäten, verfügbare Kapazität und Volumen anzeigen.  Sie können die Tabelle mithilfe der Spaltenauswahl anpassenimage:column-selector.png["Spaltenauswahlsymbol"] Symbol.
+
++
+image:bxp-current-consumption-table.png["Angaben zum Stromverbrauch in Tabellenform"]
+
+
+
+--
+.Digital Advisor
+--
+.Schritte
+. Gehen Sie im linken Navigationsbereich von Digital Advisor zu *Allgemein > Keystone -Abonnements > Aktueller Verbrauch*.
+. Wählen oder suchen Sie die gewünschte Abonnementnummer aus der Dropdown-Liste *Abonnement*.
++
+image:aiq-ks-dtls-4.png["Registerkarte „Stromverbrauch“"]
+
++
+Für das ausgewählte Abonnement können Sie Details wie Start- und Enddatum des Abonnements und den Abrechnungszeitraum, beispielsweise monatlich oder jährlich, anzeigen.  Im Rahmen der Abonnementnutzung können Sie den Namen des Leistungsservicelevels, die zugesagten, verbrauchten und verfügbaren Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung (in TiB) anzeigen.  Bestimmte Leistungsservicelevel, die einen höheren Verbrauch verzeichnen, werden hervorgehoben.  Sie können auch Warnungen und Alarme anzeigen, die für Ihre Volumes generiert wurden.
+
++
+Zusätzlich zum aktuellen Verbrauch möchten Sie möglicherweise auch die historischen Verbrauchsdaten zum Vergleich anzeigen.  Klicken Sie auf die Schaltfläche *Historische Daten anzeigen*, um zur Registerkarte *Verbrauchstrend* zu navigieren und die historischen Daten für dasselbe Abonnement anzuzeigen.
+
+
+
+--
+====
+Informationen zu Ihren Keystone -Speicherdiensten und den entsprechenden Leistungsservice-Levels finden Sie unterlink:../concepts/service-levels.html["Leistungsservicelevel in Keystone"] .
+
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-overview.html["Das Keystone -Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone Abonnementressourcen an"]
+* link:../integrations/assets.html["Anzeigen von Assets in allen Ihren Keystone -Abonnements"]
+* link:../integrations/volumes-objects-tab.html["Details zu Datenträgern und Objekten anzeigen"]
+

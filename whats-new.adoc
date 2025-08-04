@@ -1,0 +1,316 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'new features, release notes, enhancements, what"s new' 
+summary: NetApp bietet Ihnen in jeder Version der Keystone STaaS-Dienste neue und verbesserte Funktionen. 
+---
+= Was ist neu in Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Informieren Sie sich über die neuesten Funktionen und Verbesserungen der Keystone STaaS-Dienste.
+
+
+
+== 05. August 2025
+
+
+
+=== Anzeigen von Verbrauchsdaten auf Instanzebene
+
+Sie können den aktuellen Verbrauch und historische Daten für jede Instanz des Performance-Service-Levels über das Keystone -Dashboard in BlueXP anzeigen.  Diese Funktion ist für Leistungsservicelevel mit mehreren Instanzen verfügbar, sofern Sie über ein Abonnement für Keystone Version 3 (v3) verfügen.  Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Den Verbrauch Ihrer Keystone -Abonnements anzeigen"] .
+
+
+
+== 30. Juni 2025
+
+
+
+=== Veröffentlichung von Keystone Version 3 (v3).
+
+Sie können jetzt Keystone Version 3 (v3) abonnieren, die neueste Version des NetApp Keystone STaaS-Angebots.  Diese Version führt mehrere Verbesserungen ein, darunter vereinfachte Leistungsservicelevel, zusätzliche Burst-Kapazitätsoptionen und flexible Abrechnungsfrequenzen.  Diese Verbesserungen vereinfachen die Verwaltung, Optimierung und Skalierung von Speicherlösungen.  Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["Keystone STaaS-Dienste für v3"] .
+
+
+
+== 19. Juni 2025
+
+
+
+=== Keystone Dashboard in BlueXP
+
+Sie können jetzt direkt von BlueXP aus auf das Keystone -Dashboard zugreifen.  Diese Integration bietet Ihnen einen zentralen Ort zum Überwachen, Verwalten und Verfolgen aller Ihrer Keystone -Abonnements sowie Ihrer anderen NetApp -Dienste.
+
+Mit dem Keystone -Dashboard in BlueXP können Sie:
+
+* Zeigen Sie alle Ihre Abonnementdetails, Kapazitätsnutzung und Assets an einem Ort an.
+* Verwalten Sie Abonnements ganz einfach und fordern Sie Änderungen an, wenn sich Ihre Anforderungen ändern.
+* Bleiben Sie mit den neuesten Informationen zu Ihrer Speicherumgebung auf dem Laufenden.
+
+
+Um zu beginnen, gehen Sie im linken Navigationsmenü von BlueXP zu *Speicher > Keystone *.  Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Übersicht über das Keystone -Dashboard"] .
+
+
+
+== 08. Januar 2025
+
+
+
+=== Hinzufügen von Anzeigeoptionen für die täglich anfallende Datennutzung
+
+Sie können jetzt den täglich aufgelaufenen Datenverbrauch für einen monatlichen oder vierteljährlichen Abrechnungszeitraum entweder im Diagramm- oder Tabellenformat anzeigen, indem Sie auf die Leiste klicken, die die in Rechnung gestellten Daten anzeigt.  Weitere Informationen finden Sie unterlink:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Täglich aufgelaufene Burst-Datennutzung anzeigen"] .
+
+
+
+== 12. Dezember 2024
+
+
+
+=== Spalte „Logisch verwendet“ umbenannt
+
+Die Spalte *Logical Used* auf der Registerkarte *Volume Details* unter *Volumes & Objects* wurde jetzt in * Keystone Logical Used* umbenannt.
+
+
+
+=== Registerkarte „Erweiterte Assets“
+
+Die Registerkarte *Assets* im Bildschirm * Keystone -Abonnements* verfügt jetzt über zwei neue Unterregisterkarten: * ONTAP* und * StorageGRID*.  Diese Unterregisterkarten bieten basierend auf Ihren Abonnements detaillierte Einblicke auf Clusterebene für ONTAP und Informationen auf Grid-Ebene für StorageGRID .  Weitere Informationen finden Sie unterlink:./integrations/assets-tab.html["Registerkarte „Assets“"^] .
+
+
+
+=== Neue Option zum Ausblenden/Anzeigen von Spalten
+
+Die Registerkarte *Volumedetails* in *Volumes & Objekte* enthält jetzt die Option *Spalten ausblenden/einblenden*.  Mit dieser Option können Sie Spalten auswählen oder abwählen, um die tabellarische Auflistung der Datenträger nach Ihren Wünschen anzupassen.  Weitere Informationen finden Sie unterlink:./integrations/volumes-objects-tab.html["Registerkarte „Volumes und Objekte“"^] .
+
+
+
+== 21. November 2024
+
+
+
+=== Erweiterter, in Rechnung gestellter, aufgelaufener Burst
+
+Sie können jetzt die aufgelaufenen Burst-Nutzungsdaten vierteljährlich über die Option *Invoiced Accrued Burst* anzeigen, wenn Sie sich für einen vierteljährlichen Abrechnungszeitraum entschieden haben.  Weitere Informationen finden Sie unterlink:./integrations/consumption-tab.html#view-accrued-burst["Abgerechneten aufgelaufenen Burst anzeigen"^] .
+
+
+
+=== Neue Spalten auf der Registerkarte „Volumes Details“
+
+Um die Berechnung der logischen Nutzung übersichtlicher zu gestalten, wurden der Registerkarte *Volumedetails* innerhalb der Registerkarte *Volumes & Objekte* zwei neue Spalten hinzugefügt:
+
+* *Logisches AFS*: Zeigt die logische Kapazität an, die vom aktiven Dateisystem des Volumes verwendet wird.
+* *Physischer Snapshot*: Zeigt den von den Snapshots verwendeten physischen Speicherplatz an.
+
+
+Diese Spalten bieten eine bessere Übersichtlichkeit in der Spalte *Logical Used*, die die kombinierte logische Kapazität anzeigt, die vom aktiven Dateisystem des Volumes verwendet wird, und den physischen Speicherplatz, der von Snapshots verwendet wird.
+
+
+
+== 11. November 2024
+
+
+
+=== Verbesserte Berichterstellung
+
+Sie können jetzt mithilfe der Berichtsfunktion in Digital Advisor einen konsolidierten Bericht erstellen, um die Details Ihrer Keystone -Daten anzuzeigen.  Weitere Informationen finden Sie unterlink:./integrations/options.html#generate-consolidated-report-from-digital-advisor["Konsolidierten Bericht erstellen"^] .
+
+
+
+== 10. Juli 2024
+
+
+
+=== Etikettenänderungen
+
+Die Bezeichnung *Aktuelle Nutzung* wird in *Aktueller Verbrauch* geändert und *Kapazitätstrend* wird in *Verbrauchstrend* geändert.
+
+
+
+=== Suchleiste für Abonnements
+
+Das Dropdown-Menü *Abonnements* auf allen Registerkarten im Bildschirm * Keystone -Abonnements* enthält jetzt eine Suchleiste.  Sie können nach bestimmten Abonnements suchen, die im Dropdown-Menü *Abonnements* aufgeführt sind.
+
+
+
+== 27. Juni 2024
+
+
+
+=== Einheitliche Anzeige des Abonnements
+
+Der Bildschirm „Keystone -Abonnements“ wird aktualisiert, um die ausgewählte Abonnementnummer auf allen Registerkarten anzuzeigen.
+
+* Wenn eine beliebige Registerkarte im Bildschirm „Keystone -Abonnements“ aktualisiert wird, navigiert der Bildschirm automatisch zur Registerkarte „Abonnements“ und setzt alle Registerkarten auf das erste Abonnement zurück, das im Dropdown-Menü „Abonnement“ aufgeführt ist.
+* Wenn das ausgewählte Abonnement keine Leistungsmetriken abonniert hat, wird auf der Registerkarte *Leistung* bei der Navigation das erste Abonnement angezeigt, das im Dropdown-Menü *Abonnement* aufgeführt ist.
+
+
+
+
+== 29. Mai 2024
+
+
+
+=== Verbesserte Burst-Anzeige
+
+Der *Burst*-Indikator im Index des Nutzungsdiagramms wurde erweitert, um den Prozentwert des Burst-Limits anzuzeigen.  Dieser Wert ändert sich je nach vereinbartem Burst-Limit für ein Abonnement.  Sie können den Burst-Limitwert auch auf der Registerkarte *Abonnements* anzeigen, indem Sie mit der Maus über die Anzeige *Burst-Nutzung* in der Spalte *Nutzungsstatus* fahren.
+
+
+
+=== Hinzufügen von Service-Levels
+
+Die Service-Levels *CVO Primary* und *CVO Secondary* sind enthalten, um Cloud Volumes ONTAP für Abonnements zu unterstützen, die Tarifpläne mit null zugesagter Kapazität haben oder mit einem Metro-Cluster konfiguriert sind.
+
+* Sie können das Diagramm zur Kapazitätsnutzung für diese Service-Levels im alten Dashboard des Widgets „Keystone -Abonnements“ und auf der Registerkarte „Kapazitätstrend“ sowie detaillierte Nutzungsinformationen auf der Registerkarte „Aktuelle Nutzung“ anzeigen.
+* Im Reiter *Abonnements* werden diese Service-Levels angezeigt als `CVO (v2)` in der Spalte *Nutzungstyp*, wodurch die Abrechnung entsprechend dieser Servicelevel identifiziert werden kann.
+
+
+
+
+=== Zoom-In-Funktion für kurze Ausbrüche
+
+Die Registerkarte *Kapazitätstrend* enthält jetzt eine Zoomfunktion, um die Details kurzfristiger Ausbrüche in den Nutzungsdiagrammen anzuzeigen. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html["Registerkarte „Kapazitätstrend“"^] .
+
+
+
+=== Verbesserte Anzeige von Abonnements
+
+Die Standardanzeige von Abonnements wurde erweitert, um die Sortierung nach Tracking-ID zu ermöglichen.  Die Abonnements auf der Registerkarte *Abonnements*, einschließlich der Dropdown-Liste *Abonnement* und der CSV-Berichte, werden jetzt basierend auf der alphabetischen Reihenfolge der Tracking-IDs in der Reihenfolge a, A, b, B usw. angezeigt.
+
+
+
+=== Verbesserte Anzeige der aufgelaufenen Bursts
+
+Der Tooltip, der angezeigt wird, wenn Sie mit der Maus über das Balkendiagramm zur Kapazitätsnutzung auf der Registerkarte *Kapazitätstrend* fahren, zeigt jetzt den Typ des aufgelaufenen Bursts basierend auf der zugesagten Kapazität an.  Es wird zwischen vorläufigem und in Rechnung gestelltem aufgelaufenem Burst unterschieden und für Abonnements mit Tarifplänen für zugesagte Kapazitäten von null der *vorläufige aufgelaufene Verbrauch* und der *in Rechnung gestellte aufgelaufene Verbrauch* sowie für Abonnements mit zugesagter Kapazität ungleich null der *vorläufige aufgelaufene Burst* und der *in Rechnung gestellte aufgelaufene Burst* angezeigt.
+
+
+
+== 09. Mai 2024
+
+
+
+=== Neue Spalten in CSV-Berichten
+
+Die CSV-Berichte auf der Registerkarte *Kapazitätstrend* enthalten jetzt die Spalten *Abonnementnummer* und *Kontoname* für verbesserte Details.
+
+
+
+=== Spalte „Erweiterter Verwendungstyp“
+
+Die Spalte *Verwendungstyp* auf der Registerkarte *Abonnements* wurde erweitert, um logische und physische Verwendungen als durch Kommas getrennte Werte für Abonnements anzuzeigen, die Servicelevel sowohl für Dateien als auch für Objekte abdecken.
+
+
+
+=== Greifen Sie über die Registerkarte „Volume-Details“ auf Objektspeicherdetails zu
+
+Die Registerkarte *Volumedetails* innerhalb der Registerkarte *Volumes & Objekte* bietet jetzt Objektspeicherdetails sowie Volumeinformationen für Abonnements, die Servicelevel für Dateien und Objekte enthalten.  Sie können auf der Registerkarte *Volume-Details* auf die Schaltfläche *Object Storage-Details* klicken, um die Details anzuzeigen.
+
+
+
+== 28. März 2024
+
+
+
+=== Verbesserung der Anzeige der QoS-Richtlinienkonformität auf der Registerkarte „Volumedetails“
+
+Die Registerkarte *Volumedetails* innerhalb der Registerkarte *Volumes & Objekte* bietet jetzt eine bessere Übersicht über die Einhaltung der Quality of Service (QoS)-Richtlinie.  Die Spalte, die früher als *AQoS* bekannt war, wurde in *Compliant* umbenannt. Sie gibt an, ob die QoS-Richtlinie konform ist.  Darüber hinaus wurde eine neue Spalte *QoS-Richtlinientyp* hinzugefügt, die angibt, ob die Richtlinie fest oder adaptiv ist.  Wenn keines von beiden zutrifft, wird in der Spalte _Nicht verfügbar_ angezeigt. Weitere Informationen finden Sie unter link:./integrations/volumes-objects-tab.html["Registerkarte „Volumes und Objekte“"^] .
+
+
+
+=== Neue Spalte und vereinfachte Abonnementanzeige im Reiter „Volumenübersicht“
+
+* Die Registerkarte *Volume-Zusammenfassung* innerhalb der Registerkarte *Volumes & Objekte* enthält jetzt eine neue Spalte mit dem Titel *Geschützt*.  Diese Spalte enthält die Anzahl der geschützten Volumes, die mit Ihren abonnierten Service-Levels verknüpft sind.  Wenn Sie auf die Anzahl der geschützten Volumes klicken, gelangen Sie zur Registerkarte *Volumedetails*, auf der Sie eine gefilterte Liste der geschützten Volumes anzeigen können.
+* Die Registerkarte *Volume Summary* wurde aktualisiert und zeigt nun nur noch Basisabonnements an, Zusatzdienste sind ausgeschlossen. Weitere Informationen finden Sie unter link:./integrations/volumes-objects-tab.html["Registerkarte „Volumes und Objekte“"^] .
+
+
+
+
+=== Änderung der Anzeige der aufgelaufenen Burst-Details im Reiter „Kapazitätstrend“
+
+Der Tooltip, der angezeigt wird, wenn Sie mit der Maus über das Balkendiagramm zur Kapazitätsnutzung auf der Registerkarte *Kapazitätstrend* fahren, zeigt die Details der aufgelaufenen Bursts für den aktuellen Monat an.  Für die vorherigen Monate sind keine Details verfügbar.
+
+
+
+=== Verbesserter Zugriff zum Anzeigen historischer Daten für Keystone -Abonnements
+
+Sie können jetzt historische Daten anzeigen, wenn ein Keystone Abonnement geändert oder erneuert wird.  Sie können das Startdatum eines Abonnements auf ein früheres Datum festlegen, um Folgendes anzuzeigen:
+
+* Daten zum Verbrauch und zur aufgelaufenen Burst-Nutzung von der Registerkarte *Kapazitätstrend*.
+* Leistungsmetriken von ONTAP -Volumes aus der Registerkarte *Leistung*.
+
+
+Die Daten werden basierend auf dem ausgewählten Startdatum des Abonnements angezeigt.
+
+
+
+== 29. Februar 2024
+
+
+
+=== Hinzufügen der Registerkarte „Assets“
+
+Der Bildschirm * Keystone -Abonnements* enthält jetzt die Registerkarte *Assets*.  Diese neue Registerkarte bietet Informationen auf Clusterebene basierend auf Ihren Abonnements. Weitere Informationen finden Sie unter link:./integrations/assets-tab.html["Registerkarte „Assets“"^] .
+
+
+
+=== Verbesserungen an der Registerkarte „Volumes & Objekte“
+
+Um eine bessere Übersicht über Ihre ONTAP -Systemvolumes zu gewährleisten, wurden der Registerkarte *Volumes* zwei neue Registerkartenschaltflächen hinzugefügt: *Volume-Zusammenfassung* und *Volume-Details*.  Die Registerkarte *Volume-Zusammenfassung* bietet eine Gesamtzählung der mit Ihren abonnierten Service-Levels verbundenen Volumes, einschließlich ihres AQoS-Konformitätsstatus und Kapazitätsinformationen.  Auf der Registerkarte *Volumedetails* werden alle Volumes und ihre Besonderheiten aufgelistet. Weitere Informationen finden Sie unter link:./integrations/volumes-objects-tab.html["Registerkarte „Volumes und Objekte“"^] .
+
+
+
+=== Verbessertes Sucherlebnis bei Digital Advisor
+
+Die Suchparameter auf dem Bildschirm „Digital Advisor“ umfassen jetzt Keystone Abonnementnummern und für Keystone -Abonnements erstellte Beobachtungslisten.  Sie können die ersten drei Zeichen einer Abonnementnummer oder eines Beobachtungslistennamens eingeben. Weitere Informationen finden Sie unter link:./integrations/keystone-aiq.html["Sehen Sie sich das Keystone -Dashboard auf Active IQ Digital Advisor an"^] .
+
+
+
+=== Zeitstempel der Verbrauchsdaten anzeigen
+
+Sie können den Zeitstempel der Verbrauchsdaten (in UTC) auf dem alten Dashboard des Widgets * Keystone Subscriptions* anzeigen.
+
+
+
+== 13. Februar 2024
+
+
+
+=== Möglichkeit, Abonnements anzuzeigen, die mit einem primären Abonnement verknüpft sind
+
+Einige Ihrer primären Abonnements können verknüpfte sekundäre Abonnements haben.  In diesem Fall wird die primäre Abonnementnummer weiterhin in der Spalte *Abonnementnummer* angezeigt, während die verknüpften Abonnementnummern in einer neuen Spalte *Verknüpfte Abonnements* auf der Registerkarte *Abonnements* aufgeführt werden.  Die Spalte *Verknüpfte Abonnements* steht Ihnen nur zur Verfügung, wenn Sie verknüpfte Abonnements haben und Sie können Informationsmeldungen sehen, die Sie darüber informieren.
+
+
+
+== 11. Januar 2024
+
+
+
+=== Für den aufgelaufenen Burst zurückgegebene Rechnungsdaten
+
+Die Beschriftungen für *Accrued Burst* werden jetzt auf der Registerkarte *Capacity Trend* in *Invoiced Accrued Burst* geändert.  Durch Auswahl dieser Option können Sie die monatlichen Diagramme für die in Rechnung gestellten, aufgelaufenen Burst-Daten anzeigen. Weitere Informationen finden Sie unter link:./integrations/consumption-tab.html#view-accrued-burst["Abgerechneten aufgelaufenen Burst anzeigen"^] .
+
+
+
+=== Aufgelaufene Verbrauchsdetails für bestimmte Tarifpläne
+
+Wenn Sie ein Abonnement mit Tarifplänen mit _null_ zugesagter Kapazität haben, können Sie die aufgelaufenen Verbrauchsdetails auf der Registerkarte *Kapazitätstrend* anzeigen.  Wenn Sie die Option *Abgerechneter Verbrauch* auswählen, können Sie die monatlichen Diagramme für die abgerechneten Verbrauchsdaten anzeigen.
+
+
+
+== 15. Dezember 2023
+
+
+
+=== Möglichkeit zur Suche nach Beobachtungslisten
+
+Die Unterstützung für Beobachtungslisten in Digital Advisor wurde auf Keystone -Systeme erweitert.  Sie können jetzt die Details der Abonnements für mehrere Kunden anzeigen, indem Sie mit Beobachtungslisten suchen.  Weitere Informationen zur Verwendung von Beobachtungslisten in Keystone STaaS finden Sie unterlink:./integrations/keystone-aiq.html#search-by-keystone-watchlists["Suche nach Keystone -Beobachtungslisten"^] .
+
+
+
+=== Datum in UTC-Zeitzone konvertiert
+
+Die auf den Registerkarten des Bildschirms * Keystone -Abonnements* von Digital Advisor zurückgegebenen Daten werden in UTC-Zeit (Server-Zeitzone) angezeigt.  Wenn Sie ein Datum für die Abfrage eingeben, wird automatisch davon ausgegangen, dass es sich um UTC-Zeit handelt. Weitere Informationen finden Sie unter link:./integrations/keystone-aiq.html["Keystone -Abonnement-Dashboard und -Berichterstellung"^] .
