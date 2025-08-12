@@ -25,7 +25,13 @@ Der erweiterte Datenschutzdienst von Keystone kann Daten synchron auf einen seku
 
 Informationen zum Anzeigen des Verbrauchs in einer MetroCluster -Konfiguration finden Sie unterlink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Referenzdiagramme für erweiterten Datenschutz"] .
 
-Die Zusatzgebühren gelten für alle Kapazitäten in Ihrem Abonnement, einschließlich Quelldaten, gespiegelter Kopien und ungespiegelter Daten.
+
+
+== Preise verstehen
+
+Der Preis für den erweiterten Zusatzdienst zum Datenschutz richtet sich nach der zugesagten Kapazität an jedem Standort.  Dies hilft bei der Ermittlung der tatsächlichen Kosten des erweiterten Datenschutzdienstes in $/TiB. Die Zusatzgebühren gelten für alle Kapazitäten in Ihrem Abonnement, einschließlich Quelldaten, gespiegelter Kopien und ungespiegelter Daten.
+
+Für die MetroCluster Konfiguration ist für jeden Standort ein eigenes Abonnement erforderlich und die zugesagte Kapazität wird Ihnen an jedem Standort separat in Rechnung gestellt.  Weitere Informationen zur Abrechnung finden Sie unterlink:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["Abrechnung für erweiterten Datenschutz"] .
 
 Beachten Sie Folgendes:
 

@@ -35,10 +35,12 @@ Beachten Sie Folgendes:
 
 Erweiterter Datenschutz verwendet NetApp MetroCluster , um Daten zwischen zwei physisch getrennten Clustern zu spiegeln.  Bei gespiegelten MetroCluster -Aggregaten werden die Daten zweimal geschrieben, einmal auf jeden Cluster.  Der Keystone -Dienst berechnet den Verbrauch auf jeder Seite unabhängig, was zu zwei identischen Verbrauchsaufzeichnungen führt.  Die Zusatzgebühren werden auf alle Kapazitäten im Abonnement angewendet, unabhängig davon, ob sich die Daten an der Quelle befinden oder ob es sich um gespiegelte oder ungespiegelte Daten handelt.
 
+Jeder MetroCluster Standort verfügt über ein eigenes Abonnement und eine eigene Abrechnung.  Bei MetroCluster -Konfigurationen berücksichtigt die Nutzungsmessung, wie der Speicher an beiden Standorten genutzt wird.  Wenn Sie ein MetroCluster Setup mit 100 TiB pro Site haben, werden an jeder Site nur 50 TiB aktiv verwendet, während die restlichen 50 TiB an jeder Site als gespiegelte Sicherung dienen.  Die Zusatzgebühren für den erweiterten Datenschutz werden auf Grundlage dieser 100 TiB der gesamten aktiven Nutzung berechnet und über die jeweiligen Abonnements zu je 50 TiB auf beide Sites aufgeteilt.
+
 Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, stellen Sie möglicherweise eine Diskrepanz zwischen dem von diesen Tools und Keystone gemeldeten Verbrauch fest.  System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-)Cluster und melden dabei nur die Hälfte der Verbrauchsmetriken, die der Keystone -Dienst meldet.
 
 .Beispiel:
-Site A und Site B sind in einer MetroCluster -Konfiguration eingerichtet.  Wenn ein Benutzer an Standort A ein Volumen von 10 TB erstellt, wird an Standort B ein identisches Volumen von 10 TB erstellt. Keystone ermittelt an jedem Standort einen Verbrauch von 10 TB, was zu einer Gesamterhöhung von 20 TB führt.  System Manager und Unified Manager melden ein 10-TB-Volume, das an Standort A erstellt wurde, melden jedoch kein 10-TB-Volume an Standort B.
+Site A und Site B sind in einer MetroCluster -Konfiguration eingerichtet. Wenn ein Benutzer an Standort A ein Volumen von 10 TB erstellt, wird an Standort B ein identisches Volumen von 10 TB erstellt. Keystone ermittelt an jedem Standort einen Verbrauch von 10 TB, was zu einer Gesamterhöhung von 20 TB führt. System Manager und Unified Manager melden ein 10-TB-Volume, das an Standort A erstellt wurde, melden jedoch kein 10-TB-Volume an Standort B.
 
 Darüber hinaus werden alle auf einem Keystone -System mit erweitertem Datenschutz erstellten Volumes auf den Verbrauch des erweiterten Datenschutzes angerechnet, unabhängig davon, ob diese Volumes gespiegelt sind oder nicht.
 

@@ -18,7 +18,7 @@ Der NetApp Keystone STaaS-Dienst verwendet mehrere Begriffe zum Messen von Metri
 
 Die folgenden Begriffe und Definitionen werden im Keystone STaaS-Dienst zum Messen von Metriken verwendet:
 
-* Kapazitätsmesseinheiten: GiB, TiB und PiB
+* Kapazität: Gemessen in GiB, TiB und PiB.
 * E/A-Dichte: IOPS/TiB: Anzahl der pro Sekunde verarbeiteten Eingabe-/Ausgabevorgänge basierend auf dem gesamten Speicherplatz, der von der Arbeitslast verbraucht wird, in Tebibyte.
 * Serviceverfügbarkeit
 * Dauerhaftigkeit beim genauen Datenzugriff
@@ -29,7 +29,7 @@ Die folgenden Begriffe und Definitionen werden im Keystone STaaS-Dienst zum Mess
 
 == Metrikmessung
 
-* *Kapazitätsmessung in Gibibyte (GiB), Tebibyte (TiB) und Pebibyte (PiB)*: Messungen der Datenspeicherkapazität auf Basis von 1024 (1 GiB = 1024^3^ Bytes, 1 TiB = 1024^4^ Bytes und 1 PiB = 1024^5^ Bytes).
+* *Kapazitätsmessung in GiB, TiB und PiB*: Messungen der Datenspeicherkapazität auf Basis von 1024 (1 GiB = 1024^3^ Bytes, 1 TiB = 1024^4^ Bytes und 1 PiB = 1024^5^ Bytes).
 * *Operationszählerdiagramm in IOPS/TiB*: Die von der Anwendung angeforderten Protokolloperationen pro Sekunde, geteilt durch die Größe des von den Workloads verwendeten Datenträgers.
 * *Verfügbarkeit*: Gemessen als Prozentsatz der Anzahl der vom Dienst erfolgreich beantworteten E/A-Anfragen, geteilt durch die Gesamtzahl der an den Dienst gestellten E/A-Anfragen.  Dies wird an der Servicegrenze eines Monats gemessen und beinhaltet nicht die geplante Serviceausfallzeit oder Nichtverfügbarkeit der Einrichtungen, des Netzwerks oder anderer vom Kunden bereitgestellter Dienste.
 * *Haltbarkeit*: Prozentsatz der Daten, auf die ohne Verlust der Genauigkeit zugegriffen wird, ausgenommen vom Kunden verursachte Löschungen oder Beschädigungen.

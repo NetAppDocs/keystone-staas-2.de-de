@@ -187,6 +187,8 @@ Für das Leistungsservicelevel „Advanced Data-Protect“ sieht das Diagramm fo
 
 image:adp-src-2.png["mcc Primärbasis"]
 
+Der angezeigte Verbrauch von 94,21 TiB stellt die Nutzung für das primäre Abonnement dar.  Da der erweiterte Datenschutz den Verbrauch auf Partner-Sites mit separaten Abonnements aufteilt, zeigt dieses Diagramm nur die Nutzung der primären Site.  Informationen zu den Preisen für den erweiterten Datenschutz-Zusatzdienst finden Sie unterlink:../concepts/adp.html#understand-pricing["Preise verstehen"] .
+
 .Was Sie für das sekundäre Abonnement (Spiegelsite) sehen können
 Wenn Sie das sekundäre Abonnement überprüfen, können Sie sehen, dass das Balkendiagramm für das Leistungsservicelevel _Leistung_ (Basisleistungsservicelevel) am selben Datenerfassungspunkt wie die Partnersite umgekehrt ist und die Verbrauchsaufteilung an den primären und Spiegelsites 93,38 TiB bzw. 95,04 TiB beträgt.
 
