@@ -27,7 +27,13 @@ Bevor Sie AutoSupport für die Einbeziehung von Keystone -Daten konfigurieren, s
 . Melden Sie sich als Systemadministratorbenutzer per SSH beim Keystone ONTAP Cluster an.  Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["Greifen Sie per SSH auf den Cluster zu"^] .
 . Ändern Sie den Protokollinhalt.
 +
-** Führen Sie diesen Befehl aus, um den Inhalt des täglichen Protokolls zu ändern:
+** Führen Sie für ONTAP 9.16.1 und höher diesen Befehl aus, um den täglichen Protokollinhalt zu ändern:
++
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
+----
+** Führen Sie für frühere ONTAP Versionen diesen Befehl aus, um den Inhalt des täglichen Protokolls zu ändern:
 +
 [source]
 ----

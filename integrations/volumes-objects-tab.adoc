@@ -54,7 +54,7 @@ Sie können die tabellarische Auflistung der Volumes sehen, z. B. Kapazitätsnut
 NOTE: QoS-Richtlinien sind in Keystone Version 3 nicht anwendbar.
 
 +
-Mit *Spalten ausblenden/einblenden* können Sie in der Tabelle angezeigte Spalten hinzufügen oder entfernen.  Standardmäßig sind alle Spalten außer der Spalte *Abteilung* ausgewählt.  Sie können beliebige Spalten auswählen oder die Auswahl aufheben, einschließlich der Spalte *Abteilung*. Ihre Einstellungen werden zur späteren Verwendung gespeichert.  Beim Herunterladen des CSV-Berichts werden die Spaltendetails *Abteilung* einbezogen, sofern sie ausgewählt sind, während andere Spalten unabhängig von ihrem Auswahlstatus in der Tabelle angezeigt werden.
+Mit *Spalten ausblenden/einblenden* können Sie in der Tabelle angezeigte Spalten hinzufügen oder entfernen. Standardmäßig zeigt die Tabelle Ihre zuvor gespeicherten Spalteneinstellungen an.  Neu hinzugefügte Spalten, wie etwa die Spalten *Abteilung* oder *Gesamt-Fußabdruck*, sind standardmäßig ausgeblendet und müssen manuell ausgewählt werden, damit sie in der Tabelle angezeigt werden.  Sie können beliebige Spalten auswählen oder die Auswahl aufheben und Ihre Einstellungen werden für die spätere Verwendung gespeichert.  Beim Herunterladen des CSV-Berichts werden alle verfügbaren Spalten unabhängig von Ihren Anzeigeeinstellungen in den Export einbezogen.
 
 +
 
