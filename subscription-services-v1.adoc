@@ -16,7 +16,7 @@ summary: Keystone STaaS über Keystone Flex-Abonnementdienste
 [role="lead"]
 Keystone STaaS wurde von den Keystone Abonnementdiensten (früher bekannt als Keystone Flex-Abonnementdienste) abgelöst.
 
-Während die Navigation der beiden Angebote ähnlich ist,link:./integrations/keystone-bluexp.html["Keystone -Dashboard"^] Die Abonnementdienste von Keystone unterscheiden sich von Keystone STaaS in den Leistungsstufen, dem Serviceangebot und den Abrechnungsgrundsätzen.  Ab April 2024 verwaltet und veröffentlicht NetApp Dokumentationen nur für Keystone STaaS.  Wenn Sie noch Keystone Abonnementdienste verwenden, wenden Sie sich an Ihren KSM, um Unterstützung bei der Migration zu Keystone STaaS zu erhalten.  Bei Bedarf können Sie hier auf eine PDF-Version der Dokumentation zu den Keystone Abonnementdiensten zugreifen:
+Während die Navigation der beiden Angebote ähnlich ist,link:./integrations/keystone-console.html["Keystone -Dashboard"^] Die Abonnementdienste von Keystone unterscheiden sich von Keystone STaaS in den Leistungsstufen, dem Serviceangebot und den Abrechnungsgrundsätzen. Ab April 2024 verwaltet und veröffentlicht NetApp Dokumentationen nur für Keystone STaaS. Wenn Sie noch Keystone Abonnementdienste verwenden, wenden Sie sich an Ihren KSM, um Unterstützung bei der Migration zu Keystone STaaS zu erhalten. Bei Bedarf können Sie hier auf eine PDF-Version der Dokumentation zu den Keystone Abonnementdiensten zugreifen:
 
 * https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide.pdf["Englisch"^]
 * https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ja-jp.pdf["japanisch"^]

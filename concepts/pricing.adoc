@@ -18,7 +18,7 @@ Der nutzungsbasierte Abonnementdienst NetApp Keystone STaaS bietet flexiblen und
 
 Keystone bietet Ihnen die folgenden Abrechnungsmöglichkeiten:
 
-* Sie können auf der Grundlage von IOPS und zugesagter Latenzkapazität bezahlen, um verschiedene Workload-Anforderungen zu erfüllen.  Die verschiedenen Leistungsservicestufen – Extreme, Premium, Performance, Standard, Value und Object – ermöglichen Ihnen die Verwaltung Ihres Speichers basierend auf dem von Ihnen erworbenen Servicelevel.
+* Sie können auf der Grundlage von IOPS und zugesagter Latenzkapazität bezahlen, um verschiedene Workload-Anforderungen zu erfüllen. Die verschiedenen Leistungsservicestufen – Extreme, Premium, Performance, Standard, Value und Object – ermöglichen Ihnen die Verwaltung Ihres Speichers basierend auf dem von Ihnen erworbenen Leistungsservicelevel.
 * Es bietet eine vorhersehbare Abrechnung für die zugesagte Kapazität und eine nutzungsabhängige Bezahlung für die variable (Burst-)Kapazitätsnutzung.
 * Sie können einen Paketpreis für Hardware, Kernbetriebssystem und Support zu einem Preis von einem $/TiB auswählen.  Sie erhalten für jeden Speichertyp, jede Datei, jeden Block, jedes Objekt oder jeden Cloud-Speicherdienst eine einzige Rechnung.
 * Sie können die Laufzeit der Dienste und die Zahlungsoptionen flexibel auswählen, beispielsweise monatlich, vierteljährlich oder jährlich.

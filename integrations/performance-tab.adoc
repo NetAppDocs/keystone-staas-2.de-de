@@ -17,12 +17,12 @@ summary: Um die Leistung Ihrer Systeme zu überwachen, können Sie Leistungsmetr
 Um die Leistung Ihrer Systeme zu überwachen, können Sie Leistungsmetriken der von Ihren Keystone Abonnements verwalteten ONTAP Volumes anzeigen.
 
 
-TIP: Dieser Reiter steht Ihnen im Digital Advisor optional zur Verfügung.  Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen.  Es ist in BlueXP nicht verfügbar.
+TIP: Dieser Reiter steht Ihnen im Digital Advisor optional zur Verfügung. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen. Es ist in der NetApp Konsole nicht verfügbar.
 
 Um diese Registerkarte in Digital Advisor anzuzeigen, führen Sie die folgenden Schritte aus:
 
 .Schritte
-. Klicken Sie auf *Allgemein > Keystone -Abonnements > Leistung*.
+. Wählen Sie *Allgemein > Keystone -Abonnements > Leistung*.
 . Wählen Sie die Abonnementnummer aus.  Standardmäßig ist die erste Abonnementnummer ausgewählt.
 . Wählen Sie den gewünschten Datenträgernamen aus der Liste aus.
 +

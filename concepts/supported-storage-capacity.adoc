@@ -28,7 +28,7 @@ Dies sind die Daten, die ein Kunde auf der Keystone -Infrastruktur platziert.  A
 
 Die monatlich während der Abonnementlaufzeit in Rechnung gestellte Mindestkapazität:
 
-* Jedem Servicelevel wird Kapazität zugewiesen.
+* Für jedes Leistungsservicelevel ist Kapazität festgelegt.
 * Während der Laufzeit können feste Kapazitäten und zusätzliche Service-Levels hinzugefügt werden.
 
 
@@ -40,7 +40,7 @@ Während der Laufzeit eines Abonnements können Sie die zugesagten Kapazitäten 
 
 * Die zugesagte Kapazität kann unter bestimmten Bedingungen verringert werden.  Weitere Informationen finden Sie unterlink:../concepts/capacity-requirements.html["Kapazitätsreduzierung"] .
 * Die zugesagte Kapazität kann 90 Tage vor Ablauf Ihres Abonnements nicht erhöht werden, es sei denn, das Abonnement soll um weitere 12 Monate verlängert werden.
-* Sie können Änderungen an der zugesagten Kapazität über die BlueXP Schnittstelle oder von Ihrem Keystone Success Manager (KSM) anfordern.  Informationen zum Anfordern von Änderungen finden Sie unterlink:../concepts/gssc.html["NetApp Keystone Unterstützung"] .
+* Sie können Änderungen an der zugesagten Kapazität über die Konsole oder Ihren Keystone Success Manager (KSM) anfordern. Informationen zum Anfordern von Änderungen finden Sie unterlink:../concepts/gssc.html["NetApp Keystone Unterstützung"] .
 
 
 
