@@ -50,7 +50,7 @@ TIP: Sie können die Tabelle mithilfe der Spaltenauswahl anpassenimage:column-se
 . Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Assets* aus.
 . Wählen Sie die Registerkarte *Volumes in Clustern*.
 +
-image:console-volumes-clusters-multiple-sub.png["Ein Screenshot von Volumes in Clustern für mehrere Abonnements"]
+image:console-volumes-clusters-multiple-sub-1.png["Ein Screenshot von Volumes in Clustern für mehrere Abonnements"]
 
 +
 Sie sehen detaillierte Informationen zu allen Volumes in Clustern über Keystone -Abonnements hinweg, einschließlich Volumename, Abonnementnummer, Knotenseriennummer, Einhaltung von QoS-Richtlinien, Clustername, Hostname und Leistungsservicelevel.  Sie können die bereitgestellte Kapazität, die logische und physische Auslastung sowie kalte Daten überwachen.  Außerdem erhalten Sie einen Überblick über:

@@ -29,16 +29,16 @@ Um den aktuellen Verbrauchsstatus Ihrer Abonnements über die NetApp Konsole ode
 Sie werden zum Reiter *Stromverbrauch* weitergeleitet.
 
 +
-image:bxp-current-consumption-graph.png["Details zum Stromverbrauch im grafischen Format"]
+image:console-current-consumption-graph.png["Details zum Stromverbrauch im grafischen Format"]
 
 +
 Für das ausgewählte Abonnement können Sie Verbrauchsdetails entweder im Tabellen- oder Grafikformat anzeigen, indem Sie die Option *Tabelle* oder *Diagramm* aus der Dropdown-Liste *Anzeigen als* verwenden.  In der grafischen Ansicht können Sie den aktuellen Verbrauch pro Leistungsservicelevel sehen, einschließlich genutzter Kapazität, bereitgestellter Kapazität, zugesagtem Kapazitätslimit und Burst-Kapazitätslimit.
 
 +
-In der Tabellenansicht können Sie Details wie die maximal verbrauchte Kapazität und die verbleibenden Tage bis zum Ablauf sehen.  Im Rahmen der Überwachung Ihrer Abonnementnutzung können Sie den Namen des Leistungsservicelevels, den Verbrauchsstatus, zugesagte und genutzte Kapazitäten, bereitgestellte und Burst-Kapazitäten, verfügbare Kapazität und Volumen anzeigen.  Sie können die Tabelle mithilfe der Spaltenauswahl anpassenimage:column-selector.png["Spaltenauswahlsymbol"] Symbol.
+In der Tabellenansicht können Sie Details wie die maximal verbrauchte Kapazität und die verbleibenden Tage bis zum Ablauf sehen. Im Rahmen der Überwachung Ihrer Abonnementnutzung können Sie den Namen des Leistungsservicelevels, die Kapazitätsnutzung, zugesagte und genutzte Kapazitäten, bereitgestellte und Burst-Kapazitäten, verfügbare Kapazität und Volumen anzeigen. Sie können die Tabelle mithilfe der Spaltenauswahl anpassenimage:column-selector.png["Spaltenauswahlsymbol"] Symbol.
 
 +
-image:bxp-current-consumption-table.png["Angaben zum Stromverbrauch in Tabellenform"]
+image:console-current-consumption-table.png["Angaben zum Stromverbrauch in Tabellenform"]
 
 
 

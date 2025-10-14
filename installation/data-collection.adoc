@@ -78,6 +78,10 @@ Die folgende Liste ist ein repräsentatives Beispiel der für ONTAP erfassten Da
 ** Speichertyp
 ** Aggregatname
 ** Aggregierte UUID
+** Physisch verwendet
+** Verfügbare Größe
+** Größe
+** Verwendete Größe
 
 
 * Aggregierte Objektspeicher
@@ -174,6 +178,17 @@ Die folgende Liste ist ein repräsentatives Beispiel der für ONTAP erfassten Da
 ** VolumeBlocksFootprintBin1
 
 
+* MetroCluster
++
+** Node
+** Aggregat
+** LIFs
+** Konfigurationsreplikation
+** Anschlüsse
+** Cluster
+** Bände
+
+
 * MetroCluster -Cluster
 +
 ** ClusterUUID
@@ -182,6 +197,36 @@ Die folgende Liste ist ein repräsentatives Beispiel der für ONTAP erfassten Da
 ** RemoteClusterName
 ** Lokaler Konfigurationsstatus
 ** RemoteConfigurationState
+
+
+* MetroCluster -Knoten
++
+** DR-Spiegelungsstatus
+** Intercluster LIF
+** Knotenerreichbarkeit
+** DR-Partnerknoten
+** DR Aux Partner-Knoten
+** Symmetrische Beziehung zwischen DR, DR Aux und HA-Knoten
+** Automatische ungeplante Umschaltung
+
+
+* MetroCluster -Konfigurationsreplikation
++
+** Remote-Heartbeat
+** Letzter gesendeter Heartbeat
+** Letzter empfangener Heartbeat
+** Vserver Stream
+** Cluster-Stream
+** Storage
+** Speichervolumen im Einsatz
+
+
+* MetroCluster Mediatoren
++
+** Adresse des Mediators
+** Mediator-Port
+** Mediator konfiguriert
+** Mediator erreichbar
 ** Modus
 
 
@@ -243,6 +288,13 @@ Die folgende Liste ist ein repräsentatives Beispiel der für ONTAP gesammelten 
 * QoSPolicyGroupLatenz
 * LesenMBps
 * QoSSyncSnapmirrorLatenz
+* Daten auf Systemebene
++
+** Schreiben/Lesen/Sonstige/Gesamt-IOPS
+** Schreiben/Lesen/Sonstiges/Gesamtdurchsatz
+** Schreiben/Lesen/Sonstiges/Gesamtlatenz
+
+
 * Schreib-IOPS
 
 
@@ -298,6 +350,11 @@ Die folgende Liste ist eine repräsentative Auswahl der `Physical Data` für Sto
 * Beispiel
 * StorageGRID Speicherauslastung in Bytes
 * StorageGRID Speichernutzungsmetadaten in Bytes
+
+
+Die folgende Liste ist eine repräsentative Auswahl der `Availability/Uptime Data` für StorageGRID gesammelt:
+
+* SLA-Betriebszeit in Prozent
 
 
 ====
