@@ -52,5 +52,5 @@ image:dark-site-generate-support-bundle-1.png["Support-Paket generieren"]
 +
 Dieser Prozess erzeugt eine `tar` Paket am genannten Speicherort, das zur Fehlerbehebung an NetApp weitergegeben werden kann.
 
-. Wenn die Datei heruntergeladen ist, können Sie sie an das Keystone ServiceNow-Supportticket anhängen.  Informationen zum Erstellen von Tickets finden Sie unterlink:../concepts/gssc.html["Generieren von Serviceanfragen"] .
+. Wenn die Datei heruntergeladen ist, können Sie sie an das Keystone ServiceNow-Supportticket anhängen. Informationen zum Sammeln von Tickets finden Sie unter link:../concepts/support-services.html["Generieren von Serviceanfragen"]Die
 

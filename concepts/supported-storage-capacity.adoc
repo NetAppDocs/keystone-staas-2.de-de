@@ -40,7 +40,7 @@ Während der Laufzeit eines Abonnements können Sie die zugesagten Kapazitäten 
 
 * Die zugesagte Kapazität kann unter bestimmten Bedingungen verringert werden.  Weitere Informationen finden Sie unterlink:../concepts/capacity-requirements.html["Kapazitätsreduzierung"] .
 * Die zugesagte Kapazität kann 90 Tage vor Ablauf Ihres Abonnements nicht erhöht werden, es sei denn, das Abonnement soll um weitere 12 Monate verlängert werden.
-* Sie können Änderungen an der zugesagten Kapazität über die Konsole oder Ihren Keystone Success Manager (KSM) anfordern. Informationen zum Anfordern von Änderungen finden Sie unterlink:../concepts/gssc.html["NetApp Keystone Unterstützung"] .
+* Änderungen der zugesagten Kapazität können Sie über die Konsole oder über Ihren Keystone Success Manager (KSM) anfordern. Informationen zum Beantragen von Änderungen finden Sie unter link:../concepts/support-services.html["NetApp Keystone Unterstützung"]Die
 
 
 

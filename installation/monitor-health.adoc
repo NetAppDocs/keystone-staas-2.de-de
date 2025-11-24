@@ -103,5 +103,5 @@ Mit der Keystone Collector TUI können Sie Supportpakete erstellen und diese dan
 `$ keystone-collector-tui`
 . Gehen Sie zu *Fehlerbehebung > Support-Paket erstellen*.image:tui-sup-bundl.png["Tui-Bildschirm"]
 . Bei der Generierung wird der Speicherort des Bundles angezeigt.  Verwenden Sie FTP, SFTP oder SCP, um eine Verbindung zum Speicherort herzustellen und die Protokolldatei auf ein lokales System herunterzuladen.image:tui-sup-bundl-2.png["Tui-Bildschirm"]
-. Wenn die Datei heruntergeladen ist, können Sie sie an das Keystone ServiceNow-Supportticket anhängen.  Informationen zum Erstellen von Tickets finden Sie unterlink:../concepts/gssc.html["Generieren von Serviceanfragen"] .
+. Wenn die Datei heruntergeladen ist, können Sie sie an das Keystone ServiceNow-Supportticket anhängen. Informationen zum Sammeln von Tickets finden Sie unter link:../concepts/support-services.html["Generieren von Serviceanfragen"]Die
 
