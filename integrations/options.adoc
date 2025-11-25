@@ -57,4 +57,4 @@ image:alert-aiq-3.png["Alarm"]
 
 Informationen zu AQoS-Richtlinien finden Sie unterlink:../concepts/qos.html["Adaptive QoS"] .
 
-Wenden Sie sich an den NetApp Keystone Support, um weitere Informationen zu diesen Nachrichten zu erhalten.  Informationen zum Einreichen von Serviceanfragen finden Sie unterlink:../concepts/gssc.html#generating-service-requests["Generieren von Serviceanfragen"] .
+Wenden Sie sich an den NetApp Keystone Support, um weitere Informationen zu diesen Nachrichten zu erhalten. Informationen zum Erstellen von Serviceanfragen finden Sie unter link:../concepts/support-services.html#generating-service-requests["Generieren von Serviceanfragen"]Die
