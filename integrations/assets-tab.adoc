@@ -22,9 +22,13 @@ Sie können detaillierte Informationen zu ONTAP -Clustern und -Knoten sowie Stor
 
 Die Registerkarte *Assets* auf der Seite *Abonnements* zeigt detaillierte Informationen zu Volumes in Clustern, StorageGRID Knoten und ONTAP Knoten, die mit dem Abonnement verknüpft sind, einschließlich verschiedener Details und des Kapazitätsstatus.
 
+[NOTE]
+====
+* Diese Ansicht ist auf jeweils ein Keystone Abonnement beschränkt. Sie können auch die Vermögenswerte anderer Abonnements anzeigen, indem Sie aus der Dropdown-Liste *Tracking-ID* auswählen. Über das Keystone -Dashboard in der NetApp -Konsole können Sie Assets über mehrere Keystone Abonnements hinweg anzeigen. Weitere Informationen finden Sie unterlink:../integrations/assets.html["Anzeigen von Assets in allen Ihren Keystone -Abonnements"] .
+* Die Optionen im Dropdown-Menü *Ansicht* hängen von Ihren Keystone -Abonnementplattformen ab. *Volumes in clusters* und *Nodes in clusters* sind für ONTAP verfügbar. Bei StorageGRID ist das Dropdown-Menü *View* nicht verfügbar; die Tabelle *Nodes in grids* wird automatisch angezeigt. Wenn Ihr Abonnement beide Plattformen umfasst, stehen Ihnen alle drei Optionen zur Verfügung.
 
-NOTE: Diese Ansicht ist auf jeweils ein Keystone Abonnement beschränkt. Sie können auch die Vermögenswerte anderer Abonnements anzeigen, indem Sie aus der Dropdown-Liste *Tracking-ID* auswählen. Über das Keystone -Dashboard in der NetApp -Konsole können Sie Assets über mehrere Keystone Abonnements hinweg anzeigen. Weitere Informationen finden Sie unterlink:../integrations/assets.html["Anzeigen von Assets in allen Ihren Keystone -Abonnements"] .
 
+====
 Sie können diese Informationen anzeigen, indem Sie die folgenden Schritte ausführen:
 
 [role="tabbed-block"]
