@@ -4,7 +4,7 @@ permalink: rest-api/get-customer-subscriptions.html
 keywords: subscriptions, service levels, customer IDs, keystone, api 
 summary: Die Digital Advisor REST-API ruft eine Liste aller Abonnements und Servicelevel ab, die mit der angegebenen Kunden-ID verknüpft sind. 
 ---
-= Erhalten Sie Kundenabonnements mithilfe der Digital Advisor REST-API
+= Keystone Kundenabonnements über die Digital Advisor REST-API abrufen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

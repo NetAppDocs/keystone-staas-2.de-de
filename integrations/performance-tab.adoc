@@ -4,7 +4,7 @@ permalink: integrations/performance-tab.html
 keywords: keystone-aiq, digital advisor keystone, performance tab 
 summary: Um die Leistung Ihrer Systeme zu überwachen, können Sie Leistungsmetriken der von Ihren Keystone Abonnements verwalteten ONTAP Volumes anzeigen. 
 ---
-= Anzeigen von Leistungsmetriken
+= Leistungskennzahlen für Keystone -Abonnements anzeigen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

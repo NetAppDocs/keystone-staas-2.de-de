@@ -4,7 +4,7 @@ permalink: concepts/committed-capacity-billing.html
 keywords: Billing based on committed capacity, committed capacity billing 
 summary: Bei der zugesagten Kapazität handelt es sich um die Kapazität, die beim Kauf des Abonnements für ein bestimmtes Servicelevel zugesagt wurde. 
 ---
-= Abrechnung basierend auf zugesagter Kapazität
+= Keystone Abrechnung der zugesagten Kapazität verstehen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

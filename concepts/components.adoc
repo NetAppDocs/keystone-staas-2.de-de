@@ -4,7 +4,7 @@ permalink: concepts/components.html
 keywords: infrastructure component, deployment requirement, installation requirement 
 summary: Informieren Sie sich über die Komponenten, die zum Aktivieren der NetApp Keystone STaaS-Dienste in Ihrer Umgebung erforderlich sind. 
 ---
-= Für die Bereitstellung erforderliche Komponenten
+= Für Keystone -Dienste erforderliche Komponenten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Informieren Sie sich über die Komponenten, die zum Aktivieren der NetA
 
 
 [role="lead"]
-Um NetApp Keystone STaaS-Dienste in Ihrer Umgebung zu aktivieren, sind mehrere Komponenten erforderlich.  Sie sollten sich die Details zu diesen Komponenten ansehen, bevor Sie beginnen.
+Sie benötigen mehrere Komponenten, um die NetApp Keystone STaaS-Dienste zu aktivieren. Sehen Sie sich diese Komponenten an, bevor Sie beginnen.
 
 
 

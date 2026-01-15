@@ -4,7 +4,7 @@ permalink: concepts/consumed-capacity-billing.html
 keywords: consumed capacity billing, billing and consumed capacity 
 summary: Die verbrauchte Kapazität ist die Kapazität, die Ihre Workloads während der Nutzung Ihres Dienstes tatsächlich nutzen. 
 ---
-= Messung basierend auf verbrauchter Kapazität
+= Keystone Leistungsmessung verstehen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

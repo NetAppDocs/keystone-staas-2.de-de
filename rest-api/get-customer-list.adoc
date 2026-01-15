@@ -4,7 +4,7 @@ permalink: rest-api/get-customer-list.html
 keywords: customer, keystone, api, IDs,  Digital Advisor 
 summary: Die Digital Advisor REST-API ruft eine Liste aller mit dem Benutzer verknüpften Kunden-IDs ab. 
 ---
-= Rufen Sie mithilfe der Digital Advisor REST-API eine Liste aller Kunden ab
+= Rufen Sie eine Liste aller Keystone Kunden mithilfe der Digital Advisor REST API ab.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

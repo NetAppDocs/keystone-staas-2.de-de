@@ -4,7 +4,7 @@ permalink: concepts/billing-schedules.html
 keywords: billing schedules, schedule for payment 
 summary: Keystone STaaS-Abonnements werden monatlich und jährlich abgerechnet. 
 ---
-= Abrechnungspläne
+= Informieren Sie sich über die Abrechnungspläne von Keystone.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

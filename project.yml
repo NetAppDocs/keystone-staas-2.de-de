@@ -153,7 +153,7 @@ sidebar:
         url: "/concepts/service-levels.html"
       - title: Kapazitätsanforderungen für Performance-Service-Levels
         url: "/concepts/capacity-requirements.html"
-    - title: Zusatzleistungen
+    - title: Erfahren Sie mehr über Zusatzleistungen
       entries:
       - title: Erweiterter Datenschutz
         url: "/concepts/adp.html"
@@ -165,7 +165,7 @@ sidebar:
         url: "/concepts/nrnvc.html"
       - title: US Protected Support (USPS)
         url: "/concepts/usps.html"
-    - title: Keystone STaaS SLO
+    - title: Erfahren Sie mehr über Keystone STaaS SLO
       entries:
       - title: Verfügbarkeit
         url: "/concepts/sla-availability.html"
@@ -175,7 +175,7 @@ sidebar:
         url: "/concepts/sla-sustainability.html"
       - title: Ransomware-Wiederherstellungsgarantie
         url: "/concepts/sla-ransomware.html"
-    - title: Abrechnung
+    - title: Abrechnung verstehen
       entries:
       - title: Keystone -Preise
         url: "/concepts/pricing.html"
@@ -185,7 +185,7 @@ sidebar:
         url: "/concepts/consumed-capacity-billing.html"
       - title: Abrechnung basierend auf Burst-Verbrauch
         url: "/concepts/burst-consumption-billing.html"
-      - title: Verschiedene Szenarien für die Keystone -Abrechnung
+      - title: Abrechnung für spezifische Volumenkonfigurationen
         url: "/concepts/misc-volume-billing.html"
       - title: Abrechnungspläne
         url: "/concepts/billing-schedules.html"

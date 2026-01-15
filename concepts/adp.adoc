@@ -4,7 +4,7 @@ permalink: concepts/adp.html
 keywords: data protection advanced 
 summary: Nutzen Sie den erweiterten Zusatzdienst für Datenschutz, um einen effizienten Datenschutz unternehmenskritischer Workloads sicherzustellen. 
 ---
-= Erfahren Sie mehr über erweiterten Datenschutz
+= Erweitertes Datensicherungs-Add-on für Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
