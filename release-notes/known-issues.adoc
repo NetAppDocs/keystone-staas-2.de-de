@@ -24,6 +24,15 @@ Die folgenden bekannten Probleme wurden in NetApp Keystone STaaS gemeldet:
 
 
  a| 
+Abonnementänderung nicht möglich
+ a| 
+Die Option zur Änderung der reservierten Kapazität für Keystone-Abonnements ist derzeit in der NetApp Console nicht verfügbar. Diese Funktionalität wird in einer zukünftigen Version wieder eingeführt.
+ a| 
+Keine
+
+
+
+ a| 
 Falsche Rechnung aufgrund von Datenkonflikten
  a| 
 Eine Nichtübereinstimmung der Verbrauchsdaten für AutoSupport Abonnements führt zur Erstellung falscher Rechnungen und damit zu Abrechnungsungenauigkeiten.
