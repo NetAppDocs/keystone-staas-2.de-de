@@ -14,16 +14,11 @@ summary: Nutzen Sie den erweiterten Zusatzdienst für Datenschutz, um einen effi
 
 
 [role="lead"]
-Sie können den erweiterten Zusatzdienst für Datenschutz mit Ihrem Keystone STaaS-Abonnement abonnieren.  Dieser Zusatzdienst nutzt die NetApp MetroCluster -Technologie, um einen effizienten Datenschutz Ihrer unternehmenskritischen Workloads mit einem Recovery Point Objective (RPO) von 0 sicherzustellen.
+Sie können den erweiterten Datenschutz-Zusatzdienst (ADP) mit Ihrem Keystone STaaS-Abonnement abonnieren. Während die Standarddienste von Keystone einen standardmäßigen Datenschutz mittels SnapMirror, SnapVault und Snapshot bieten, verwendet dieser Zusatzdienst die NetApp MetroCluster-Technologie, um einen effizienten Datenschutz Ihrer geschäftskritischen Workloads mit einem Recovery Point Objective (RPO) von 0 sicherzustellen.
 
+Keystone advanced data protection service kann Daten synchron an einen sekundären Standort spiegeln. Im Falle einer Katastrophe am primären Standort kann der sekundäre Standort ohne Datenverlust übernehmen. Diese Funktion verwendet die link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"^] Konfiguration zwischen zwei Standorten, um den Datenschutz zu ermöglichen. Sie können die erweiterten Datenschutz-Add-on-Services nur für Ihre Datei- und Blockspeicherdienste verwenden. Als Teil dieses Add-on-Services wird das  `Advanced Data-Protect` Performance-Service-Level Ihrem Abonnement zugewiesen.
 
-NOTE: Die Keystone STaaS-Standarddienste für Datei- und Blockspeicher bieten standardmäßige Datenschutzdienste durch die Verwendung von NetApp -Technologien wie SnapMirror, SnapVault und Snapshot.
-
-Informationen zum Standard- und Cloud-Dienst finden Sie unterlink:../concepts/supported-storage-services.html["Keystone STaaS-Dienste"] .
-
-Der erweiterte Datenschutzdienst von Keystone kann Daten synchron auf einen sekundären Standort spiegeln.  Im Falle einer Katastrophe am primären Standort kann der sekundäre Standort ohne Datenverlust übernehmen.  Diese Funktion nutzt dielink:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"] Konfiguration zwischen zwei Standorten, um Datenschutz zu ermöglichen.  Sie können die erweiterten Zusatzdienste für den Datenschutz nur für Ihre Datei- und Blockspeicherdienste verwenden.  Als Teil dieses Zusatzdienstes bietet die `Advanced Data-Protect` Ihrem Abonnement ist ein Leistungsservicelevel zugewiesen.
-
-Informationen zum Anzeigen des Verbrauchs in einer MetroCluster -Konfiguration finden Sie unterlink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Referenzdiagramme für erweiterten Datenschutz"] .
+Sie können Verbrauchs- und Zustandskennzahlen Ihrer MetroCluster-Konfiguration überwachen. Weitere Informationen finden Sie unter link:../integrations/adp-tab.html["Verbrauch und Status Ihrer MetroCluster-Abonnements anzeigen"].
 
 
 
@@ -31,7 +26,7 @@ Informationen zum Anzeigen des Verbrauchs in einer MetroCluster -Konfiguration f
 
 Der Preis für den erweiterten Zusatzdienst zum Datenschutz richtet sich nach der zugesagten Kapazität an jedem Standort.  Dies hilft bei der Ermittlung der tatsächlichen Kosten des erweiterten Datenschutzdienstes in $/TiB. Die Zusatzgebühren gelten für alle Kapazitäten in Ihrem Abonnement, einschließlich Quelldaten, gespiegelter Kopien und ungespiegelter Daten.
 
-Für die MetroCluster Konfiguration ist für jeden Standort ein eigenes Abonnement erforderlich und die zugesagte Kapazität wird Ihnen an jedem Standort separat in Rechnung gestellt.  Weitere Informationen zur Abrechnung finden Sie unterlink:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["Abrechnung für erweiterten Datenschutz"] .
+Für die MetroCluster-Konfiguration benötigt jeder Standort ein eigenes Abonnement, und die zugesicherte Kapazität wird an jedem Standort unabhängig in Rechnung gestellt.
 
 Beachten Sie Folgendes:
 
@@ -40,6 +35,38 @@ Beachten Sie Folgendes:
 * Gebühren fallen nur für Ihre Datei- und Blockspeicherdienste an.
 
 
-Die folgenden MetroCluster -Szenarien werden unterstützt:
 
-image:mcc-1.png["Von Keystone unterstützte MetroCluster -Konfigurationen"]
+
+== Unterstützte MetroCluster Konfigurationen
+
+Keystone unterstützt die folgenden MetroCluster Bereitstellungsszenarien:
+
+Aktiv/Passiv-Konfiguration:: In dieser Konfiguration werden Primärdaten an einem Standort auf einen sekundären Standort gespiegelt. Wenn beispielsweise 100 TiB an logischen Daten an Standort A verbraucht werden, werden sie auf Standort B repliziert. Beide Standorte benötigen identische Abonnements:
++
+--
+* *Abonnement 1 (Standort A):* 100 TiB Storage Service + 100 TiB ADP
+* *Abonnement 2 (Standort B):* 100 TiB Storage Service + 100 TiB ADP
+
+
+--
+Aktiv/Aktiv-Konfiguration mit vollständiger Spiegelung:: In dieser Konfiguration hosten beide Standorte Primärdaten, die bidirektional gespiegelt werden. Beispielsweise werden 100 TiB Primärdaten am Standort A nach Standort B gespiegelt und 100 TiB Primärdaten am Standort B nach Standort A. Beide Standorte benötigen Abonnements für die kombinierte Kapazität:
++
+--
+* *Abonnement 1 (Standort A):* 200 TiB Storage Service + 200 TiB ADP
+* *Abonnement 2 (Standort B):* 200 TiB Storage Service + 200 TiB ADP
+
+
+--
+Aktiv/Aktiv-Konfiguration mit teilweiser Spiegelung:: In dieser Konfiguration hostet ein Standort gespiegelte Daten, während der andere Standort sowohl gespiegelte als auch ungespiegelte Daten hostet. Beispielsweise werden 100 TiB primärer Daten an Standort A zu Standort B gespiegelt, während Standort B zusätzlich 100 TiB ungespiegelte Daten hostet. Die Abonnements unterscheiden sich je nach Kapazität an jedem Standort:
++
+--
+* *Abonnement 1 (Standort A):* 100 TiB Storage Service + 100 TiB ADP
+* *Abonnement 2 (Standort B):* 200 TiB Storage Service + 200 TiB ADP
+
+
+--
+
+
+Das folgende Diagramm zeigt diese unterstützten MetroCluster Konfigurationen:
+
+image:mcc-1.png["Diagramm mit drei MetroCluster Konfigurationen: Aktiv/Passiv mit symmetrischer Spiegelung, Aktiv/Aktiv mit vollständiger bidirektionaler Spiegelung und Aktiv/Aktiv mit partieller Spiegelung"]

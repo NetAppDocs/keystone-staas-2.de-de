@@ -47,8 +47,7 @@ Erfahren Sie mehr über dielink:https://docs.netapp.com/us-en/bluexp-setup-admin
 
 Beachten Sie Folgendes:
 
-* Während die Konsole und der Digital Advisor einige exklusive Funktionen bieten, stellt die Konsole Verwaltungsfunktionen für Keystone bereit, mit denen Sie Abonnements verwalten und notwendige Anpassungen vornehmen können.
-* Um Abonnements ändern zu können, muss Ihnen die Rolle „Keystone -Administrator“ zugewiesen sein. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über die Zugriffsrollen der NetApp Konsole"^] .
+* Während die Console und Digital Advisor einige exklusive Funktionen bieten, stellt die Console administrative Funktionalität für Keystone bereit, sodass Sie Abonnements verwalten und notwendige Anpassungen vornehmen können. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-keystone-roles.html["Keystone -Zugriffsrollen in der NetApp Console"^].
 * Digital Advisor ist in die Konsole integriert, sodass Sie direkt von der Konsole aus auf alle Funktionen von Digital Advisor zugreifen können, einschließlich des Keystone -Dashboards. Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-console.html#netapp-console["Digital Advisor Integration mit der NetApp Konsole"^] .
 
 
@@ -93,11 +92,6 @@ link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnunge
 
 
  a| 
-link:../integrations/modify-subscription.html["Ändern Sie Ihre Abonnements"](nur für Keystone -Administratoren)
-| Ja | Nein 
-
-
- a| 
 link:../integrations/options.html#generate-reports-from-netapp-console-or-digital-advisor["Berichte erstellen"]
 | Ja | Ja 
 
@@ -105,6 +99,11 @@ link:../integrations/options.html#generate-reports-from-netapp-console-or-digita
  a| 
 link:../integrations/volumes-objects-tab.html["Details zu Volumes und Objekten anzeigen"]
 | Ja | Ja 
+
+
+ a| 
+link:../integrations/adp-tab.html["Anzeigen des MetroCluster-Verbrauchs und -Status"]
+| Ja (einschließlich Gesundheitsstatus, Topologieansicht und Synchronisierungsüberwachung) | Ja (nur Verbrauchsdaten) 
 
 
  a| 

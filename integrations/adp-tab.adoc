@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: integrations/adp-tab.html 
+keywords: keystone-aiq, digital advisor keystone, advanced data protection, ADP, MetroCluster, consumption data, health status, primary site, mirror site, sync status, ONTAP Mediator, capacity utilization, consumption trends, bluexp, NetApp Console, Console 
+summary: Zeigen Sie Verbrauchsdaten an und überwachen Sie den Gesundheitsstatus Ihrer MetroCluster Partnerstandorte, wenn Sie den erweiterten Datenschutz-Zusatzdienst in Keystone abonnieren. 
+---
+= Verbrauch und Status Ihrer Keystone MetroCluster Abonnements einsehen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie den erweiterten Datenschutz-Zusatzdienst abonnieren, können Sie die Verbrauchsdaten Ihrer MetroCluster-Partnerstandorte entweder in der NetApp Console oder Digital Advisor einsehen. In der NetApp Console können Sie außerdem den Replikationsstatus und die Integrität Ihrer MetroCluster-Konfiguration überwachen.
+
+
+
+== Anzeigen des Verbrauchs von MetroCluster-Abonnements und des Gesundheitsstatus
+
+Führen Sie die folgenden Schritte aus:
+
+[role="tabbed-block"]
+====
+.NetApp Konsole
+--
+.Schritte
+. Wählen Sie im linken Navigationsmenü der Konsole *Speicher > Keystone > Abonnements* aus.
+. Wählen Sie das MetroCluster-Abonnement in der Spalte *Subscription number* aus.
++
+
+TIP: MetroCluster-Abonnements werden durch das image:metrocluster-icon.png["MetroCluster Abonnement-Symbol"] Symbol gekennzeichnet.
+
++
+Die Registerkarte *Aktueller Verbrauch* wird geöffnet und zeigt Einblicke in den Verbrauch für Ihre abonnierten Basis-Leistungsservicelevel und deren entsprechende erweiterte Datenschutz-Leistungsservicelevel an. Sie können diese Informationen in tabellarischer oder grafischer Form anzeigen. Weitere Informationen finden Sie unter link:../integrations/current-usage-tab.html["Sehen Sie sich den aktuellen Verbrauch Ihrer Keystone Abonnements an"].
+
+. Wählen Sie die Registerkarte *Advanced data protection (ADP)*.
++
+Auf dieser Registerkarte können Sie Verbrauchsdaten für Ihre Basis-Performance-Service-Levels sowohl am primären als auch am Spiegelstandort einsehen, den Gesundheitszustand Ihrer MetroCluster-Konfiguration überwachen und den Synchronisierungsstatus verfolgen.
+
++
+** Sehen Sie sich das Verbrauchsverteilungsdiagramm für den ausgewählten Zeitraum an.
++
+Das Diagramm zeigt den Verbrauch sowohl für Ihre primäre als auch für Ihre Spiegel-Site. Bewegen Sie den Mauszeiger über das Diagramm, um die Verbrauchsaufschlüsselung in Tebibyte (TiB) für jede Site anzuzeigen.
+
++
+
+NOTE: Für die Basis-Servicelevels wird jedes Volume sowohl am primären als auch am Spiegelstandort entsprechend der Bereitstellung abgerechnet. Das Diagramm ist daher aufgeteilt, um den Verbrauch an jedem Standort darzustellen.
+
++
+*Beispiel:* Im Tooltip werden Verbrauchswerte wie 1,15 TiB für den primären Standort und 4,22 TiB für den Spiegelstandort angezeigt.
+
++
+image:adp-consumption-chart.png["Liniendiagramm, das die MetroCluster-Verbrauchsverteilung mit 1,15 TiB am primären Standort und 4,22 TiB am Spiegelstandort im Tooltip anzeigt"]
+
+** Überwachen Sie den Gesundheitszustand Ihrer MetroCluster Setup in der *ADP Topology*-Ansicht.
++
+Die Topologie zeigt den Verbindungsstatus zwischen dem primären und dem Spiegelstandort (normal, eingeschränkt, getrennt oder wird initialisiert), den Datensynchronisierungsstatus (synchron oder nicht synchron) und den ONTAP Mediator-Status, sofern konfiguriert. Weitere Informationen zum ONTAP Mediator finden Sie unter link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["Erfahren Sie mehr über ONTAP Mediator"^].
+
++
+image:adp-topology.png["Abbildung der ADP-Topologie mit Darstellung des primären Standorts (Cluster A), des Spiegelstandorts (Cluster B), der Verbindungsstatusanzeigen, des Synchronisierungsstatus und ONTAP Mediator"]
+
++
+
+TIP: Sie können das Cluster B-Abonnement (mirror) aus der ADP-Topologie auswählen, um es als primären Standort anzuzeigen.
+
++
+
+TIP: Wenn der Synchronisierungsstatus „nicht synchronisiert“ oder der Verbindungsstatus „beeinträchtigt“ angezeigt wird, lesen Sie link:../concepts/support-services.html["Holen Sie sich Hilfe zu Keystone"] zur Fehlerbehebung des Problems.
+
+** Zeigen Sie historische Verbrauchstrends für den primären oder den Spiegelstandort an.
++
+Wählen Sie unter *Kapazitätsauslastung* *Ansicht* neben entweder Cluster A (primär) oder Cluster B (Spiegel).
+
++
+Die Registerkarte *Verbrauchstrend* öffnet sich und zeigt historische Verbrauchsdaten für den ausgewählten Cluster über einen festgelegten Zeitraum an. Sie können die Trends der Kapazitätsnutzung sowohl für Basis- als auch für erweiterte Leistungsstufen des Datenschutzes analysieren. Weitere Informationen finden Sie unter link:../integrations/consumption-tab.html["Sehen Sie sich die Verbrauchstrends Ihrer Keystone Abonnements an"].
+
++
+*Beispiel:* Das folgende Diagramm zeigt den Verbrauch für die _Premium_-Leistungsdienstleistungsstufe (Basis) für den primären Standort (Cluster A):
+
++
+image:adp-base-consumption.png["Verbrauchsdiagramm für das Premium-Performance-Servicelevel am primären Standort"]
+
++
+Für die Leistungsdienstleistungsstufe _Advanced Data-Protect premium_ sieht das Diagramm für den primären Standort (Cluster A) wie folgt aus:
+
++
+image:adp-consumption.png["Advanced Data Protection Premium-Verbrauchsübersicht für den primären Standort"]
+
++
+Für die _Advanced Data-Protect_ Performance-Serviceebene wird der Gesamtverbrauch zwischen dem primären und dem Spiegelstandort aufgeteilt, und die Nutzung an jedem Standort wird in einem separaten Abonnement abgerechnet; ein Abonnement für den primären Standort und ein weiteres für den Spiegelstandort. Das ist der Grund, warum beim Auswählen der Abonnementnummer für den primären Standort auf der Registerkarte *Consumption trend* die Verbrauchsdiagramme für den Advanced Data Protection Add-on-Service nur die einzelnen Verbrauchsdaten des primären Standorts anzeigen. Da jeder Partnerstandort in einer MetroCluster-Konfiguration sowohl als Quelle als auch als Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegel-Volumes, die an diesem Standort erstellt wurden. Weitere Informationen finden Sie unter link:../concepts/adp.html["Erweitertes Datensicherungs-Add-on für Keystone"].
+
+
+
+
+
+Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["MetroCluster Datenschutz und Notfallwiederherstellung verstehen"^] .
+
+--
+.Digital Advisor
+--
+.Schritte
+. Wählen Sie *General > Keystone Subscriptions > Consumption Trend*.
+. Wählen Sie das MetroCluster-Abonnement aus.
++
+Wenn die Cluster in Ihrer ONTAP Speicherumgebung in einem MetroCluster -Setup konfiguriert sind, werden die Verbrauchsdaten Ihres Keystone Abonnements im selben historischen Datendiagramm aufgeteilt, um den Verbrauch an den primären und gespiegelten Standorten für die Basisleistungs-Servicelevel anzuzeigen.
+
++
+
+NOTE: Die Verbrauchsbalkendiagramme sind nur für die Basisleistungs-Servicelevel aufgeteilt.  Beim Zusatzdienst „Erweiterter Datenschutz“, also dem Leistungsservice-Level „Advanced Data-Protect“, ist diese Abgrenzung nicht vorhanden.
+
++
+
+TIP: Der Tooltip neben der Tracking-ID Ihres Abonnements im Reiter *Aktueller Verbrauch* hilft Ihnen, das Partnerabonnement im MetroCluster Setup zu identifizieren.
+
+
+
+Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["MetroCluster Datenschutz und Notfallwiederherstellung verstehen"^] .
+
+--
+====
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-overview.html["Das Keystone -Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Zeigen Sie Ihre Abonnementdetails an"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich Ihre aktuellen Verbrauchsdetails an"]
+* link:../integrations/consumption-tab.html["Verbrauchstrends anzeigen"]
+* link:../integrations/subscription-timeline.html["Zeigen Sie die Zeitleiste Ihres Abonnements an"]
+* link:../integrations/assets-tab.html["Zeigen Sie Ihre Keystone Abonnementressourcen an"]
+

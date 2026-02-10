@@ -34,7 +34,7 @@ Sie sehen die wichtigsten Kennzahlen wie Kapazitätsnutzung, Ablaufstatus des Ab
 Aus der Tabelle können Sie folgende Details entnehmen:
 
 +
-** *Abonnementnummer*: Die von NetApp zugewiesene Abonnementnummer des Keystone Abonnements.
+** *Abonnementnummer*: Die Abonnementnummer des Keystone-Abonnements, die von NetApp vergeben wurde. Abonnements mit dem image:metrocluster-icon.png["MetroCluster Abonnement-Symbol"] Symbol sind MetroCluster-Abonnements. Weitere Informationen zu MetroCluster-Abonnements finden Sie unter link:../integrations/adp-tab.html["Verbrauch und Status Ihrer Keystone MetroCluster Abonnements einsehen"].
 ** *Tracking-ID*: Die Tracking-ID, die bei der Aktivierung des Abonnements zugewiesen wurde.  Dies ist eine eindeutige ID für jedes Abonnement und jede Site, die zum Verfolgen des Abonnements verwendet wird.
 ** *Kundenname*: Der Name des Kunden, der mit dem Keystone -Abonnement verknüpft ist.
 ** *Verknüpfte Abonnements*: Wenn Sie sekundäre Abonnements haben, die mit Ihrem primären Abonnement verknüpft sind, werden in dieser Spalte die verknüpften Abonnementnummern für das primäre Abonnement aufgeführt.  Diese Abonnementnummer kann zu Ihrem primären oder sekundären (verknüpften) Abonnement gehören.
@@ -78,7 +78,7 @@ Für bestimmte Felder und Spalten werden möglicherweise Informations- oder Warn
 ** *Tracking-ID*: Die Tracking-ID, die bei der Aktivierung des Abonnements zugewiesen wurde.  Dies ist eine eindeutige ID für jedes Abonnement und jede Site.
 +
 
-TIP: Wenn Sie den Add-On-Dienst für erweiterten Datenschutz abonniert haben, können Sie auf den Tooltip neben Ihrer Abonnementnummer klicken, um die Tracking-ID des Partnerabonnements in einem MetroCluster -Setup anzuzeigen.  Um den detaillierten Verbrauch nach Partnerabonnements in einer MetroCluster -Konfiguration anzuzeigen, siehelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Referenzdiagramme für erweiterten Datenschutz"] .
+TIP: Wenn Sie den Zusatzdienst für erweiterten Datenschutz abonniert haben, können Sie auf die QuickInfo neben Ihrer Abonnementnummer klicken, um die Tracking-ID des Partnerabonnements in einer MetroCluster-Konfiguration anzuzeigen. Um den detaillierten Verbrauch von Partnerabonnements in einer MetroCluster-Konfiguration anzuzeigen, siehe link:../integrations/adp-tab.html["Anzeigen des MetroCluster-Abonnementverbrauchs und -zustands"].
 
 ** *Verwendungstyp*: Möglicherweise haben Sie mehrere Keystone Versionen abonniert.  Die Tarifregeln für Leistungsservicelevel können je nach Abonnementversion unterschiedlich sein.  Anhand des Werts in dieser Spalte können Sie erkennen, ob die Nutzungsart nach bereitgestellter, physischer oder logischer Nutzung abgerechnet wird.  Weitere Informationen zu Version 1 finden Sie unter https://docs.netapp.com/us-en/keystone/index.html["Keystone Abonnementdienste | Dokumentation Version 1"^] .
 ** *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements.
