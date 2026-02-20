@@ -38,6 +38,10 @@ Die historischen Verbrauchsdaten für jedes Leistungsservicelevel werden basiere
 NOTE: Sie können *Aufgelaufener Burst* aus der Dropdown-Liste *Anzeigen* auswählen, wenn Sie die historischen Burst-Nutzungsdaten anzeigen möchten, für die Rechnungen erstellt wurden.  Mithilfe dieser Daten können Sie die in Ihrer Rechnung ausgewiesene Nutzung analysieren.  Weitere Informationen finden Sie unterlink:../integrations/consumption-tab.html#view-accrued-burst["Aufgelaufenen Burst anzeigen"] .
 
 +
+
+NOTE: Wenn Sie Zusatzdienste wie Advanced Data Protection (ADP) oder Data Infrastructure Insights (DII) abonniert haben, werden die Verbrauchsdaten dieser Dienste zusammen mit Ihren Basis-Leistungsdienststufen sowohl in der historischen Verbrauchsübersicht als auch in der Übersicht der kumulierten Spitzenwerte angezeigt. Weitere Informationen zu Zusatzdiensten finden Sie unter link:../concepts/adp.html["Erfahren Sie mehr über Zusatzleistungen"].
+
++
 image:bxp-consumption-trend.png["Screenshot mit historischem Verbrauch"]
 
 +
@@ -159,3 +163,14 @@ Ein Beispielbild, das die täglich anfallende Burst-Datennutzung in einem Linien
 image:invoiced-daily-accr-burst-date.png["Screenshot, der Burst-Nutzungsdaten in einem Liniendiagrammformat zeigt"]
 
 Sie können zu einer Tabellenansicht wechseln, indem Sie oben rechts im Diagramm auf die Option *Tabelle* klicken.  Die Tabellenansicht bietet detaillierte tägliche Nutzungsmetriken, einschließlich Leistungsservicelevel, Zeitstempel, zugesagte Kapazität, verbrauchte Kapazität und abrechenbare bereitgestellte Kapazität.  Sie können auch einen Bericht dieser Details im CSV-Format zur späteren Verwendung und zum Vergleich erstellen.
+
+*Verwandte Informationen*
+
+* link:../integrations/dashboard-overview.html["Das Keystone -Dashboard verstehen"]
+* link:../integrations/subscriptions-tab.html["Details zu Ihren Keystone -Abonnements anzeigen"]
+* link:../integrations/current-usage-tab.html["Sehen Sie sich den aktuellen Verbrauch Ihrer Keystone Abonnements an"]
+* link:../integrations/subscription-timeline.html["Sehen Sie sich die Zeitleiste Ihrer Keystone -Abonnements an"]
+* link:../integrations/assets-tab.html["Anzeigen von Assets, die mit einem Keystone -Abonnement verknüpft sind"]
+* link:../integrations/monitoring-alerts.html["Anzeigen und Verwalten von Warnungen und Monitoren"]
+* link:../integrations/volumes-objects-tab.html["Details zu Volumes und Objekten anzeigen"]
+
