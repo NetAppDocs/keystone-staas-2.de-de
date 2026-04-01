@@ -39,21 +39,31 @@ NOTE: Sie können *Aufgelaufener Burst* aus der Dropdown-Liste *Anzeigen* auswä
 
 +
 
-NOTE: Wenn Sie Zusatzdienste wie Advanced Data Protection (ADP) oder Data Infrastructure Insights (DII) abonniert haben, werden die Verbrauchsdaten dieser Dienste zusammen mit Ihren Basis-Leistungsdienststufen sowohl in der historischen Verbrauchsübersicht als auch in der Übersicht der kumulierten Spitzenwerte angezeigt. Weitere Informationen zu Zusatzdiensten finden Sie unter link:../concepts/adp.html["Erfahren Sie mehr über Zusatzleistungen"].
+NOTE: Wenn Sie Zusatzdienste wie Advanced Data Protection (ADP) oder Data Infrastructure Insights (DII) abonniert haben, werden die Verbrauchsdaten dieser Dienste zusammen mit Ihren Basis-Leistungsservice-Levels sowohl in der historischen Verbrauchsübersicht als auch in der Übersicht der kumulierten Spitzenwerte angezeigt. Weitere Informationen zu Zusatzdiensten finden Sie unter link:../concepts/adp.html["Erfahren Sie mehr über Zusatzleistungen"]. image:consumption-trend-burst.png["Screenshot mit historischem Verbrauch"]
 
 +
-image:bxp-consumption-trend.png["Screenshot mit historischem Verbrauch"]
+Das Liniendiagramm zeigt historische Verbrauchsdaten und ermöglicht es Nutzern, Trends über einen ausgewählten Zeitraum zu analysieren. Das Diagramm zeigt die folgenden Kennzahlen:
 
 +
-Das Liniendiagramm zeigt historische Verbrauchsdaten an und ermöglicht Benutzern die Analyse von Trends über einen ausgewählten Datumsbereich.  Das Diagramm zeigt Kennzahlen wie Daten (von Benutzerdaten genutzte Speicherkapazität), Snapshot (von Snapshot-Daten genutzte Speicherkapazität) und genutzte Kapazität (Gesamtspeicherkapazität, einschließlich Daten und Snapshot-Daten) sowie die zugesagte und Burst-Kapazität.  Datum und Uhrzeit jedes Datenpunkts werden unten im Diagramm angezeigt.  Basierend auf dem Datumsbereich Ihrer Abfrage zeigen die Nutzungsdiagramme bis zu 30 Datenerfassungspunkte.  Sie können den Mauszeiger über das Diagramm bewegen, um die Nutzungsaufschlüsselung an jedem Datenerfassungspunkt anzuzeigen.
+** *Ausgenutzte Kapazität*: Gesamtspeicherplatz in Verwendung, einschließlich Daten- und Snapshot-Kapazität.
+** *Daten*: Speicherkapazität, die von Benutzerdaten belegt wird.
+** *Snapshot*: Speicherkapazität, die von Snapshot-Daten belegt wird.
+** *Verpflichtet*: Die vertraglich zugesicherte Kapazität.
+** *Burst-Kapazität*: Die maximal zulässige Burst-Kapazität für Ihr Abonnement.
+** *Über der Burst-Kapazität*: Speichernutzung über dem Burst-Limit. Diese Metrik wird nur angezeigt, wenn das Burst-Limit überschritten wird.
++
+Basierend auf dem Datumsbereich Ihrer Abfrage zeigen die Nutzungsdiagramme bis zu 30 Datenerfassungspunkte an. Sie können den Mauszeiger über das Diagramm bewegen, um die Nutzungsaufschlüsselung an jedem Datenerfassungspunkt anzuzeigen.
 
 +
 
 NOTE: Der von Ihnen gewählte Datumsbereich bestimmt den Detaillierungsgrad am unteren Rand des Diagramms. Bei Zeiträumen von 30 Tagen oder weniger werden sowohl das Datum als auch die Uhrzeit für jeden Datenpunkt angezeigt. Bei Zeiträumen von mehr als 30 Tagen wird nur das Datum angezeigt.
 
-
-
++
 Sie können sich neben dem historischen Verbrauch auch eine Zusammenfassung des aktuellen Verbrauchs anzeigen lassen, um einen klaren Überblick über Ihren Verbrauch zu erhalten.
+
+
+
+
 
 --
 .Digital Advisor
@@ -118,6 +128,20 @@ Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den Ve
 
 --
 ====
+
+
+== Prognosedaten anzeigen
+
+Sie können die voraussichtliche Kapazitätsauslastung für die nächsten 120 Tage ab dem aktuellen Datum über die *Prognose*-Umschaltfläche in der Ansicht *Historischer Verbrauch* auf der Registerkarte *Verbrauchstrend* in der Console einsehen. Die Umschaltfläche ist standardmäßig aktiviert.
+
+Standardmäßig zeigt das Diagramm den historischen Verbrauch der letzten 30 Tage sowie eine 120-Tage-Prognose ab dem aktuellen Datum im selben Diagramm an. Insgesamt werden bis zu 30 Datenpunkte dargestellt (20 für historische Daten und 10 für Prognosedaten), wobei eine vertikale Linie die beiden Segmente trennt.
+
+image:forecast-1.png["Screenshot mit Prognosedaten"]
+
+Wenn Sie einen Datumsbereich auswählen, der nicht mit dem aktuellen Datum endet, wird die Prognose automatisch deaktiviert. Um sie wieder zu aktivieren, werden Sie in einem Bestätigungsdialog darauf hingewiesen, dass Prognosedaten nur verfügbar sind, wenn der ausgewählte Zeitraum mit dem aktuellen Datum endet. Durch Bestätigen wird die Ansicht auf den Standardbereich der letzten 30 Tage historischer Daten plus die nächsten 120 Tage Prognose zurückgesetzt.
+
+Wenn der prognostizierte Verbrauch die Burst-Kapazität voraussichtlich übersteigt, erscheint ein Warnhinweis im Diagramm, der eine Kapazitätserweiterung empfiehlt.
+
 
 
 == Berechnung des aufgelaufenen Bursts
