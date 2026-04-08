@@ -273,29 +273,11 @@
   <block id="d33f2a600ba4fe43084a26e95e4908c0" category="paragraph">*Verwandte Informationen*</block>
   <block id="3158f806d725e1ec78b0701704e3095e" category="inline-link-macro">So schätzen Sie den Keystone -Verbrauch mit Daten-Tiering (FabricPool) mithilfe der ONTAP CLI</block>
   <block id="a61155b6c29c4a67dcebc112d4f1a0e6" category="paragraph"><block ref="a61155b6c29c4a67dcebc112d4f1a0e6" category="inline-link-macro-rx"></block></block>
-  <block id="265561b81e51364d306e58144832b7a8" category="summary">Wenn Sie Hilfe benötigen, wenden Sie sich an das NetApp Keystone Supportteam.</block>
   <block id="9c749342ce1dc8c39f5e67d29a9500ac" category="doc">Holen Sie sich Hilfe zu Keystone</block>
-  <block id="9271c91f15a89ae66145641e94752632" category="paragraph">Das NetApp Keystone Supportteam und der Keystone Success Manager (KSM) sind für die Bereitstellung des Services für Ihre Keystone Abonnements verantwortlich.  Wenn Sie Hilfe benötigen, können Sie sich an das Keystone Supportteam wenden.</block>
   <block id="1d15537f2746347dfa1ac4acd53c9adb" category="section-title">NetApp Keystone Unterstützung</block>
-  <block id="8a559914d26628167b5f08a9373076e9" category="paragraph">NetApp stellt NetApp Keystone Kunden per Remote-Zugriff Betriebsdienste bereit.  Diese Dienste umfassen eine Reihe von Betriebsdisziplinen im Rahmen von Speicherverwaltungsaktivitäten.  Zu diesen Diensten gehören Anlagen- und Konfigurationsverwaltung, Kapazitäts- und Leistungsverwaltung, Änderungsverwaltung, Ereignis-, Vorfall- und Problemverwaltung, Erfüllung von Serviceanfragen und Berichterstellung.  NetApp weist den Kontrollstatus nach und belegt ihn wie erforderlich.</block>
-  <block id="0f68b904e33d9ac04605aecc958bcf52" category="section-title">Weitere Informationen</block>
-  <block id="49b12603d90b8d1e26781b4c49aa661a" category="paragraph">NetApp verwendet die ITOM-Überwachungslösung, um die NetApp Keystone Umgebung proaktiv zu überwachen und zur Fehlerbehebung eine Verbindung mit ihr herzustellen.</block>
-  <block id="aee6a3bc19432c3c01a246f89d46a987" category="admonition">In einem partnerbetriebenen Modell werden die Serviceanfragen des Mieters und Untermieters dem Service Desk des Partners zugewiesen.  Das Support-Tool des Partners ist möglicherweise in die ITOM-Lösung integriert.</block>
   <block id="5e3fca9227064d2d04c47a0f13b4fffe" category="paragraph">Weitere Informationen zu den Keystone -Diensten finden Sie unter:</block>
-  <block id="f0c94d09bc7d41e3ed09416fd1ed8a12" category="inline-link"><block ref="f0c94d09bc7d41e3ed09416fd1ed8a12" category="inline-link-rx"></block></block>
-  <block id="1c6d9d150de7c9865ab3839ec9e99e4b" category="list-text">NetApp Keystone<block ref="4b675bc45aec5ce1523a19f69a2ff928" category="inline-link-rx"></block></block>
-  <block id="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link"><block ref="fa4af55c3fdbce23e96d2cf73261fa5b" category="inline-link-rx"></block></block>
-  <block id="0f185ccd88416daec4eee0a846d110b8" category="list-text">NetApp Produktdokumentation<block ref="2e85fc867cab94d246e0bf6043b361cd" category="inline-link-rx"></block></block>
-  <block id="01a2b3dbd173b41f042686cdc48ed6d5" category="section-title">Keystone -Supportüberwachung</block>
-  <block id="9c63af51824784bfae9cd146a00bdd21" category="paragraph">Der NetApp Keystone -Support überwacht den Zustand Ihrer Produkte und abonnierten Dienste, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen.</block>
   <block id="b47b3a710484adb2c8cfacd64043b550" category="paragraph-title">Keystone -Erfolgsmanager</block>
-  <block id="380091ff4f618bba4a7e7e4aa88a1ec1" category="paragraph">Der Keystone Success Manager (KSM) arbeitet bei Ihren Keystone -Diensten eng mit Ihnen zusammen und informiert Sie wöchentlich oder monatlich über Abrechnungs- und Betriebsberichte.  Die Verantwortlichkeiten sind in Ihrem NetApp Keystone Vertrag festgelegt.</block>
   <block id="2d0539451bff9f553647efc300f001de" category="section-title">Generieren von Serviceanfragen</block>
-  <block id="ec48441169568deaa659297bc5ea9f6c" category="paragraph">Wenn Sie während des Onboardings Anmeldeinformationen für den Zugriff und die Nutzung von Netapp Keystone ServiceNow erhalten haben, können Sie über das Portal Serviceanfragen für Probleme im Zusammenhang mit Ihren Keystone -Abonnements generieren:</block>
-  <block id="4bb1ec7470540bdb0d6aeee19ef42670" category="paragraph">Stellen Sie sicher, dass Sie die Systemdetails, Protokolle und zugehörigen Informationen bereit haben, bevor Sie die Serviceanfrage stellen.  Wenn Sie eine Serviceanfrage stellen, erhält das Keystone Supportteam das Supportticket und greift zur Fehlerbehebung auf die Informationen zu.  Sie können Ihr ServiceNow-Ticket verfolgen, um den Status und die Lösung zu erfahren.</block>
-  <block id="ce79b37185c18b2eba95931a0b15de7a" category="inline-link-macro">Support-Paket erstellen und abholen</block>
-  <block id="d5bd195454f7264ad483f3ee67bec884" category="paragraph">Informationen zum Hinzufügen von Support-Paketen finden Sie unter<block ref="bc06f0ccbc4013c0e8a3b640622ac4cb" category="inline-link-macro-rx"></block> .</block>
-  <block id="11cc259f3fbff7a9b169739c7cd9d613" category="paragraph">Wenn Sie einen offenen Fall/ein Ticket haben, das eskaliert werden muss, senden Sie eine E-Mail an eine der folgenden Adressen: keystone.services@netapp.com keystone.escalations@netapp.com</block>
   <block id="24acde87a618c9dc2d11377311afc495" category="summary">Die Keystone -Infrastruktur, das Design, die Technologieauswahl und die Komponentenprodukte liegen ausschließlich bei NetApp.</block>
   <block id="c556196a410876d85c1dc7aafc4fee9f" category="doc">Keystone -Infrastruktur</block>
   <block id="7954e225c8bd390ff2168144c5e393c1" category="paragraph">NetApp ist allein verantwortlich für die Infrastruktur, das Design, die Technologieauswahl und die Komponenten von Keystone, was sowohl für NetApp als auch für vom Kunden betriebene Umgebungen gilt.</block>
@@ -2479,7 +2461,6 @@
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">10. November 2025</block>
   <block id="0c359189f8e07afc4bf0a432b108a2f7" category="list-text">Der Kunde stellt einen Linux-Server bereit, auf dem eines der folgenden Betriebssysteme läuft: Debian 12, Red Hat Enterprise Linux 8.6 oder spätere Versionen der 8.x-Reihe, Red Hat Enterprise Linux 9.0 oder spätere Versionen oder CentOS 7 (nur für bestehende Umgebungen). Die Keystone Software wird mithilfe von<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block> oder<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> Das Paket ist abhängig von der Linux-Distribution.</block>
   <block id="188a74af3438876c97ac7877f4af6cc9" category="list-text">Der Kunde stellt einen Linux-Server bereit, auf dem Debian 12, Ubuntu 20.04 LTS, Red Hat Enterprise Linux (RHEL) 8.x, Red Hat Enterprise Linux 9.0, Amazon Linux 2023 oder eine neuere Version läuft.</block>
-  <block id="75269ad6e7abe01d12768761ab748b48" category="paragraph"><block ref="75269ad6e7abe01d12768761ab748b48" category="inline-link-rx"></block></block>
   <block id="079d46d4e807d9ca797d92cd97e9c5ea" category="list-text">Servicegutschriften können auf eine zukünftige Rechnung angerechnet werden. Servicegutschriften gelten nicht für abgelaufene Keystone Abonnements. Weitere Informationen finden Sie unter <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>.</block>
   <block id="8e3e0d66dd46c331ec4b3a698a38a9e7" category="list-text">Änderungen der zugesagten Kapazität können Sie über die Konsole oder über Ihren Keystone Success Manager (KSM) anfordern. Informationen zum Beantragen von Änderungen finden Sie unter <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>Die</block>
   <block id="17766f6125f71fd7cf26ceef70d4e504" category="list-text">Wenn die Datei heruntergeladen ist, können Sie sie an das Keystone ServiceNow-Supportticket anhängen. Informationen zum Sammeln von Tickets finden Sie unter <block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>Die</block>
@@ -2727,4 +2708,33 @@
   <block id="ed7ea238eb12e525c819f7503ae42929" category="list-text">*Keystone-Version*: Die Version des Keystone-Dienstes, die für das Abonnement verwendet wird. Die Tarifplanregeln für Leistungsservicestufen können je nach Abonnementversion unterschiedlich sein. Weitere Informationen zu Version v1 finden Sie unter <block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block>. Diese Spalte ist standardmäßig ausgeblendet und kann mit dem Spaltenauswahl-<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>-Symbol aktiviert werden.</block>
   <block id="a317125c258dec2606079ff63caaadb2" category="paragraph">30. März 2026</block>
   <block id="5b57bf4dba78305736e07582baae16bb" category="section-title">30. März 2026</block>
+  <block id="a98df09202cc6e4ad7e06d5c995a6d93" category="summary">Verwenden Sie die NetApp Support-Website, um einen Supportfall zu erstellen oder Kontaktinformationen für Ihre Keystone-Abonnements zu finden.</block>
+  <block id="87c73f5bfb171c5c0b72cd1a7ea79280" category="paragraph">NetApp bietet Keystone-Kunden operative Dienstleistungen. Kunden erhalten einen dedizierten Keystone Success Manager (KSM), direkte Support-Kontaktoptionen und proaktives Monitoring durch die ITOM-Lösung.</block>
+  <block id="585c05c1d0460b954c3964cd9a3ffb3e" category="section-title">NetApp Support-Services</block>
+  <block id="d76bb60a63fdb624e2fc6b78e311c3e3" category="paragraph">NetApp bietet Keystone-Kunden operative Dienstleistungen aus der Ferne an. Diese Dienstleistungen umfassen ein breites Spektrum an Speichermanagementaktivitäten, darunter Anlagen- und Konfigurationsmanagement, Kapazitäts- und Leistungsmanagement, Änderungsmanagement, Ereignis- und Störungsmanagement, Bearbeitung von Serviceanfragen und Berichtswesen.</block>
+  <block id="a2900fe72fef1254ae96a9980be42aa2" category="paragraph">Ihr KSM arbeitet eng mit Ihnen an Ihren Keystone-Services zusammen und stellt wöchentliche oder monatliche Abrechnungs- und Betriebsberichte bereit. Die spezifischen Verantwortlichkeiten sind in Ihrer NetApp Keystone-Vereinbarung definiert.</block>
+  <block id="ad119d5ea30f6c26b58e0af5bc43c9fe" category="section-title">Kontaktieren Sie den Support</block>
+  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link-macro">NetApp Support Site</block>
+  <block id="62b7ee2a253095d749908b17b34e24c5" category="paragraph">Sollten Sie ein Problem mit Ihrem Keystone-Abonnement haben, melden Sie sich beim <block ref="074fa40ccf5449d2c887c8cca730e7ab" category="inline-link-macro-rx"></block> mit Ihren NSS-Zugangsdaten an, um einen Supportfall zu erstellen.</block>
+  <block id="0ba24cfc8633d8cf1d37c60ecb155d87" category="inline-link-macro">Registrieren Sie Ihr Konto</block>
+  <block id="dc7ced2019f4ef90d64f453eaa65ab21" category="paragraph">Falls Sie keinen NSS-Login besitzen, <block ref="be0ff70700e6d7bf8208580b4a29d4dc" category="inline-link-macro-rx"></block> verwenden Sie die Seriennummer (SN) eines der Knoten in Ihrem Abonnement.</block>
+  <block id="62cbebda99dfd65eb48d1df30a89caaa" category="inline-link-macro">Wie man einen technischen Supportfall eröffnet</block>
+  <block id="c484ea3aaefbfd168a2e20e6590e44cc" category="paragraph">Eine Schritt-für-Schritt-Anleitung mit Screenshots finden Sie unter <block ref="2daabf72974e38c8344b8e0ce3e0b27e" category="inline-link-macro-rx"></block>.</block>
+  <block id="78ffc43e0dd33cb20c26db09198e2b7c" category="paragraph">Wenn Sie lieber direkt mit einem Supportmitarbeiter sprechen möchten, rufen Sie eine der folgenden Nummern an:</block>
+  <block id="577187e794f48d5fbbe4938623a620fb" category="list-text">USA / Kanada: 888 463 8277</block>
+  <block id="ae15434ff1dc1dc41e45362b9dd4d979" category="list-text">Europa: 00 800 44 638277</block>
+  <block id="954620ada207a9aeeae740abaf43fc51" category="list-text">Indien: 000 800 100 8948</block>
+  <block id="6490c6329214b86200487468669b7f5e" category="inline-link-macro"><block ref="6490c6329214b86200487468669b7f5e" category="inline-link-rx"></block></block>
+  <block id="1750d05da304eca93c29ce6b3abf9420" category="list-text">Weitere globale Zahlen: <block ref="b6fd89ee51af4f46cd0692037b18c807" category="inline-link-macro-rx"></block></block>
+  <block id="1faa32d72b1d234cd1844269c4ecc266" category="section-title">Supportüberwachung</block>
+  <block id="513ac101f78fa63747befb7f73414070" category="paragraph">NetApp nutzt die ITOM-Überwachungslösung, um den Zustand Ihrer Produkte und abonnierten Dienste proaktiv zu überwachen und eine Verbindung zur NetApp Keystone-Umgebung zur Fehlerbehebung herzustellen.</block>
+  <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="section-title">Zusätzliche Ressourcen</block>
+  <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
+  <block id="07d64f85c46041387234eb4f1b2c6dda" category="list-text"><block ref="07d64f85c46041387234eb4f1b2c6dda" category="inline-link-macro-rx"></block></block>
+  <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="inline-link-macro">NetApp Produktdokumentation</block>
+  <block id="c4c9ecac280f54a5500192a9efb21c2b" category="list-text"><block ref="c4c9ecac280f54a5500192a9efb21c2b" category="inline-link-macro-rx"></block></block>
+  <block id="417de6e21a96febf9dc5f6d95a18c845" category="inline-link-macro">Wie man die Seriennummer der ONTAP Plattform ermittelt</block>
+  <block id="9678bc25baa5d4e1d8060e89e70f72fc" category="list-text"><block ref="9678bc25baa5d4e1d8060e89e70f72fc" category="inline-link-macro-rx"></block></block>
+  <block id="843e615119fedf23ac503dbdf746f02a" category="inline-link-macro">Welche Seriennummer ist beim Erstellen eines StorageGRID Supportfalls zu verwenden?</block>
+  <block id="ce9d93de629e2074412aaee90a3a8db2" category="list-text"><block ref="ce9d93de629e2074412aaee90a3a8db2" category="inline-link-macro-rx"></block></block>
 </blocks>
