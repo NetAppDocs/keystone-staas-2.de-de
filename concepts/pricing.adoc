@@ -5,15 +5,13 @@ keywords: pricing, billing introduction, Keystone billing
 summary: Keystone bietet ein Pay-as-you-grow-Modell für Ihren flexiblen und skalierbaren Verbrauchsbedarf. 
 ---
 = Erfahren Sie mehr über die Keystone-Abrechnung
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
-
-'''
-sidebar: sidebar permalink: concepts/pricing.html keywords: pricing, Keystone billing, committed capacity, consumed capacity, burst consumption, billing schedules summary: Mit NetApp Keystone STaaS zahlen Sie für das, was Sie zusagen, und nur zusätzlich für das, was Sie darüber hinaus nutzen. Diese Seite erklärt, wie das Pay-as-you-grow-Modell funktioniert – von der Preisgestaltung Ihrer Speicherzusage über die Messung und Abrechnung der Kapazität bis hin zum Zeitpunkt der Rechnungserstellung. ---
-
-
-
-= Erfahren Sie mehr über die Keystone-Abrechnung
 
 [role="lead"]
 Mit NetApp Keystone STaaS zahlen Sie für das, was Sie buchen, und nur zusätzlich für das, was Sie darüber hinaus nutzen. Diese Seite erklärt, wie das Pay-as-you-go-Modell funktioniert, einschließlich wie Ihr Speicherkontingent bepreist wird, wie die Kapazität gemessen und abgerechnet wird und wann Rechnungen erstellt werden.
