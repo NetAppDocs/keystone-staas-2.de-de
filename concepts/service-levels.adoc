@@ -14,7 +14,7 @@ summary: Keystone STaaS bietet Speicherkapazität auf vordefinierten Serviceleve
 
 
 [role="lead"]
-Keystone STaaS bietet Datenspeicherkapazität auf vordefinierten Leistungsserviceleveln.  Jedes von Keystone -Diensten verwaltete Volume ist mit einem Leistungsservicelevel verknüpft.
+Keystone STaaS bietet vordefinierte Performance-Servicelevel (PSLs), auch Basis-Performance-Servicelevel genannt, für jeden Speichertyp. Jeder PSL legt die Performance-Ziele (IOPS, Durchsatz und Latenz), die unterstützten Protokolle, die Plattform und die Mindestkapazitätsanforderungen fest. Die verfügbaren PSLs können geprüft werden, um das passende Servicelevel für die jeweilige Workload auszuwählen und das Abonnement zu planen.
 
 Ein Abonnement kann mehrere Tarifpläne haben und jeder Tarifplan entspricht einem Leistungsservicelevel.  Jeder Tarifplan verfügt über eine zugesagte Kapazität pro Leistungsservicelevel.
 
