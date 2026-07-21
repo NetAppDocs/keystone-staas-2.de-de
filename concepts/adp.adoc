@@ -22,6 +22,7 @@ Sie können Verbrauchs- und Zustandskennzahlen Ihrer MetroCluster-Konfiguration 
 
 
 
+[[understand-pricing]]
 == Preise verstehen
 
 Der Preis für den erweiterten Zusatzdienst zum Datenschutz richtet sich nach der zugesagten Kapazität an jedem Standort.  Dies hilft bei der Ermittlung der tatsächlichen Kosten des erweiterten Datenschutzdienstes in $/TiB. Die Zusatzgebühren gelten für alle Kapazitäten in Ihrem Abonnement, einschließlich Quelldaten, gespiegelter Kopien und ungespiegelter Daten.
@@ -37,6 +38,7 @@ Beachten Sie Folgendes:
 
 
 
+[[supported-metrocluster-configurations]]
 == Unterstützte MetroCluster Konfigurationen
 
 Keystone unterstützt die folgenden MetroCluster Bereitstellungsszenarien:

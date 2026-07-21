@@ -20,6 +20,7 @@ Sie können Keystone Collector je nach Ihren Anforderungen entweder auf VMware v
 
 
 
+[[deploy-on-vmware-vsphere]]
 == Bereitstellung auf VMware vSphere
 
 Gehen Sie folgendermaßen vor:
@@ -30,6 +31,7 @@ Gehen Sie folgendermaßen vor:
 
 
 
+[[install-on-linux]]
 == Installation unter Linux
 
 Die Keystone Collector-Software wird auf dem Linux-Server mithilfe der bereitgestellten .deb- oder .rpm-Dateien installiert, basierend auf der Linux-Distribution.

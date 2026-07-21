@@ -18,6 +18,7 @@ Das Verfügbarkeits-SLO zielt auf eine Betriebszeit von 99,999 % während eines 
 
 
 
+[[metrics]]
 == Metriken
 
 * *Monatliche Betriebszeit in Prozent* = [(Anzahl der zulässigen Sekunden in einem Monat – Durchschnitt der Anzahl der Sekunden Ausfallzeit für alle AFF -Speicher-Arrays, die zur Lieferung der Keystone Bestellung in diesem Monat eingesetzt wurden) / Anzahl der zulässigen Sekunden in einem Monat] x 100 %
@@ -27,12 +28,14 @@ Das Verfügbarkeits-SLO zielt auf eine Betriebszeit von 99,999 % während eines 
 
 
 
+[[performance-service-levels]]
 == Leistungsservice-Levels
 
 Alle Leistungsservicelevel, die von ONTAP Flash-Speicher-Arrays unterstützt werden, sind für das Verfügbarkeits-SLO berechtigt.  Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Leistungsservicelevel in Keystone"] .
 
 
 
+[[service-credits]]
 == Serviceguthaben
 
 
@@ -73,6 +76,7 @@ Wenn die Verfügbarkeit von ONTAP Flash-Speicher-Arrays für berechtigte Abonnem
 |===
 
 
+[[service-credit-calculation]]
 === Berechnung des Serviceguthabens
 
 Servicegutschriften werden nach folgender Formel ermittelt:
@@ -125,6 +129,7 @@ Basierend auf der Berechnung beträgt das Serviceguthaben 5 $.
 
 
 
+[[service-credit-request]]
 === Serviceguthabenanfrage
 
 Wenn ein Verstoß gegen das SLA festgestellt wird, öffnen Sie ein Support-Ticket der Priorität 3 (P3) beim NetApp Keystone Support.

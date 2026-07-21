@@ -18,12 +18,14 @@ NetApp garantiert mit dem Ransomware Recovery Guarantee-Programm die Wiederherst
 
 
 
+[[service-levels]]
 == Service-Level
 
 Der Ransomware Recovery Assurance Service ist für die gesamte Hardware erforderlich, die das Keystone -Abonnement für die Dauer der jeweiligen Abonnementlaufzeit unterstützt.
 
 
 
+[[service-credits]]
 == Serviceguthaben
 
 

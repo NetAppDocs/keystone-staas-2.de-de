@@ -20,6 +20,7 @@ Informationen zu QoS finden Sie unter https://docs.netapp.com/us-en/ontap/perfor
 
 
 
+[[adaptive-qos]]
 == Adaptive QoS
 
 Adaptive QoS (AQoS) wird von Keystone -Diensten verwendet, um das IOPS/TiB-Verhältnis basierend auf der Volumegröße dynamisch aufrechtzuerhalten.  Informationen zu AQoS-Richtlinien finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["Informationen zu adaptiver QoS"^] .
@@ -33,6 +34,7 @@ NOTE: Wenn Sie auf Ihre Datenträger keine AQoS-Richtlinien angewendet haben, we
 
 
 
+[[adaptive-qos-settings]]
 == Adaptive QoS-Einstellungen
 
 Die Adaptive QoS (AQoS)-Einstellungen variieren je nach Servicelevel.
@@ -59,6 +61,7 @@ Die Adaptive QoS (AQoS)-Einstellungen variieren je nach Servicelevel.
 |===
 
 
+[[configuration-of-adaptive-qos-policy-group]]
 == Konfiguration der adaptiven QoS-Richtliniengruppe
 
 Sie können adaptive QoS-Richtlinien (AQoS) konfigurieren, um eine Durchsatzober- oder -untergrenze automatisch an die Volumegröße anzupassen.  Nicht alle Keystone Servicelevel sind auf die standardmäßigen ONTAP QoS-Richtlinien abgestimmt.  Sie können benutzerdefinierte QoS-Richtlinien für sie erstellen.  Beim Konfigurieren einer Richtlinie sollten Sie Folgendes beachten:
@@ -80,12 +83,14 @@ Informationen zur IO-Dichte finden Sie unterlink:../concepts/metrics.html["In Ke
 
 
 
+[[settings-of-adaptive-qos-policies]]
 == Einstellungen adaptiver QoS-Richtlinien
 
 Die Einstellungen für adaptive QoS-Richtlinien (AQoS) für jedes Servicelevel werden in den folgenden Abschnitten beschrieben.  Die hier angegebenen minimalen und maximalen Volumegrößen für jedes Servicelevel ermöglichen optimale IOPs und Latenzwerte für ein Volume.  Das Erstellen zu vieler Volumes außerhalb dieser Richtlinien kann sich negativ auf die Leistung dieser Volumes auswirken.
 
 
 
+[[settings-for-extreme-service-level]]
 === Einstellungen für den Servicelevel „Extrem“
 
 Einstellungen und Befehle für das Servicelevel „Extreme“:
@@ -102,6 +107,7 @@ qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_
 
 
 
+[[settings-for-premium-service-level]]
 === Einstellungen für das Servicelevel „Premium“
 
 Einstellungen und Befehle für die Serviceebene „Premium“:
@@ -118,6 +124,7 @@ qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_
 
 
 
+[[settings-for-performance-service-level]]
 === Einstellungen für den Servicelevel „Leistung“
 
 Einstellungen und Befehle für das Service-Level „Performance“:
@@ -134,6 +141,7 @@ qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <
 
 
 
+[[settings-for-standard-service-level]]
 === Einstellungen für den Servicelevel „Standard“
 
 Einstellungen und Befehle für die Serviceebene „Standard“:
@@ -150,6 +158,7 @@ qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM
 
 
 
+[[settings-for-value-service-level]]
 === Einstellungen für den Servicelevel „Wert“
 
 Einstellungen und Befehle für die Serviceebene „Wert“:
@@ -166,6 +175,7 @@ qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_na
 
 
 
+[[block-size-calculation]]
 == Blockgrößenberechnung
 
 Beachten Sie diese Punkte, bevor Sie die Blockgröße mithilfe dieser Einstellungen berechnen:

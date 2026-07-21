@@ -18,6 +18,7 @@ Die Daten in Keystone STaaS-Systemen fließen durch Keystone Collector und die I
 
 
 
+[[keystone-collector-data-flow]]
 == Keystone Collector-Datenfluss
 
 Keystone Collector initiiert REST-API-Aufrufe an die Speichercontroller und ruft regelmäßig Nutzungsdetails der Controller ab, wie in diesem Flussdiagramm dargestellt:
@@ -33,6 +34,7 @@ image:data-collector-flow.png["zeigt den Datenfluss innerhalb der Collector-Komp
 
 
 
+[[monitoring-data-flows]]
 == Überwachen von Datenflüssen
 
 Die kontinuierliche Überwachung des Zustands der Speicherinfrastruktur ist eine der wichtigsten Funktionen des Keystone -Dienstes.  Zur Überwachung und Berichterstattung verwendet Keystone die ITOM-Überwachungslösung.  Die folgende Abbildung beschreibt, wie der Fernzugriff auf den Kundenstandort durch die ITOM-Überwachungslösung gesichert wird.  Kunden können die Remote-Sitzungsfunktion aktivieren, die es dem Keystone Supportteam ermöglicht, zur Fehlerbehebung eine Verbindung zu überwachten Geräten herzustellen.
@@ -50,6 +52,7 @@ image:monitoring-flow-2.png["Datenfluss"]
 
 
 
+[[compliance-standards]]
 == Compliance-Standards
 
 Die ITOM-Überwachungslösung von Keystone entspricht der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union und dem California Consumer Privacy Act (CCPA).  Es bietet auch einelink:https://www.logicmonitor.com/legal/data-processing-addendum["Datenschutzzusatz (DPA)"^] um diese Verpflichtungen zu dokumentieren.  Die ITOM-Überwachungslösung sammelt und speichert keine personenbezogenen Daten.

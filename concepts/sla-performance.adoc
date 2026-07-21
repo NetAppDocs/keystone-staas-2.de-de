@@ -18,6 +18,7 @@ NetApp Keystone bietet latenzbasierte SLOs pro Performance-Servicelevel, wie in 
 
 
 
+[[metrics]]
 == Metriken
 
 * *Verschlechterte Leistung*: Die Zeitspanne in Minuten pro Vorfall, während der das Latenzziel des 90. Perzentils nicht erreicht wird.
@@ -39,6 +40,7 @@ NetApp Keystone bietet latenzbasierte SLOs pro Performance-Servicelevel, wie in 
 
 
 
+[[performance-service-levels]]
 == Leistungsservice-Levels
 
 Alle Performance-Service-Levels, die von ONTAP Flash-Speicher-Arrays unterstützt werden, sind für Performance-SLO berechtigt und garantieren die Einhaltung der folgenden Ziellatenz:
@@ -57,6 +59,7 @@ Weitere Informationen zu den Latenzanforderungen der Performance-Service-Levels 
 
 
 
+[[service-credits]]
 == Serviceguthaben
 
 
@@ -76,6 +79,7 @@ NetApp vergibt Servicegutschriften für die verschlechterte Leistung:
 |===
 
 
+[[service-credit-calculation]]
 === Berechnung des Serviceguthabens
 
 Servicegutschriften werden nach folgender Formel ermittelt:
@@ -111,6 +115,7 @@ Basierend auf der Berechnung beträgt das Serviceguthaben 12 $.
 
 
 
+[[service-credit-request]]
 === Serviceguthabenanfrage
 
 Wenn ein Verstoß gegen das SLA festgestellt wird, öffnen Sie ein Support-Ticket der Priorität 3 (P3) beim NetApp Keystone Support.

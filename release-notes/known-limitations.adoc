@@ -18,10 +18,12 @@ Bekannte Einschränkungen kennzeichnen Plattformen, Geräte oder Funktionen, die
 
 
 
+[[keystone-collector-limitations]]
 == Einschränkungen von Keystone Collector
 
 
 
+[[keystone-collector-authentication-failure-with-storagegrid-sso-enabled]]
 === Authentifizierungsfehler beim Keystone Collector mit aktiviertem StorageGRID SSO
 
 Keystone Collector unterstützt keine Messung, wenn für das StorageGRID -System Single Sign-On (SSO) aktiviert ist.  In den Protokollen wird die folgende Fehlermeldung angezeigt:
@@ -32,6 +34,7 @@ Siehe Knowledge Base-Artikellink:https://kb.netapp.com/hybrid/Keystone/Collector
 
 
 
+[[keystone-collector-cannot-start-on-vsphere-8-0-update-1]]
 === Keystone Collector kann unter vSphere 8.0 Update 1 nicht gestartet werden
 
 Eine Keystone Collector-VM mit VMware vSphere Version 8.0 Update 1 lässt sich nicht einschalten und es wird folgende Fehlermeldung angezeigt:
@@ -42,6 +45,7 @@ Siehe Knowledge Base-Artikellink:https://kb.netapp.com/hybrid/Keystone/Collector
 
 
 
+[[support-bundle-cannot-be-generated-over-kerberos]]
 === Support-Bundle kann nicht über Kerberos generiert werden
 
 Wenn das Stammverzeichnis von Keystone Collector über NFSv4 mit Kerberos gemountet wird, wird das Support-Paket nicht generiert und die folgende Fehlermeldung wird angezeigt:
@@ -52,12 +56,14 @@ Siehe Knowledge Base-Artikel https://kb.netapp.com/hybrid/Keystone/Collector/Key
 
 
 
+[[keystone-collector-cannot-communicate-with-hosts-within-specific-network-range]]
 === Keystone Collector kann nicht mit Hosts innerhalb eines bestimmten Netzwerkbereichs kommunizieren
 
 Keystone Collector kann nicht mit Geräten innerhalb des Netzwerkbereichs 10.88.0.0/16 kommunizieren, wenn die `ks-collector` Dienst läuft.  Siehe Knowledge Base-Artikellink:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_container_conflict_with_customer_network["Konflikt zwischen Keystone Collector-Container und Kundennetzwerk"^] für Informationen und Lösungen.
 
 
 
+[[keystone-collector-cannot-verify-customer-root-ssl-ca-certificate]]
 === Keystone Collector kann das SSL-CA-Stammzertifikat des Kunden nicht überprüfen
 
 Wenn die SSL/TLS-Prüfung an der Grenzfirewall in einer Umgebung zur Prüfung des SSL/TLS-Verkehrs aktiviert ist, kann Keystone Collector keine HTTPS-Verbindung herstellen, da das Stamm-CA-Zertifikat des Kunden nicht vertrauenswürdig ist.

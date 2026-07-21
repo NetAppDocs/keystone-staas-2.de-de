@@ -18,6 +18,7 @@ Sie können Ihre Daten suchen und filtern, Berichte zu Abonnements und Nutzung e
 
 
 
+[[search-and-filter-data-from-netapp-console]]
 == Suchen und Filtern von Daten über die NetApp Konsole
 
 In der Konsole können Sie Keystone -Daten basierend auf den in der Tabelle innerhalb einer Registerkarte verfügbaren Spaltenparametern suchen und filtern.  Beispielsweise können Sie auf der Registerkarte *Abonnements* auf der Seite *Abonnements* Daten filtern, indem Sie die Keystone -Version in das Suchfeld eingeben.  Ebenso können Sie auf der Registerkarte *Volumes in Clustern* auf der Seite *Assets* Volumes filtern, indem Sie den Volumenamen in das Suchfeld eingeben.
@@ -26,6 +27,7 @@ Sie können Ihre Suche verfeinern, indem Sie die erweiterte Filteroption verwend
 
 
 
+[[generate-reports-from-netapp-console-or-digital-advisor]]
 == Generieren Sie Berichte über die NetApp Konsole oder Digital Advisor
 
 Über den Download-Button können Sie Berichte zu Ihren Keystone -Daten erstellen und anzeigenimage:bluexp-download-report-2.png["Symbol 2 zum Herunterladen von Berichten in der Konsole"] in Registerkarten in der Konsole oder im Digital Advisor verfügbar. Über diese Registerkarten können Sie Berichte zu Ihren Abonnements, zur historischen Nutzung, zur Burst-Nutzung, zur Leistung, zu Assets, Volumes und Objekten erstellen.
@@ -34,6 +36,7 @@ Die Details werden im CSV-Format generiert, das Sie zur späteren Verwendung und
 
 
 
+[[generate-consolidated-report-from-digital-advisor]]
 == Konsolidierten Bericht aus Digital Advisor generieren
 
 In Digital Advisor können Sie einen konsolidierten Bericht für Ihre Abonnements, die historische Nutzung, die Burst-Nutzung, die Leistung, die Assets sowie die Volumes und Objekte erstellen und anzeigen.  Wählen Sie hierzu in der Berichtsfunktion in Digital Advisor als Berichtstyp * Keystone -Abonnements* aus.  Sie können diese Berichte auf Kunden-, Cluster-, Beobachtungslisten- oder Abonnementebene erstellen.
@@ -46,6 +49,7 @@ Weitere Informationen zum Erstellen von Berichten finden Sie unterlink:https://d
 
 
 
+[[view-alerts-from-digital-advisor]]
 == Benachrichtigungen von Digital Advisor anzeigen
 
 In Digital Advisor bietet das Keystone -Dashboard Warnmeldungen, die Ihnen helfen, die in Ihrer Speicherumgebung auftretenden Probleme zu verstehen.  Diese Benachrichtigungen können als Informationsmeldungen oder Warnungen erscheinen.  Wenn es beispielsweise Volumes in Ihren verwalteten Clustern gibt, denen keine adaptiven QoS-Richtlinien (AQoS) zugeordnet sind, wird möglicherweise eine Warnmeldung angezeigt.  Wählen Sie die Warnmeldung aus, um die Liste der nicht konformen Volumes auf der Registerkarte *Volumes & Objekte* anzuzeigen.

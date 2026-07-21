@@ -137,6 +137,7 @@ Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den Ve
 ====
 
 
+[[accrued-burst-computation]]
 == Berechnung des aufgelaufenen Bursts
 
 Die aufgelaufene Burst-Nutzung für einen ganzen Monat wird wie folgt berechnet:
@@ -151,6 +152,7 @@ Der Burst ist die Differenz zwischen der verbrauchten Kapazität und der zugesag
 
 
 
+[[view-accrued-burst]]
 == Aufgelaufenen Burst anzeigen
 
 Sie können die aufgelaufene Burst-Datennutzung über die Console oder Digital Advisor anzeigen. Wenn Sie im Tab *Consumption trend* in der Console im Dropdown-Menü *View* die Option *Accrued burst* oder im Tab *Consumption Trend* in Digital Advisor die Option *Invoiced Accrued Burst* ausgewählt haben, können Sie die aufgelaufene Burst-Datennutzung monatlich oder vierteljährlich anzeigen, abhängig von Ihrem gewählten Abrechnungszeitraum.
@@ -174,6 +176,7 @@ image:accr-burst-2.png["aufgelaufene Burst-Nutzung vierteljährlich"]
 
 
 
+[[view-forecast-data]]
 == Prognosedaten anzeigen
 
 In der Konsole können Sie im Tab *Verbrauchstrend* den *Prognose*-Schalter verwenden, um die prognostizierte Kapazitätsnutzung in der Ansicht *Historischer Verbrauch* und den prognostizierten aufgelaufenen Burst in der Ansicht *Aufgelaufener Burst* anzuzeigen. Der Schalter ist in beiden Ansichten standardmäßig aktiviert.
@@ -192,6 +195,7 @@ Wenn der prognostizierte Verbrauch die zugesicherte Kapazität voraussichtlich �
 
 
 
+[[view-daily-accrued-burst-data-usage]]
 == Täglich aufgelaufene Burst-Datennutzung anzeigen
 
 Sie können die täglich aufgelaufene Datennutzung für einen monatlichen oder vierteljährlichen Abrechnungszeitraum über die Konsole oder den Digital Advisor anzeigen.  In der Konsole bietet die Tabelle *Aufgelaufener Burst nach Tagen* detaillierte Daten, einschließlich Zeitstempel, zugesagter, verbrauchter und aufgelaufener Burst-Kapazität, wenn Sie *Aufgelaufener Burst* aus der Dropdown-Liste *Anzeigen* auf der Registerkarte *Verbrauchstrend* auswählen.

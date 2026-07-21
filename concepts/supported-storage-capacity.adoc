@@ -18,12 +18,14 @@ Der NetApp Keystone STaaS-Dienst unterstützt mehrere Arten von Speicherkapazit�
 
 
 
+[[logical-capacity]]
 == Logische Kapazität
 
 Dies sind die Daten, die ein Kunde auf der Keystone -Infrastruktur platziert.  Alle Keystone -Kapazitäten beziehen sich auf eine logische Kapazität.  Wenn beispielsweise eine 1-TiB-Datei auf der Keystone Infrastruktur gespeichert wird, sollte mindestens 1 TiB Kapazität erworben werden.
 
 
 
+[[committed-capacity]]
 == Zugesicherte Kapazität
 
 Die monatlich während der Abonnementlaufzeit in Rechnung gestellte Mindestkapazität:
@@ -34,6 +36,7 @@ Die monatlich während der Abonnementlaufzeit in Rechnung gestellte Mindestkapaz
 
 
 
+[[changes-to-committed-capacity]]
 === Änderungen der zugesagten Kapazität
 
 Während der Laufzeit eines Abonnements können Sie die zugesagten Kapazitäten ändern.  Allerdings gibt es bestimmte Voraussetzungen:
@@ -45,18 +48,36 @@ Während der Laufzeit eines Abonnements können Sie die zugesagten Kapazitäten 
 
 
 
+[[consumed-capacity]]
 == Verbrauchte Kapazität
 
-Die verbrauchte Kapazität bezieht sich auf die Kapazität (in TiB Speicher), die derzeit für den Dienst verbraucht wird.  Es ist die Summe aus:
+Die belegte Kapazität bezieht sich auf die Kapazität (in TiB Speicher), die aktuell vom Dienst genutzt wird. Sie wird je nach Datenspeichertyp unterschiedlich berechnet:
 
-* Die logische Kapazität, die zum Speichern aller Instanzen und Typen von Benutzerdaten (wie Kopien, gespiegelte Kopien und Versionen) verwendet wird.
-* Die logische Kapazität, die zum Speichern von Klon-Volumes verwendet wird, die mehr als 10 % der Größe des Original-Volumes haben.
-* Die physische Kapazität, die zum Speichern der Differenzdaten aus Snapshot-Kopien verwendet wird.
-* Die zugewiesene physische Kapazität.
+* *Einheitlicher oder blockoptimierter Speicher*: Die verbrauchte Kapazität wird basierend auf dem während des Bestellprozesses ausgewählten Kapazitätstyps (entweder logisch oder physisch) berechnet. Die Berechnung erfolgt pro Performance-Servicelevel-Instanz.
++
+.. *Logische Kapazität*: Sie ist die Summe aus:
++
+*** Gemessene logische Kapazität, vor der Dateneffizienz des Storage Arrays, um alle Instanzen und Arten von Kundendaten zu speichern, wie Kopien, gespiegelte Kopien, Versionen und Klone.
+*** Physische Kapazität zur Speicherung von Metadaten und Differenzdaten von Snapshots und bestimmten Klonen.
+*** Jede dick bereitgestellte physische Kapazität.
+
+
+.. *Physische Kapazität*: Sie ist die Summe aus:
++
+*** Gemessene physische Kapazität, nach Berücksichtigung der Dateneffizienz des Storage Arrays, zur Speicherung aller Instanzen und Arten von Kundendaten, wie Kopien, gespiegelte Kopien, Versionen und Klone.
+*** Physische Kapazität, die zur Speicherung von Metadaten und Differenzdaten von Snapshots verwendet wird.
+*** Jede dick bereitgestellte physische Kapazität.
 
 
 
 
+* *Objektspeicher*: Die belegte Kapazität wird als die Menge der gemessenen physischen Kapazität berechnet, die zum Speichern aller Instanzen und Typen von Kundendaten auf allen Knoten verwendet wird. Diese Berechnung basiert auf den konfigurierten Richtlinien für das Informationslebenszyklusmanagement (ILM).
+* *Cloud Volumes ONTAP*: Die verbrauchte Kapazität wird als die Menge der gemessenen, bereitgestellten logischen Kapazität aller Cloud Volumes ONTAP Volumes berechnet.
+
+
+
+
+[[burst-capacity]]
 == Burst-Kapazität
 
 Mit dem NetApp Keystone Service können Sie zusätzlich zur zugesagten Kapazität für ein Servicelevel zusätzliche Kapazität nutzen.  Dies wird als Burst-Kapazitätsnutzung bezeichnet.
@@ -69,6 +90,7 @@ Beachten Sie diese Punkte:
 
 
 
+[[billed-capacity]]
 == Abgerechnete Kapazität
 
 Monatliche Rechnung = (zugesagte Kapazität [TiB] * zugesagte Rate [$/TiB]) + (täglich durchschnittlich bereitgestellte Burst-Kapazität [TiB] * Burst-Rate [$/TiB]).  Die monatliche Rechnung enthält eine Mindestgebühr basierend auf der zugesagten Kapazität.

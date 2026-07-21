@@ -18,6 +18,7 @@ NetApp Keystone bietet eine garantierte Messung der maximalen Anzahl tatsächlic
 
 
 
+[[metrics]]
 == Metriken
 
 * *Watt*: Der vom täglichen AutoSupport gemeldete Stromverbrauch, einschließlich der Nutzung durch den Controller und angeschlossene Festplattenregale.
@@ -34,6 +35,7 @@ Weitere Informationen zum Speichereffizienzverhältnis finden Sie unter https://
 
 
 
+[[performance-service-levels]]
 == Leistungsservice-Levels
 
 Nachhaltigkeit SLO basiert auf den folgenden Konsumkriterien:
@@ -62,6 +64,7 @@ Weitere Informationen finden Sie unterlink:https://docs.netapp.com/us-en/keyston
 
 
 
+[[service-credits]]
 == Serviceguthaben
 
 
@@ -95,6 +98,7 @@ Wenn der W/TiB-Verbrauch während eines Abrechnungszeitraums die SLA-Kriterien n
 |===
 
 
+[[service-credit-request]]
 === Serviceguthabenanfrage
 
 Wenn ein Verstoß gegen das SLA festgestellt wird, öffnen Sie ein Support-Ticket der Priorität 3 (P3) beim NetApp Keystone Support und geben Sie die Details wie in der unten gezeigten Excel-Tabelle gefordert an:

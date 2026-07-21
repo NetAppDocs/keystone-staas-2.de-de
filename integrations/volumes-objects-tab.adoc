@@ -23,6 +23,7 @@ NOTE: Der Titel dieser Registerkarte variiert je nach Art der Bereitstellung an 
 
 
 
+[[view-ontap-volumes-and-object-storage-details]]
 == Details zu ONTAP -Volumes und Objektspeicher anzeigen
 
 Die Registerkarte *Volumes & Objects* bietet Einblicke in ONTAP -Systemvolumes und Objektspeicher auf verschiedenen Detailebenen.  Für ONTAP -Volumes gibt es zwei Unterregisterkarten: *Volume-Zusammenfassung*, die eine Gesamtanzahl der den abonnierten Leistungsservice-Levels zugeordneten Volumes bereitstellt, und *Volume-Details*, die diese Volumes noch einmal mit ihren spezifischen Einzelheiten auflistet.  Die Unterregisterkarte *Objekte* enthält Details zum Objektspeicher für Abonnements, die Leistungsservicelevel sowohl für Datei- als auch für Objektspeicher umfassen.

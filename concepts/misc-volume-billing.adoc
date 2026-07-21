@@ -18,6 +18,7 @@ Wenn Sie die Keystone -Abrechnung für bestimmte Konfigurationen verstehen, kön
 
 
 
+[[billing-for-cloned-volumes]]
 == Abrechnung für geklonte Volumes
 
 Wenn Volumes in ONTAP geklont werden und Sie diese zum Sichern und Wiederherstellen Ihrer Daten verwenden, können Sie die Klone ohne zusätzliche Zahlungen weiter verwenden.  Für geklonte Volumes, die über einen längeren Zeitraum für andere Zwecke in Ihrem Unternehmen verwendet werden, fallen jedoch Gebühren an.
@@ -31,6 +32,7 @@ Beachten Sie Folgendes:
 
 
 
+[[billing-for-advanced-data-protection]]
 == Abrechnung für erweiterten Datenschutz
 
 Erweiterter Datenschutz verwendet NetApp MetroCluster , um Daten zwischen zwei physisch getrennten Clustern zu spiegeln.  Bei gespiegelten MetroCluster -Aggregaten werden die Daten zweimal geschrieben, einmal auf jeden Cluster.  Der Keystone -Dienst berechnet den Verbrauch auf jeder Seite unabhängig, was zu zwei identischen Verbrauchsaufzeichnungen führt.  Die Zusatzgebühren werden auf alle Kapazitäten im Abonnement angewendet, unabhängig davon, ob sich die Daten an der Quelle befinden oder ob es sich um gespiegelte oder ungespiegelte Daten handelt.
@@ -46,24 +48,28 @@ Darüber hinaus werden alle auf einem Keystone -System mit erweitertem Datenschu
 
 
 
+[[billing-for-temporary-volumes]]
 == Abrechnung temporärer Volumina
 
 Gelegentlich werden beim Verschieben von Volumes temporäre (TMP) Volumes von ONTAP erstellt.  Diese temporären Datenträger sind kurzlebig und der Verbrauch dieser Datenträger wird für die Abrechnung nicht gemessen.
 
 
 
+[[billing-and-adaptive-qos-policies]]
 == Abrechnungs- und adaptive QoS-Richtlinien
 
 Keystone misst den Verbrauch basierend auf Servicelevels.  Jedem Servicelevel ist eine bestimmte adaptive Quality of Service (QoS)-Richtlinie zugeordnet.  Während der Bereitstellung werden Sie über die Details jeder adaptiven QoS-Richtlinie für Ihre abonnierten Keystone -Dienste informiert.  Stellen Sie während der Speicherverwaltungsvorgänge sicher, dass Ihren Volumes die entsprechenden adaptiven QoS-Richtlinien gemäß Ihren abonnierten Serviceleveln zugewiesen sind, um unerwartete Abrechnungen zu vermeiden.  Weitere Informationen zu adaptiven QoS-Richtlinien in ONTAP finden Sie unterlink:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Garantierter Durchsatz mit QoS-Übersicht"^] .
 
 
 
+[[billing-for-snapmirror-destinations]]
 == Abrechnung für SnapMirror -Ziele
 
 Die Preisgestaltung für das SnapMirror Zielvolume richtet sich nach der adaptiven QoS-Richtlinie für das der Quelle zugewiesene Servicelevel.  Wenn der Quelle jedoch keine adaptive QoS-Richtlinie zugeordnet ist, wird dem Ziel die niedrigste verfügbare Serviceebene in Rechnung gestellt.
 
 
 
+[[billing-for-luns]]
 == Abrechnung für LUNs
 
 Für LUNs gilt dasselbe Abrechnungsmuster wie für die Volumes, die adaptiven QoS-Richtlinien unterliegen.  Wenn separate adaptive QoS-Richtlinien für LUNs festgelegt sind, gilt Folgendes:
@@ -74,6 +80,7 @@ Für LUNs gilt dasselbe Abrechnungsmuster wie für die Volumes, die adaptiven Qo
 
 
 
+[[system-and-root-volumes]]
 == System- und Root-Volumes
 
 System- und Root-Volumes werden als Teil der Gesamtüberwachung des Keystone Dienstes überwacht, jedoch nicht gezählt oder in Rechnung gestellt.  Der Verbrauch dieser Mengen ist von der Abrechnung ausgenommen.

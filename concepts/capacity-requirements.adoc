@@ -18,6 +18,7 @@ Die Kapazitätsanforderungen für die Leistungsservicelevel von Keystone STaaS u
 
 
 
+[[minimum-capacity-requirements-for-file-and-block-services]]
 == Mindestkapazitätsanforderungen für Datei- und Blockdienste
 
 Die pro Abonnement zulässige Mindestkapazität und inkrementelle Kapazität werden in der folgenden Tabelle beschrieben.  Die Mindestkapazität pro Leistungsservicelevel ist für alle Keystone -Verkaufsaktionen gleich definiert.  Die Kapazität über der Mindestkapazität, entweder zu Beginn des Abonnements, als Zusatzdienst zum Abonnement oder nach Neuzuweisung während des Abonnements, wird ebenfalls in der Tabelle strukturiert.
@@ -44,6 +45,7 @@ Inkrementelle Kapazität (und in Vielfachen) als Add-on während des Abonnements
 |===
 
 
+[[minimum-capacity-requirements-for-object-storage]]
 == Mindestkapazitätsanforderungen für Objektspeicher
 
 Die Mindestkapazitätsanforderungen für Objektspeicher können Sie der folgenden Tabelle entnehmen:
@@ -94,6 +96,7 @@ Nicht zutreffend
 |===
 
 
+[[capacity-adjustments]]
 == Kapazitätsanpassungen
 
 Erfahren Sie mehr über Kapazitätsanpassungen:
@@ -107,6 +110,7 @@ Erfahren Sie mehr über Kapazitätsanpassungen:
 
 
 
+[[capacity-reduction]]
 === Kapazitätsreduzierung
 
 Die Kapazitätsreduzierung (jährlich) gilt für das Zahlungsmodell „Jährlich im Voraus“ und ausschließlich für lokale Bereitstellungen.  Es ist nicht für Cloud-Dienste oder Hybrid-Cloud-Dienste verfügbar.  Es bietet die Bereitstellung von Kapazitäten vor Ort, die pro Servicelevel und Abonnement um bis zu 25 % reduziert werden können.  Diese Kürzung ist einmal jährlich mit Wirkung zum Beginn der nächsten jährlichen Abrechnungsperiode zulässig.  Um die Kapazitätsreduzierung zu nutzen, sollten die jährlichen Zahlungen für On-Premise-Dienste während der Laufzeit jederzeit über 200.000 USD liegen.  Da dieses Abrechnungsmodell nur für lokale Bereitstellungen unterstützt wird, ist keine Umverteilung der Ausgaben von lokalen zu Cloud-Diensten möglich.  Ein Beispiel für eine jährliche Kapazitätsreduzierung ist in der folgenden Abbildung dargestellt.
@@ -115,6 +119,7 @@ image:reallocation.png["Neuzuweisungslogik erklärt"]
 
 
 
+[[quarterly-spend-reallocation]]
 === Vierteljährliche Neuzuweisung der Ausgaben
 
 Keystone STaaS bietet Ihnen die Möglichkeit, Ausgaben für lokale Dienste auf Ausgaben für Cloud Volumes ONTAP umzuverteilen.
