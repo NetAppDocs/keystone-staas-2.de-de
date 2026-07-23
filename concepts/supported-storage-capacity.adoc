@@ -21,7 +21,7 @@ Der NetApp Keystone STaaS-Dienst unterst체tzt mehrere Arten von Speicherkapazit�
 [[logical-capacity]]
 == Logische Kapazit채t
 
-Dies sind die Daten, die ein Kunde auf der Keystone -Infrastruktur platziert.  Alle Keystone -Kapazit채ten beziehen sich auf eine logische Kapazit채t.  Wenn beispielsweise eine 1-TiB-Datei auf der Keystone Infrastruktur gespeichert wird, sollte mindestens 1 TiB Kapazit채t erworben werden.
+Dies ist die Speicherkapazit채t, die erforderlich ist, um Benutzerdaten zu speichern, bevor die vom Speichersystem bereitgestellten Dateneffizienzen angewendet werden.
 
 
 

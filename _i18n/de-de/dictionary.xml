@@ -691,7 +691,6 @@
   <block id="1c8da55ed1bb51aa2c1e766474b9b2bc" category="summary">Informieren Sie sich über die Speicherkapazitätstypen, die vom NetApp Keystone STaaS-Dienst für Version 2 unterstützt werden.</block>
   <block id="e561d7dfcd6620325c8edbb7b2c1d749" category="paragraph">Der NetApp Keystone STaaS-Dienst unterstützt mehrere Arten von Speicherkapazitäten.  Das Verständnis dieser unterschiedlichen Kapazitätsbegriffe kann Ihnen bei der Verwendung von Keystone helfen.</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">Logische Kapazität</block>
-  <block id="dfafb0db4cb7ff50434d65c4ee640f1a" category="paragraph">Dies sind die Daten, die ein Kunde auf der Keystone -Infrastruktur platziert.  Alle Keystone -Kapazitäten beziehen sich auf eine logische Kapazität.  Wenn beispielsweise eine 1-TiB-Datei auf der Keystone Infrastruktur gespeichert wird, sollte mindestens 1 TiB Kapazität erworben werden.</block>
   <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">Zugesicherte Kapazität</block>
   <block id="6695ab4bfa1eb6d5122189f790f27577" category="paragraph">Die monatlich während der Abonnementlaufzeit in Rechnung gestellte Mindestkapazität:</block>
   <block id="c6eb79bc54b68ec5e0cc19ef77aaf577" category="list-text">Während der Laufzeit können feste Kapazitäten und zusätzliche Service-Levels hinzugefügt werden.</block>
@@ -2791,4 +2790,5 @@
   <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*Grau*: Das Abonnement ist abgelaufen.</block>
   <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">Bei Abonnements mit aktivierter automatischer Verlängerung wird ein Symbol für die automatische Verlängerung angezeigt, das darauf hinweist, dass sich das Abonnement am Ende der aktuellen Laufzeit automatisch verlängert.</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">20. Juli 2026</block>
+  <block id="d0178ba7ef0d480555c11a8e0e008358" category="paragraph">Dies ist die Speicherkapazität, die erforderlich ist, um Benutzerdaten zu speichern, bevor die vom Speichersystem bereitgestellten Dateneffizienzen angewendet werden.</block>
 </blocks>
