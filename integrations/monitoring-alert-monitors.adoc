@@ -32,8 +32,16 @@ image:monitoring-alert-monitors-default-view-1.png["Ein Screenshot der Warnmonit
 Sie können eine Liste der Alarmmonitore Ihrer Keystone-Abonnements einsehen, einschließlich Monitornamen, Überwachungsbedingungen, die Benachrichtigungen auslösen, Schweregrad, Abonnementnummern, Leistungsservicelevel und Status. Sie können die Spalte *Erstellt von* überprüfen, um zu sehen, ob die Alarmmonitore systemgeneriert oder benutzerdefiniert sind.
 
 +
+Keystone erstellt automatisch systemgenerierte Monitore für alle Ihre Abonnements. Diese Monitore können nicht gelöscht werden. Die Bearbeitung ist auf die Änderung der Abonnementnummern und der Performance-Servicelevel für Kapazitätsauslastungsmonitore sowie auf die Änderung der Abonnementnummern für Abonnementablaufmonitore beschränkt.
+
++
+** *Abonnementablaufüberwachung*: Warnmeldungen werden bei fünf Schwellenwerten vor dem Ablaufdatum des Abonnements ausgelöst (180, 90, 60, 30 und 7 Tage). Die Schwere der Warnmeldungen steigt von informativ bis kritisch, je näher das Ablaufdatum rückt.
+** *Kapazitätsauslastungsüberwachung*: Warnmeldungen basieren auf dem zugesicherten Spitzenprozentsatz Ihres Abonnements und nicht auf einem festen Wert. Beträgt Ihr zugesicherter Spitzenwert beispielsweise 40 %, wird die kritische Warnmeldung ausgelöst, sobald die Kapazitätsauslastung 140 % der zugesicherten Kapazität erreicht.
++
 
 NOTE: Die Registerkarte *Berichte* ist für Keystone -Abonnements derzeit nicht verfügbar.
+
+
 
 
 
