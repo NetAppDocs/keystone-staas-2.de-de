@@ -80,4 +80,4 @@ Support
 
 | image:check.png["Häkchen"] | Keine 
 |===
-Weitere Informationen zur Bereitstellung finden Sie unterlink:../concepts/infra.html["Keystone -Infrastruktur"] Undlink:..//concepts/components.html["Komponenten für die Bereitstellung"] .
+Weitere Informationen zur Bereitstellung sind unter link:../concepts/infra.html["Informationen zur Keystone Infrastruktur"] und link:..//concepts/components.html["Für Keystone -Dienste erforderliche Komponenten"] zu finden.

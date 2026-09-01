@@ -42,6 +42,6 @@ Storage-as-a-Service-Angebote (STaaS) zielen darauf ab, ein öffentliches Cloud-
 * link:../concepts/pricing.html["Keystone -Preise"]
 * link:../concepts/add-on.html["Zusatzdienste in Keystone STaaS"]
 * link:../concepts/service-levels.html["Leistungsservicelevel in Keystone"]
-* link:../concepts/infra.html["Keystone -Infrastruktur"]
+* link:../concepts/infra.html["Informationen zur Keystone Infrastruktur"]
 * link:../concepts/operational-models.html["Betriebsmodelle in Keystone"]
 
