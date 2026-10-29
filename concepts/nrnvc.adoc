@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/nrnvc.html 
 keywords: Non-returnable, non-volatile components, SnapLock compliance, add-on service 
-summary: Als Teil Ihres NetApp Keystone Abonnements erweitert NetApp das NRNVC-Angebot für Ihre Datei-, Block- und Objektdienste. 
+summary: Als Teil Ihres Keystone STaaS Abonnements erweitert NetApp den NRNVC Add-on Service für Ihre Datei-, Block- und Objektdienste. 
 ---
-= NRNVC und SnapLock Compliance Zusatzservice für Keystone
+= NRNVC und SnapLock Compliance Zusatzdienst für Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Als Teil Ihres NetApp Keystone Abonnements erweitert NetApp das NRNVC-A
 
 
 [role="lead"]
-Als Teil Ihres NetApp Keystone Abonnements erweitert NetApp das Angebot an nicht rückgabefähigen, nichtflüchtigen Komponenten (NRNVC) für Ihre Datei-, Block- und Objektdienste.
+Im Rahmen Ihres Keystone STaaS-Abonnements erweitert NetApp den Zusatzdienst für nicht rückgabefähige, nichtflüchtige Komponenten (NRNVC) für Ihre Datei-, Block- und Objektdienste.
 
 NetApp stellt die während der gesamten Servicelaufzeit oder bei Beendigung des Service verwendeten physischen Speichermedien nicht wieder her, wenn NetApp ansonsten alle seine physischen Vermögenswerte wieder herstellt, die bei der Bereitstellung des Service verwendet wurden.
 

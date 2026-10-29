@@ -4,7 +4,7 @@ permalink: concepts/supported-storage-services.html
 keywords: storage, service, service definition, keystone STaaS services, 
 summary: Keystone STaaS-Dienste unterstützen ONTAP und StorageGRID. 
 ---
-= Unterstützter Speicher in Keystone
+= Unterstützte Storage Services für Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

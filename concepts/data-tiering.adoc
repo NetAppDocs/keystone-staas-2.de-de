@@ -4,7 +4,7 @@ permalink: concepts/data-tiering.html
 keywords: add-on services, add-on, data tiering 
 summary: Der Zusatzdienst zur Datenaufteilung identifiziert weniger häufig verwendete Daten und verteilt sie auf unterstützten Speicher. 
 ---
-= Daten-Tiering-Zusatzdienst für Keystone
+= Data Tiering Zusatzdienst für Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

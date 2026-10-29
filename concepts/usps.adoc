@@ -4,7 +4,7 @@ permalink: concepts/usps.html
 keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
 summary: United States Protected Support ist ein Zusatzdienst, der die Bereitstellung und Unterstützung laufender Keystone -Dienste durch US-Bürger auf US-amerikanischem Boden ermöglicht. 
 ---
-= USPS-Zusatzoption für Keystone
+= U.S. Protected Support add-on für Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: United States Protected Support ist ein Zusatzdienst, der die Bereitste
 
 
 [role="lead"]
-United States Protected Support (USPS) ist ein Zusatzangebot für NetApp Keystone Abonnements.  Es berechtigt Sie zum Erhalt von Lieferungen und Support für laufende Keystone -Dienste durch US-Bürger auf US-amerikanischem Boden.
+United States Protected Support (USPS) ist ein Zusatzservice für NetApp Keystone STaaS Abonnements. Damit haben Sie Anspruch auf Delivery und Support für laufende Keystone Services durch US-Bürger auf US-amerikanischem Boden.
 
 Lesen Sie die folgenden Abschnitte, um zu verstehen, welche Elemente Ihrer Abonnements an diesen Zusatzdienst gebunden sind und unter den Bedingungen der NetApp Keystone -Vereinbarung bereitgestellt werden. Fußnote: Haftungsausschluss1 [Die hier beschriebenen Dienste und Angebote unterliegen einer vollständig ausgeführten Keystone -Vereinbarung, sind durch diese eingeschränkt und geregelt.]
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/misc-volume-billing.html 
 keywords: Billing and miscellaneous scenarios 
-summary: Informieren Sie sich über die Keystone -Abrechnung für bestimmte Konfigurationen, einschließlich geklonter Volumes, erweiterter Datensicherheit und mehr. 
+summary: Die Abrechnungsregeln für Keystone STaaS unterscheiden sich bei bestimmten Volume-Konfigurationen. Diese Seite erläutert die Abrechnung für geklonte Volumes, SnapMirror Ziele, LUNs, temporäre Volumes und System-Volumes. 
 ---
-= Keystone-Abrechnung für bestimmte Volumenarten
+= Keystone STaaS Abrechnung für bestimmte Volumentypen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Informieren Sie sich über die Keystone -Abrechnung für bestimmte Konf
 
 
 [role="lead"]
-Wenn Sie die Keystone -Abrechnung für bestimmte Konfigurationen verstehen, können Sie die Servicenutzung optimieren und die Kosten verwalten.  Die Konfigurationen umfassen geklonte Volumes, erweiterten Datenschutz, temporäre Volumes, QoS-Richtlinien, SnapMirror -Ziele, LUNs und System-/Root-Volumes.
+Die Abrechnungsregeln für Keystone STaaS unterscheiden sich bei bestimmten Volume-Konfigurationen. Die Kenntnis dieser Ausnahmen hilft Ihnen, unerwartete Kosten bei der Arbeit mit geklonten Volumes, SnapMirror Zielen, LUNs oder temporärem Storage zu vermeiden.
 
 
 
@@ -29,22 +29,6 @@ Beachten Sie Folgendes:
 * Für geklonte Volumes gibt es keine 24-stündige Karenzzeit.  Es wird nur die Größe des Klons berücksichtigt.
 * Sobald das Klonvolumen 10 % der physischen Größe des übergeordneten Volumens überschreitet, wird der Klon als Standardvolumen (logisch genutzte Kapazität) in Rechnung gestellt.
 
-
-
-
-[[billing-for-advanced-data-protection]]
-== Abrechnung für erweiterten Datenschutz
-
-Erweiterter Datenschutz verwendet NetApp MetroCluster , um Daten zwischen zwei physisch getrennten Clustern zu spiegeln.  Bei gespiegelten MetroCluster -Aggregaten werden die Daten zweimal geschrieben, einmal auf jeden Cluster.  Der Keystone -Dienst berechnet den Verbrauch auf jeder Seite unabhängig, was zu zwei identischen Verbrauchsaufzeichnungen führt.  Die Zusatzgebühren werden auf alle Kapazitäten im Abonnement angewendet, unabhängig davon, ob sich die Daten an der Quelle befinden oder ob es sich um gespiegelte oder ungespiegelte Daten handelt.
-
-Jeder MetroCluster Standort verfügt über ein eigenes Abonnement und eine eigene Abrechnung.  Bei MetroCluster -Konfigurationen berücksichtigt die Nutzungsmessung, wie der Speicher an beiden Standorten genutzt wird.  Wenn Sie ein MetroCluster Setup mit 100 TiB pro Site haben, werden an jeder Site nur 50 TiB aktiv verwendet, während die restlichen 50 TiB an jeder Site als gespiegelte Sicherung dienen.  Die Zusatzgebühren für den erweiterten Datenschutz werden auf Grundlage dieser 100 TiB der gesamten aktiven Nutzung berechnet und über die jeweiligen Abonnements zu je 50 TiB auf beide Sites aufgeteilt.
-
-Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, stellen Sie möglicherweise eine Diskrepanz zwischen dem von diesen Tools und Keystone gemeldeten Verbrauch fest.  System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-)Cluster und melden dabei nur die Hälfte der Verbrauchsmetriken, die der Keystone -Dienst meldet.
-
-.Beispiel:
-Site A und Site B sind in einer MetroCluster -Konfiguration eingerichtet. Wenn ein Benutzer an Standort A ein Volumen von 10 TB erstellt, wird an Standort B ein identisches Volumen von 10 TB erstellt. Keystone ermittelt an jedem Standort einen Verbrauch von 10 TB, was zu einer Gesamterhöhung von 20 TB führt. System Manager und Unified Manager melden ein 10-TB-Volume, das an Standort A erstellt wurde, melden jedoch kein 10-TB-Volume an Standort B.
-
-Darüber hinaus werden alle auf einem Keystone -System mit erweitertem Datenschutz erstellten Volumes auf den Verbrauch des erweiterten Datenschutzes angerechnet, unabhängig davon, ob diese Volumes gespiegelt sind oder nicht.
 
 
 
